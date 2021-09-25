@@ -1,0 +1,80 @@
+@import "fonts"
+@import "vars"
+
+footer
+  background: $title
+  color: #fff
+  padding: 65px 0 70px
+
+.footer-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.copyright
+  color: rgba(#fff, .35)
+  margin: 20px 0 0
+  max-width: 215px
+  width: 100%
+  line-height: 28px
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 25px 0 0
+  li
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 45px
+      height: 45px
+      border: 1px solid rgba(255, 255, 255, 0.15)
+        radius: 50%
+      padding: 11px 13px
+      fill: #fff
+      &:hover
+        box-shadow: 0 5px 15px rgba(243, 60, 93, 0.35)
+        background: $accent
+        border-color: $accent
+        fill: #fff
+      &:focus
+        background: $accent
+        border-color: $accent
+
+.footer-menu
+  font-size: 16px
+  font-weight: 500
+  max-width: 227px
+  line-height: 20px
+  li
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent
+
+.contacts-links
+  font-size: 16px
+  margin: 0 0 16px
+  color: rgba(#fff, .75)
+  display: flex
+  align-items: center
+  font-weight: 500
+  &:last-child
+    margin: 0
+  .svg-icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 15px 0 0
+    fill: $accent
+  &:hover
+    color: rgba(#fff, .75)
+
+
+

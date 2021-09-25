@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BustClub</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+          <a href="#" class="links-details">
+            <span class="links-details__text">Обучение брафиттингу</span>
+          </a>
+          <div class="address">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+            <div class="address-text">Москва, Петровка 17, стр 4, оф 53</div>
+          </div>
+
+          <a href="#" class="insta-link link-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="tel:+74998771451" class="phone">+7 (499) 877-14-51</a>
+
+          <a href="#" class="links-cabinet">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <a href="#" class="links-cabinet" data-toggle="modal" data-target="#modalUser">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </a>
+          <a href="basket.html" class="links-cabinet">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+            <span class="links-cabinet__val">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <form method="post" class="form-search">
+            <button type="submit">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <label><input type="text" placeholder="Поиск"></label>
+          </form>
+
+          <ul class="menu">
+            <li>
+              <div class="btn-size">По размеру
+                <div class="btn-size__val"><span>75FF</span><a href="#" class="btn-size__close">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a></div>
+              </div>
+            </li>
+            <li><a href="catalog.html" class="btn-catalog">Каталог</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#">Опт</a></li>
+          </ul>
+
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-page article-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="blog.html">Блог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Статья</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <div class="article-box">
+          <h1>Топ 10 бюстгальтеров для обладательниц большой груди
+            на все случаи жизни (большой заголовок)</h1>
+
+          <div class="article-img"><img src="img/article1.jpg" alt=""></div>
+
+          <div class="share mb-30">
+            <p>Поделиться:</p>
+
+            <ul class="list-share">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="box-text">
+            <p>Да, мы работаем со всеми возрастами и комплекциями, с грудью большой и маленькой, но являясь
+              дистрибьюторами марок Panache и Parfait, специализирующихся на размерах D+, в первую очередь мы продаем
+              белье для дам с большой грудью.</p>
+          </div>
+        </div>
+        <div class="article-box">
+          <h2>Envy (заголовок)</h2>
+
+          <div class="article-img"><img src="img/article2.jpg" alt=""></div>
+          <div class="box-text">
+            <p>На первом и лидирующем месте по своим запросам, удобству и посадке идет Envy, что переводится с
+              английского как зависть. С этой модели начинается брафиттинг и она висит на рейле для определения размера
+              женской груди. Производитель позиционирует эту модель как фул кап, которая закрывает все изъяны женской
+              груди, но по своей сути она еще относится и к классу балконет, так как хорошо центрует и поднимает грудь.
+              Верхнее кружево эластично и прекрасно поддается прилеганию на все формы женской груди. Не иначе как
+              зависть, которую создает такая форма Envy — высокая и соблазнительная.</p>
+          </div>
+        </div>
+
+        <div class="article-box">
+          <h2>Бюстгальтер Mia (заголовок)</h2>
+          <div class="video-box article-box-video">
+            <a href="#" class="btn-play">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </a>
+            <img src="img/article-video.jpg" alt="">
+          </div>
+
+          <div class="box-text">
+            <p>На первом и лидирующем месте по своим запросам, удобству и посадке идет Envy, что переводится с
+              английского как зависть. С этой модели начинается брафиттинг и она висит на рейле для определения размера
+              женской груди.</p>
+            <p>Производитель позиционирует эту модель как фул кап, которая закрывает все изъяны женской груди, но по
+              своей сути она еще относится и к классу балконет, так как хорошо центрует и поднимает грудь. Верхнее
+              кружево эластично и прекрасно поддается прилеганию на все формы женской груди. Не иначе как зависть,
+              которую создает такая форма Envy — высокая и соблазнительная.</p>
+          </div>
+        </div>
+
+        <div class="article-box">
+          <h3>Характеристики (подзаголовок)</h3>
+          <ul class="list-dots">
+            <li>
+              <p>Особенности модели: </p>
+              <span>съемный push-up</span>
+            </li>
+            <li>
+              <p>Состав:</p>
+              <span>эластан 13%, нейлон 87%</span>
+            </li>
+            <li>
+              <p>Вид бретелей:</p>
+              <span>широкие бретели</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="article-box">
+          <h3>Подзаголовок</h3>
+          <div class="box-text mb-20">
+            <p>На первом и лидирующем месте по своим запросам, удобству и посадке идет Envy, что переводится с
+              английского как зависть. С этой модели начинается брафиттинг и она висит на рейле для определения размера
+              женской груди.</p>
+          </div>
+          <div class="article-img"><img src="img/article3.jpg" alt=""></div>
+          <div class="article-img"><img src="img/article4.jpg" alt=""></div>
+          <div class="article-img"><img src="img/article5.jpg" alt=""></div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-lg-2 offset-lg-2">
+        <div class="article-sub-box">
+          <h3>Популярное:</h3>
+          <div class="article-sub-box__item">
+            <div class="article-sub-box__img"><img src="img/article6.jpg" alt=""></div>
+            <a href="#" class="links-details">
+              <span class="links-details__text">Школа брафитинга</span>
+            </a>
+          </div>
+
+          <div class="article-sub-box__item">
+            <div class="article-sub-box__img"><img src="img/article5.jpg" alt=""></div>
+            <a href="#" class="links-details">
+              <span class="links-details__text">Сертификат номиналом в 5 </span>
+              <span class="links-details__text">тысяч рублей за самый </span>
+              <span class="links-details__text">креативный стих максима ...</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="article-sub-box">
+          <h3>Новое:</h3>
+          <div class="article-sub-box__item">
+            <div class="article-sub-box__img"><img src="img/article7.jpg" alt=""></div>
+            <a href="#" class="links-details">
+              <span class="links-details__text">Вся голая правда </span>
+              <span class="links-details__text">о брафиттинге</span>
+            </a>
+          </div>
+          <div class="article-sub-box__item">
+            <div class="article-sub-box__img"><img src="img/article6.jpg" alt=""></div>
+            <a href="#" class="links-details">
+              <span class="links-details__text">70 размеров бюстгальтеров </span>
+              <span class="links-details__text">для самой разной груди</span>
+            </a>
+          </div>
+          <div class="article-sub-box__item">
+            <div class="article-sub-box__img"><img src="img/article6.jpg" alt=""></div>
+            <a href="#" class="links-details">
+              <span class="links-details__text">Акция ДО\ПОСЛЕ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="contacts-content">
+          <h2>Контакты</h2>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Предварительная запись</span>
+                <a href="tel:+74998771450">+7 (499) 877-14-50</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Доставка в регионы</span>
+                <a href="tel:+74998771450">+7 (499) 877-14-50</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Время работы</span>
+                <p><span>пн-сб:</span> с 10:00 до 21:00</p>
+                <p><span>вс:</span> с 10:00 до 20:00</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Адрес</span>
+                <p>Москва, Петровка 17 стр 4, оф 53</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>E-mail:</span>
+                <a href="mailto:bustclubinfo@gmail.com">bustclubinfo@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6635292445003!2d37.6131763159714!3d55.764346980556425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a43c0ad8617%3A0xda429ef0bf271a08!2z0J_QtdGC0YDQvtCy0LrQsCDRg9C7LiwgMTcg0YHRgtGA0L7QtdC90LjQtSA0LCA1Mywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2suk!4v1632168778082!5m2!1sru!2suk"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 footer-wrapper">
+        <div class="footer-box">
+          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+          <div class="copyright">
+            <p>Продавец ИП Ивкова <br>
+              Оксана Николаевна <br>
+              ИНН 771401924372 <br>
+              ОГРНИП 318774600212261 <br>
+              © 2004-2020. BustClub</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="#">Бюстгалтеры</a></li>
+            <li><a href="#">Купальники</a></li>
+            <li><a href="#">Спортивное белье</a></li>
+            <li><a href="#">Аксессуары </a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+            <li><a href="#">Обмен и возврат <br>
+              товара</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="#">Политика
+              конфиденциальности</a></li>
+            <li><a href="#">Соглашение на обработку
+              персональных данных</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box footer-box-contacts">
+          <a href="mailto:" class="mail contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="mail-text">bustclubinfo@gmail.com</span>
+          </a>
+          <div class="address contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="mail-text">Москва, Петровка 17 стр 4, оф 53</span>
+          </div>
+
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
+    integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
