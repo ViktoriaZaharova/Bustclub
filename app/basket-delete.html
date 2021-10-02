@@ -43,6 +43,7 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center flex-wrap">
           <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
           <a href="#" class="links-details">
             <span class="links-details__text">Обучение брафиттингу</span>
           </a>
@@ -117,25 +118,160 @@
   </div>
 </header>
 
-<section class="m-75">
+<section class="section-page blog-page basket-page pt-50">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="404.html">404</a></li>
-          <li><a href="brands.html">Бренды</a></li>
-          <li><a href="payment.html">Оплата и доставка</a></li>
-          <li><a href="article.html">Статья</a></li>
-          <li><a href="blog.html">Блог</a></li>
-          <li><a href="basket.html">Корзина</a></li>
-          <li><a href="basket-delete.html">Корзина-удалили позицию</a></li>
-          <li><a href="basket-zero.html">Корзина-пустая</a></li>
-          <li><a href="basket-checkout.html">Корзина-заказ оформлен</a></li>
-          <li><a href="basket-availability.html">Корзина-нет в наличии</a></li>
-        </ul>
+      <div class="col-12 col-md-8">
+        <h1>Корзина</h1>
+      </div>
+      <div class="col-12 col-md-8 mb-35">
+        <a href="#" class="links-clear" data-toggle="modal" data-target="#basketModal">
+          <span class="links-clear__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#delete"></use></svg></span>
+          <span class="links-clear__text">Очистить корзину</span>
+        </a>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-12 col-md-8 mb-30">
+        <div class="basket-card-return">
+          <a href="#" class="basket-card-return__photo"><img src="img/basket1.jpg" alt=""></a>
+          <a href="#" class="btn-return">
+            <span class="btn-return__icon"><img src="img/loader.svg" alt=""></span>
+            <span class="btn-return__text">Вернуть</span>
+          </a>
+        </div>
+
+        <div class="basket-card">
+          <a href="product.html" class="basket-card__img"><img src="img/basket2.jpg" alt=""></a>
+          <div class="basket-card__body">
+            <a href="product.html" class="basket-card__title">Бесшовные трусы Bonded Hipster (Black)</a>
+            <div class="article">Артикул: 24385.43</div>
+            <div class="basket-card__size">
+              <p>100 FF</p>
+              <a href="#" class="links-details"><span class="links-details__text">Изменить размер / цвет</span></a>
+            </div>
+          </div>
+
+          <div class="amount">
+            <span class="down"><svg class="svg-icon"><use xlink:href="img/sprite.svg#minus"></use></svg></span>
+            <input type="text" value="1"/>
+            <span class="up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#plus"></use></svg></span>
+          </div>
+
+          <div class="price-wrapper">
+            <div class="new-price">3 950 ₽</div>
+            <div class="old-price">5 800 ₽</div>
+          </div>
+
+          <a href="#" class="btn-add-favorite active"></a>
+
+          <a href="#" class="btn-delete">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#delete"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="basket-card">
+          <a href="product.html" class="basket-card__img"><img src="img/basket3.jpg" alt=""></a>
+          <div class="basket-card__body">
+            <a href="product.html" class="basket-card__title">Браллет без костей Adriana (Lace Bralette) (Blue)</a>
+            <div class="article">Артикул: 24385.43</div>
+            <div class="basket-card__size">
+              <p>100 FF</p>
+              <a href="#" class="links-details"><span class="links-details__text">Изменить размер / цвет</span></a>
+            </div>
+          </div>
+
+          <div class="amount">
+            <span class="down"><svg class="svg-icon"><use xlink:href="img/sprite.svg#minus"></use></svg></span>
+            <input type="text" value="1"/>
+            <span class="up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#plus"></use></svg></span>
+          </div>
+
+          <div class="price-wrapper">
+            <div class="price">4 100 ₽</div>
+          </div>
+
+          <a href="#" class="btn-add-favorite"></a>
+
+          <a href="#" class="btn-delete">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#delete"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-30">
+        <form method="post" class="total-basket">
+          <div class="total-basket-box">
+            <h3>Сумма покупок: 23 550 ₽ </h3>
+            <p>До бесплатной доставки осталось: <span> 2 344 ₽ </span></p>
+          </div>
+          <div class="total-basket-box">
+            <h3>Способ доставки:</h3>
+            <ul class="list-checkbox">
+              <li>
+                <label class="label-checkbox">
+                  <span class="checkbox-title">Курьером по москве</span>
+                  <input type="radio" name="radio" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">
+                    <span>Бесплатно при заказе от 10 000 руб</span>
+                    <span>Стоимость доставки -  350 руб</span>
+                  </span>
+                </label>
+              </li>
+              <li>
+                <label class="label-checkbox">
+                  <span class="checkbox-title">Самовывоз</span>
+                  <input type="radio" name="radio" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">
+                    <span>В пунктах выдачи всегда бесплатно</span>
+                  </span>
+                </label>
+              </li>
+              <li>
+                <label class="label-checkbox">
+                  <span class="checkbox-title">Доставка по России</span>
+                  <input type="radio" name="radio" class="inp-check">
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">
+                    <span>Стоимость доставки стоимость -  350 руб</span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="total-basket__wrap">
+            <p>Доставка: <span>350 ₽</span></p>
+            <div class="commission">
+              <div class="dropdown dropleft">
+                <a href="#" class="links-dropdown dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Комиссия оплаты:</a>
+                <div class="dropdown-menu dropdown-menu-basket" aria-labelledby="dropdownMenuButton">
+                  <div class="box-text">
+                    <p>При оплате онлайн взимается комиссия за обработку платежа в размере 4% от суммы заказа. При
+                      возврате средств комиссия не возвращается.</p>
+                  </div>
+                  <a href="#" class="links-details"><span class="links-details__text">Читать подробнее</span></a>
+                </div>
+              </div>
+              <div class="commission-val"> 150 ₽</div>
+            </div>
+
+            <div class="total-sum">Итого: 26 050 ₽</div>
+          </div>
+          <div class="total-basket__footer">
+            <label class="label-promo"><input type="text" placeholder="Промокод" name="promocode"></label>
+            <button type="submit" class="btn btn-accent">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -292,6 +428,32 @@
   </div>
 </footer>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon"><use xlink:href="img/sprite.svg#close-modal"></use></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Вы уверены, что хотите
+          очистить корзину?</h3>
+        <div class="box-text text-center">
+          <p>Это действие нельзя будет отменить</p>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn btn-border-red">Очистить</a>
+          <button type="button" class="btn btn-accent" data-dismiss="modal">Отмена</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
@@ -310,7 +472,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
         integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script src="js/common.js"></script>
 
 </body>

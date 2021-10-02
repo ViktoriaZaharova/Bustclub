@@ -1,3 +1,109 @@
 @import "fonts"
 @import "vars"
 
+.modal-dialog
+  max-width: 514px
+
+.modal-content
+  background: #FFFFFF
+  border: none
+    radius: 8px
+  padding: 40px 30px
+  position: relative
+  overflow-y: auto
+
+.modal-header
+  padding: 0
+  border: none
+  .close
+    margin: 0
+    opacity: 1
+    width: 24px
+    height: 24px
+    z-index: 1
+    top: 20px
+    right: 20px
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: #B0B1BF
+    padding: 3px
+
+.modal-body
+  padding: 0
+  border: none
+  overflow: visible
+  .btn-group
+    align-items: center
+    justify-content: center
+    margin: 25px 0 0
+    width: 100%
+    .btn
+      margin: 0 12px 0 0
+      height: 62px
+      max-width: 140px
+      font-size: 16px
+      font-weight: 500
+      &:last-child
+        margin: 0
+  .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
+    border-radius: 8px
+  .box-text
+    line-height: 23px
+
+.modal-dialog-scrollable .modal-body
+  overflow: visible
+
+.modal-title
+  text-align: center
+  margin: 0 auto 15px
+  max-width: 350px
+
+.modal-backdrop.show
+  opacity: 1
+
+.modal-backdrop
+  background: rgba(13, 13, 14, 0.75)
+
+.status-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  margin: 0 0 15px
+  width: 65px
+  height: 65px
+  background: rgba($accent, .15)
+  .svg-icon
+    width: 26px
+    height: 26px
+    fill: $accent
+
+.form
+  width: 100%
+  margin: 15px auto 0
+  input
+    width: 100%
+    height: 62px
+    border: 1px solid rgba(#B0B1BF, .5)
+      radius: 8px
+    background: rgba(#fff, .5)
+    padding: 0 30px
+    &::placeholder
+      color: rgba(#252634, .6)
+  label
+    width: 100%
+    margin: 0 auto 25px
+  .btn
+    margin: 0 auto
+    font-size: 16px
+    font-weight: 500
+
+.consent
+  margin: 20px auto 0
+  text-align: center
+  font-size: 14px
+  color: $text
+  .links-details__text
+    padding: 0
