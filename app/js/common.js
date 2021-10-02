@@ -55,3 +55,7 @@ $('.up').on("click",function () {
     $input.change();
     return false;
 });
+
+$('.dropdown-filter').on('click', '.dropdown-menu-filter', function(e) {
+    e.stopPropagation();
+});

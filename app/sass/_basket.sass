@@ -229,10 +229,15 @@
   position: relative
   display: flex
   flex-wrap: wrap
+  align-items: center
   padding: 0 0 0 28px
+  width: 100%
+  cursor: pointer
   span
     display: block
   &:hover
+    .checkbox-title
+      color: $accent
     .checkbox-custom
       background: rgba(233, 86, 112, 0.15)
 
@@ -246,7 +251,6 @@
       size: 100%
 
 .checkbox-title
-  width: 100%
   display: block
   font-size: 17px
   font-weight: 600
@@ -256,6 +260,7 @@
 .checkbox-text
   color: $text-dark
   line-height: 23px
+  width: 100%
 
 .checkbox-custom
   position: absolute
