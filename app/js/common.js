@@ -63,9 +63,9 @@ $('.dropdown-filter').on('click', '.dropdown-menu-filter', function (e) {
 // slider range
 $(function () {
     $(".filter__range").slider({
-        min: 400,
-        max: 2000,
-        values: [400,540],
+        min: 0,
+        max: 10000,
+        values: [400,1040],
         range: true,
         slide: function(event, ui){
 

@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BustClub</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+          <a href="#" class="links-details">
+            <span class="links-details__text">Обучение брафиттингу</span>
+          </a>
+          <div class="address">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+            <div class="address-text">Москва, Петровка 17, стр 4, оф 53</div>
+          </div>
+
+          <a href="#" class="insta-link link-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="tel:+74998771451" class="phone">+7 (499) 877-14-51</a>
+
+          <a href="#" class="links-cabinet">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <a href="#" class="links-cabinet" data-toggle="modal" data-target="#modalUser">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+          </a>
+          <a href="basket.html" class="links-cabinet">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+            <span class="links-cabinet__val">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <form method="post" class="form-search">
+            <button type="submit">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <label><input type="text" placeholder="Поиск"></label>
+          </form>
+
+          <ul class="menu">
+            <li>
+              <div class="btn-size">По размеру
+                <div class="btn-size__val"><span>75FF</span><a href="#" class="btn-size__close">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </a></div>
+              </div>
+            </li>
+            <li><a href="catalog.html" class="btn-catalog">Каталог</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#">Опт</a></li>
+          </ul>
+
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-page article-page catalog-page sale-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Новые купальники</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="main-slider-box main-slider-box1 bg-grey-light">
+          <div class="main-slider-box__content">
+            <div class="main-slider__title">Новые купальники</div>
+            <div class="box-text">
+              <p>Легкость и поддержка <br>
+                даже очень тяжелой груди</p>
+            </div>
+          </div>
+          <div class="main-slider-box__img">
+            <img src="img/slider-decor1.png" alt="" class="slider-decor slider-decor1">
+            <img src="img/slider-decor2.png" alt="" class="slider-decor slider-decor2">
+            <img src="img/slider-decor3.png" alt="" class="slider-decor slider-decor3">
+            <img src="img/slide1.png" alt="" class="slider-bg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1 mb-75">
+        <div class="catalog-info-box">
+          <h3>Заголовок описания</h3>
+          <div class="box-text">
+            <p>Про эту вещь гардероба стоит поговорить отдельно — без нее уж точно не обходится ни одна женщина. Этот
+              предмет носят ежедневно, поэтому выбирают наиболее удобные модели для различных случаев.
+            </p>
+          </div>
+
+          <h4>Какой-то список:
+          </h4>
+          <div class="box-text">
+            <ul class="list-dots">
+              <li><strong>Бра </strong> <span>— придает нужную форму груди, часто представлен с технологией пуш-ап, благодаря которой можно значительно увеличить бюст;
+вариант с отстегивающимися/прозрачными бретелями — лямки не торчат из под вещей с открытой спиной.</span></li>
+              <li>
+                <strong>Спортивный</strong> <span>— это бесшовное, мягкое изделие, подходящее для занятий спортом и во время отдыха, не причиняет никакого дискомфорта и удобно.</span>
+              </li>
+              <li>
+                <strong>Бандо</strong>
+                <span>— подходит для открытых и вечерних нарядов, лямки просто отстегиваются и не портят общий вид образа.</span>
+              </li>
+              <li>
+                <strong>Силиконовая модель</strong>
+                <span>— это две чашки, скрепленные между собой застежкой/декоративной шнуровкой, заслужил название «невидимка», его закрепляют на груди и он абсолютно незаметен во время использования.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="catalog-info-box">
+          <h3>Сроки и условия акции:</h3>
+          <div class="box-text">
+            <p>Прежде всего важно обращать внимание на ткани, поэтому выбирая трусики и бюстгальтер не стоит приобретать
+              только синтетику — белье должно дышать. Необходимо отдавать предпочтение натуральному текстилю типа
+              хлопка, трикотажа, шелка — оно довольно качественное и прослужит не один день. Очень популярны изделия из
+              микрофибры, натурального кружева, эластана.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mb-35">
+        <div class="title-line">
+          <h1>Новые купальники</h1>
+          <div class="catalog-val">80 товаров</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 col-md-3">
+        <div class="sidebar">
+          <div class="sidebar-box">
+            <a href="#" class="sidebar-category">Купальники</a>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">Мягкая чашка</a>
+              </li>
+              <li>
+                <a href="#">Формованная чашка</a>
+              </li>
+              <li>
+                <a href="#">Классические плавки</a>
+              </li>
+              <li>
+                <a href="#">С отворотом</a>
+              </li>
+              <li>
+                <a href="#">Бразильяно</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-10 col-md-9">
+        <div class="row">
+          <div class="col-12">
+            <div class="filter-wrapper">
+              <h4>Фильтр:</h4>
+
+              <div class="dropdown dropdown-filter">
+                <a class="nav-link dropdown-toggle dropdown-filter-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  размер
+                </a>
+                <div class="dropdown-menu dropdown-menu-filter">
+                  <div class="dropdown-menu__body scroll-text mScrollbar">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 II</span>
+                          <span class="filter-val">2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check" checked>
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 D</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check" checked>
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 K</span>
+                          <span class="filter-val">6</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 I</span>
+                          <span class="filter-val">8</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 HH</span>
+                          <span class="filter-val">2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 DD</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 II</span>
+                          <span class="filter-val">2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 E</span>
+                          <span class="filter-val">41</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 FF</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 F</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 F</span>
+                          <span class="filter-val">6</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 FF</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">60 F</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu__footer">
+                    <a href="#" class="btn btn-accent">Применить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-filter">
+                <a class="nav-link dropdown-toggle dropdown-filter-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  цвет
+                </a>
+                <div class="dropdown-menu dropdown-menu-filter">
+                  <div class="dropdown-menu__body scroll-text mScrollbar">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-beige"></span>
+                          <span class="checkbox-title">бежевый</span>
+                          <span class="filter-val">2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-white"></span>
+                          <span class="checkbox-title">белый</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-black"></span>
+                          <span class="checkbox-title">черный</span>
+                          <span class="filter-val">6</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check" checked>
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-blue"></span>
+                          <span class="checkbox-title">голубой</span>
+                          <span class="filter-val">8</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-blue-dark"></span>
+                          <span class="checkbox-title">синий</span>
+                          <span class="filter-val">2</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-green"></span>
+                          <span class="checkbox-title">зеленый</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-red"></span>
+                          <span class="checkbox-title">красный</span>
+                          <span class="filter-val">41</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-pink"></span>
+                          <span class="checkbox-title">розовый</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-khaki"></span>
+                          <span class="checkbox-title">хаки</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-violet"></span>
+                          <span class="checkbox-title">фиолетовый</span>
+                          <span class="filter-val">6</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-pink"></span>
+                          <span class="checkbox-title">розовый</span>
+                          <span class="filter-val">1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="color-circle color-circle-khaki"></span>
+                          <span class="checkbox-title">хаки</span>
+                          <span class="filter-val">3</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu__footer">
+                    <a href="#" class="btn btn-accent">Применить</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dropdown dropdown-filter">
+                <a class="nav-link dropdown-toggle dropdown-filter-toggle" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  бренд
+                </a>
+                <div class="dropdown-menu dropdown-menu-filter">
+                  <div class="dropdown-menu__body scroll-text mScrollbar">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Panashe</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Empreinte</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Parfait</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check" checked>
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Wacoal</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Wonderbra</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Elomi</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="label-checkbox">
+                          <input type="checkbox" name="checkbox" class="inp-check">
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-title">Freya</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu__footer">
+                    <a href="#" class="btn btn-accent">Применить</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="price-filter">
+                <h4>Цена:</h4>
+
+                <div class="filter__slider">
+                  <div class="filter__range"></div>
+                </div>
+              </div>
+
+              <a href="#" class="btn-clear-filter">
+                <span class="btn-clear-filter__text">очистить фильтр</span>
+                <span class="btn-clear-filter__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#close-modal"></use></svg></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="sorting-wrapper">
+              <h4>Сортировать по:</h4>
+              <ul class="list-sorting">
+                <li><a href="#" class="active">Популярности</a></li>
+                <li><a href="#">Цене</a></li>
+                <li><a href="#">Новинкам</a></li>
+                <li><a href="#">Распродажам</a></li>
+              </ul>
+
+              <a href="#" class="links-details">
+                <span class="links-details__text">Как подобрать белье</span>
+                <span class="links-details__icon">?</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+              <ul class="list-tags">
+                <li class="tags-item">скидка</li>
+              </ul>
+
+              <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">3 900 ₽</div>
+                    <div class="old-price">5 600 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+              <ul class="list-tags">
+                <li class="tags-item">хит</li>
+              </ul>
+              <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-grey">под заказ</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">7 780 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model4.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+              <ul class="list-tags">
+                <li class="tags-item">хит</li>
+              </ul>
+              <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-grey">под заказ</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">7 780 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model4.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <ul class="list-tags">
+                <li class="tags-item">скидка</li>
+              </ul>
+
+              <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">3 900 ₽</div>
+                    <div class="old-price">5 600 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-grey">под заказ</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">3 900 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">7 780 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model4.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model4.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+              <ul class="list-tags">
+                <li class="tags-item">новинка</li>
+              </ul>
+
+              <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">3 900 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">7 780 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  <div class="availability color-grey">под заказ</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">7 780 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+
+              <a href="product.html" class="model-card__img"><img src="img/model4.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="price">4 500 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+            <div class="model-card">
+              <a href="#" class="btn-add-favorite"></a>
+              <ul class="list-tags">
+                <li class="tags-item">скидка</li>
+              </ul>
+
+              <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+              <div class="model-card__body">
+                <div class="model-card__body-top">
+                  <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) здесь двойной
+                    заголовок</a>
+                  <div class="availability color-green">в наличии</div>
+                </div>
+                <div class="model-card__footer">
+                  <div class="price-wrapper">
+                    <div class="new-price">3 900 ₽</div>
+                    <div class="old-price">5 600 ₽</div>
+                  </div>
+                  <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <nav class="pagination-nav">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#" class="pagination-prev">
+                    <span class="pagination-prev__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+                    <span class="pagination-prev__text">Назад</span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a href="#" class="pagination-next">
+                    <span class="pagination-next__text">Далее</span>
+                    <span class="pagination-next__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contacts bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="contacts-content">
+          <h2>Контакты</h2>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Предварительная запись</span>
+                <a href="tel:+74998771450">+7 (499) 877-14-50</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Доставка в регионы</span>
+                <a href="tel:+74998771450">+7 (499) 877-14-50</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Время работы</span>
+                <p><span>пн-сб:</span> с 10:00 до 21:00</p>
+                <p><span>вс:</span> с 10:00 до 20:00</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>Адрес</span>
+                <p>Москва, Петровка 17 стр 4, оф 53</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+              <div class="contacts-box">
+                <span>E-mail:</span>
+                <a href="mailto:bustclubinfo@gmail.com">bustclubinfo@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6635292445003!2d37.6131763159714!3d55.764346980556425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a43c0ad8617%3A0xda429ef0bf271a08!2z0J_QtdGC0YDQvtCy0LrQsCDRg9C7LiwgMTcg0YHRgtGA0L7QtdC90LjQtSA0LCA1Mywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2suk!4v1632168778082!5m2!1sru!2suk"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 footer-wrapper">
+        <div class="footer-box">
+          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+          <div class="copyright">
+            <p>Продавец ИП Ивкова <br>
+              Оксана Николаевна <br>
+              ИНН 771401924372 <br>
+              ОГРНИП 318774600212261 <br>
+              © 2004-2020. BustClub</p>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="#">Бюстгалтеры</a></li>
+            <li><a href="#">Купальники</a></li>
+            <li><a href="#">Спортивное белье</a></li>
+            <li><a href="#">Аксессуары </a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="delivery.html">Оплата и доставка</a></li>
+            <li><a href="#">Обмен и возврат <br>
+              товара</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <ul class="footer-menu">
+            <li><a href="#">Политика
+              конфиденциальности</a></li>
+            <li><a href="#">Соглашение на обработку
+              персональных данных</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box footer-box-contacts">
+          <a href="mailto:" class="mail contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="mail-text">bustclubinfo@gmail.com</span>
+          </a>
+          <div class="address contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="mail-text">Москва, Петровка 17 стр 4, оф 53</span>
+          </div>
+
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
+    integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
