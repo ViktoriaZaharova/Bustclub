@@ -24,18 +24,18 @@ $('.reviews-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
-$(window).on("load",function(){
+$(window).on("load", function () {
     $(".mScrollbar").mCustomScrollbar();
 });
 
 // input change
-$('.form-selection input').on('keyup',function(){
+$('.form-selection input').on('keyup', function () {
     var $this = $(this),
         val = $this.val();
 
-    if(val.length >= 1){
+    if (val.length >= 1) {
         $(this).siblings('.input-text-size').css('opacity', '1');
-    }else {
+    } else {
         $('.input-text-size').css('opacity', '0');
     }
 });
@@ -49,13 +49,31 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     var $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
     return false;
 });
 
-$('.dropdown-filter').on('click', '.dropdown-menu-filter', function(e) {
+$('.dropdown-filter').on('click', '.dropdown-menu-filter', function (e) {
     e.stopPropagation();
+});
+
+// slider range
+$(function () {
+    $(".filter__range").slider({
+        min: 400,
+        max: 2000,
+        values: [400,540],
+        range: true,
+        slide: function(event, ui){
+
+            $('.price-range-min.value').html($(".filter__range").slider("values",0) + ' ' + '₽');
+            $('.price-range-max.value').html($(".filter__range").slider("values",1) + ' ' + '₽');
+        }
+    });
+
+    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('.filter__range').slider('values', 0 ) + ' ' + '₽' + '</span>');
+    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('.filter__range').slider('values', 1 ) + ' ' + '₽' + '</span>');
 });
