@@ -110,6 +110,9 @@ header
 .btn-size
   display: flex
   align-items: center
+  cursor: pointer
+
+
 
 .btn-size__close
   width: 8px
@@ -167,9 +170,9 @@ header
   border-radius: 0 0 8px 8px
   background: linear-gradient(0deg, rgba(176, 177, 191, 0.13), rgba(176, 177, 191, 0.13)), #FFFFFF
   display: none
+  padding: 30px 0
 
 .catalog-dropdown-wrapper
-  padding: 30px 0
   display: flex
   align-items: flex-start
   flex-wrap: wrap
@@ -192,3 +195,39 @@ header
   &:hover
     background: $accent
     color: #fff
+
+.table-sizes
+  width: 100%
+  max-width: 1326px
+  margin: 0 auto
+  font-size: 16px
+  font-family: $default-font
+  text-align: center
+  color: rgba(#0D0D0E, .5)
+  border-spacing: 2px
+  border-collapse: separate
+  thead
+    th
+      border: none
+      vertical-align: middle
+  tr
+    border: none
+  th, td
+    border-radius: 5px
+    border: none
+    padding: 15px
+    cursor: pointer
+    vertical-align: middle
+  td
+    //transition: .3s ease
+    background: #fff
+    &:hover
+      background: $accent
+      color: #fff
+  th, .table-sizes__col
+    background: rgba(#B0B1BF, .15)
+    font-weight: 500
+    cursor: none
+    pointer-events: none
+  .hover-td
+    background: linear-gradient(0deg, rgba(233, 86, 112, 0.1), rgba(233, 86, 112, 0.1)), #FFFFFF

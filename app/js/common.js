@@ -84,12 +84,43 @@ $('.btn-catalog').on('click', function (e) {
     $('.catalog-dropdown').fadeToggle();
 });
 
+$('.btn-size').on('click', function (e) {
+    e.preventDefault();
+    $('.sizes-dropdown').fadeToggle();
+});
+
 $(document).mouseup(function (e) { // событие клика по веб-документу
     var div = $(".header-dropdown"); // тут указываем ID элемента
-    var btn = $('.btn-catalog');
+    var btn = $('.btn-drop-header');
     if (!div.is(e.target) // если клик был не по нашему блоку
         && !btn.is(e.target) && btn.has(e.target).length === 0
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
         div.fadeOut(); // скрываем его
     }
+});
+
+// hover table
+$('.table-sizes td').on('mouseenter', function() {
+    var $currentTable = $(this).closest('.table-sizes');
+    var index = $(this).index();
+    $currentTable.find('td').removeClass('hover-td');
+
+    $(this).prevAll('td').not('.table-sizes__col').toggleClass('hover-td');
+    $currentTable.find('tr').each(function() {
+        $(this).find('td').eq(index).addClass('hover-td');
+    });
+
+    $(this).parent('tr').nextAll('tr').find('td').removeClass('hover-td');
+});
+
+// password view
+$('.btn-view-password').on('click', function(){
+    if ($(this).siblings('.input-password').attr('type') === 'password'){
+        $(this).addClass('view');
+        $(this).siblings('.input-password').attr('type', 'text');
+    } else {
+        $(this).removeClass('view');
+        $(this).siblings('.input-password').attr('type', 'password');
+    }
+    return false;
 });

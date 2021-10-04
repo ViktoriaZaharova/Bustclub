@@ -1734,7 +1734,8 @@ header .links-details {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  cursor: pointer; }
 
 .btn-size__close {
   width: 8px;
@@ -1807,10 +1808,10 @@ header .links-details {
   border-radius: 0 0 8px 8px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(176, 177, 191, 0.13)), to(rgba(176, 177, 191, 0.13))), #FFFFFF;
   background: linear-gradient(0deg, rgba(176, 177, 191, 0.13), rgba(176, 177, 191, 0.13)), #FFFFFF;
-  display: none; }
+  display: none;
+  padding: 30px 0; }
 
 .catalog-dropdown-wrapper {
-  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1842,6 +1843,41 @@ header .links-details {
   .catalog-dropdown__title:hover {
     background: #E95670;
     color: #fff; }
+
+.table-sizes {
+  width: 100%;
+  max-width: 1326px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgba(13, 13, 14, 0.5);
+  border-spacing: 2px;
+  border-collapse: separate; }
+  .table-sizes thead th {
+    border: none;
+    vertical-align: middle; }
+  .table-sizes tr {
+    border: none; }
+  .table-sizes th, .table-sizes td {
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    vertical-align: middle; }
+  .table-sizes td {
+    background: #fff; }
+    .table-sizes td:hover {
+      background: #E95670;
+      color: #fff; }
+  .table-sizes th, .table-sizes .table-sizes__col {
+    background: rgba(176, 177, 191, 0.15);
+    font-weight: 500;
+    cursor: none;
+    pointer-events: none; }
+  .table-sizes .hover-td {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(233, 86, 112, 0.1)), to(rgba(233, 86, 112, 0.1))), #FFFFFF;
+    background: linear-gradient(0deg, rgba(233, 86, 112, 0.1), rgba(233, 86, 112, 0.1)), #FFFFFF; }
 
 footer {
   background: #0D0D0E;
@@ -3224,8 +3260,7 @@ footer {
 
 .modal-body {
   padding: 0;
-  border: none;
-  overflow: visible; }
+  border: none; }
   .modal-body .btn-group {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3247,9 +3282,6 @@ footer {
     border-radius: 8px; }
   .modal-body .box-text {
     line-height: 23px; }
-
-.modal-dialog-scrollable .modal-body {
-  overflow: visible; }
 
 .modal-title {
   text-align: center;
@@ -3302,11 +3334,18 @@ footer {
       color: rgba(37, 38, 52, 0.6); }
   .form label {
     width: 100%;
-    margin: 0 auto 25px; }
+    margin: 0 auto 25px;
+    position: relative; }
   .form .btn {
     margin: 0 auto;
     font-size: 16px;
     font-weight: 500; }
+  .form .btn-view-password {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 21px; }
 
 .consent {
   margin: 20px auto 0;
@@ -3315,6 +3354,154 @@ footer {
   color: rgba(37, 38, 52, 0.75); }
   .consent .links-details__text {
     padding: 0; }
+
+.btn-view-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  fill: #B0B1BF;
+  cursor: pointer;
+  z-index: 1; }
+  .btn-view-password:hover {
+    fill: #E95670; }
+
+.btn-view-password.view {
+  background: url("../img/view-on.svg") no-repeat center;
+    background-size: 100%; }
+  .btn-view-password.view .svg-icon {
+    display: none; }
+
+.entrance-social {
+  margin: 0 0 15px;
+  width: 100%;
+  border-bottom: 1px solid rgba(176, 177, 191, 0.3);
+  padding: 0 0 13px; }
+  .entrance-social p {
+    margin: 0 0 15px;
+    font-weight: 500;
+    font-size: 16px; }
+
+.list-entrance-social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500; }
+  .list-entrance-social li {
+    width: calc(50% - 4px);
+    margin: 0 0 8px; }
+  .list-entrance-social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 52px;
+    border-radius: 8px;
+    padding: 0 20px;
+    text-align: center; }
+
+.entrance-social-links__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  fill: #fff; }
+
+.entrance-social-links__text {
+  margin: 0 auto; }
+
+.vk-social-links {
+  background: #4C6C91;
+  color: #fff; }
+  .vk-social-links:hover {
+    color: #fff;
+    background: #426286; }
+  .vk-social-links:focus {
+    background: #4C6C91;
+    color: #fff; }
+
+.fb-social-links {
+  background: #385185;
+  color: #fff; }
+  .fb-social-links:hover {
+    color: #fff;
+    background: #2E487C; }
+  .fb-social-links:focus {
+    color: #fff;
+    background: #385185; }
+
+.google-social-links {
+  background: rgba(22, 141, 226, 0.03);
+  border: 1px solid rgba(66, 133, 244, 0.55);
+  color: #4A7ED8; }
+  .google-social-links:hover {
+    background: rgba(22, 141, 226, 0.07);
+    color: #4A7ED8; }
+  .google-social-links:focus {
+    background: rgba(22, 141, 226, 0.03);
+    color: #4A7ED8; }
+
+.mail-social-links {
+  background: #168DE2;
+  color: #fff; }
+  .mail-social-links:hover {
+    background: #0B82D8;
+    color: #fff; }
+  .mail-social-links:focus {
+    color: #fff;
+    background: #168DE2; }
+
+.form-entrance p {
+  width: 100%;
+  margin: 0 0 15px;
+  font-weight: 500;
+  font-size: 16px; }
+
+.form-entrance label {
+  margin: 0 0 10px; }
+
+.form-entrance .btn {
+  margin: 20px auto; }
+
+.links-password {
+  margin: 15px 0 0; }
+
+.box-text-entrance {
+  text-align: center; }
+  .box-text-entrance p {
+    margin: 0;
+    font-weight: normal;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

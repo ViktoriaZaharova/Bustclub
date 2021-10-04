@@ -33,7 +33,6 @@
 .modal-body
   padding: 0
   border: none
-  overflow: visible
   .btn-group
     align-items: center
     justify-content: center
@@ -52,8 +51,6 @@
   .box-text
     line-height: 23px
 
-.modal-dialog-scrollable .modal-body
-  overflow: visible
 
 .modal-title
   text-align: center
@@ -95,10 +92,16 @@
   label
     width: 100%
     margin: 0 auto 25px
+    position: relative
   .btn
     margin: 0 auto
     font-size: 16px
     font-weight: 500
+  .btn-view-password
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 21px
 
 .consent
   margin: 20px auto 0
@@ -107,3 +110,127 @@
   color: $text
   .links-details__text
     padding: 0
+
+.btn-view-password
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  fill: #B0B1BF
+  cursor: pointer
+  z-index: 1
+  &:hover
+    fill: $accent
+
+.btn-view-password.view
+  background: url("../img/view-on.svg") no-repeat center
+    size: 100%
+  .svg-icon
+    display: none
+
+.entrance-social
+  margin: 0 0 15px
+  width: 100%
+  border-bottom: 1px solid rgba(#B0B1BF, .3)
+  padding: 0 0 13px
+  p
+    margin: 0 0 15px
+    font-weight: 500
+    font-size: 16px
+
+.list-entrance-social
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 16px
+  font-weight: 500
+  li
+    width: calc(50% - 4px)
+    margin: 0 0 8px
+  a
+    display: flex
+    align-items: center
+    height: 52px
+    border-radius: 8px
+    padding: 0 20px
+    text-align: center
+
+
+.entrance-social-links__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  min-width: 24px
+  fill: #fff
+
+.entrance-social-links__text
+  margin: 0 auto
+
+.vk-social-links
+  background: #4C6C91
+  color: #fff
+  &:hover
+    color: #fff
+    background: #426286
+  &:focus
+    background: #4C6C91
+    color: #fff
+
+.fb-social-links
+  background: #385185
+  color: #fff
+  &:hover
+    color: #fff
+    background: #2E487C
+  &:focus
+    color: #fff
+    background: #385185
+
+.google-social-links
+  background: rgba(22, 141, 226, 0.03)
+  border: 1px solid rgba(66, 133, 244, 0.55)
+  color: #4A7ED8
+  &:hover
+    background: rgba(22, 141, 226, 0.07)
+    color: #4A7ED8
+  &:focus
+    background: rgba(22, 141, 226, 0.03)
+    color: #4A7ED8
+
+.mail-social-links
+  background: #168DE2
+  color: #fff
+  &:hover
+    background: #0B82D8
+    color: #fff
+  &:focus
+    color: #fff
+    background: #168DE2
+
+.form-entrance
+  p
+    width: 100%
+    margin: 0 0 15px
+    font-weight: 500
+    font-size: 16px
+  label
+    margin: 0 0 10px
+  .btn
+    margin: 20px auto
+
+.links-password
+  margin: 15px 0 0
+
+.box-text-entrance
+  text-align: center
+
+  p
+    margin: 0
+    font-weight: normal
+    width: fit-content
+    display: inline
