@@ -77,3 +77,19 @@ $(function () {
     $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + $('.filter__range').slider('values', 0 ) + ' ' + '₽' + '</span>');
     $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('.filter__range').slider('values', 1 ) + ' ' + '₽' + '</span>');
 });
+
+// header menu
+$('.btn-catalog').on('click', function (e) {
+    e.preventDefault();
+    $('.catalog-dropdown').fadeToggle();
+});
+
+$(document).mouseup(function (e) { // событие клика по веб-документу
+    var div = $(".header-dropdown"); // тут указываем ID элемента
+    var btn = $('.btn-catalog');
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && !btn.is(e.target) && btn.has(e.target).length === 0
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.fadeOut(); // скрываем его
+    }
+});
