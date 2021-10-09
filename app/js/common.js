@@ -89,13 +89,12 @@ $('.btn-size').on('click', function (e) {
     $('.sizes-dropdown').fadeToggle();
 });
 
-$(document).mouseup(function (e) { // событие клика по веб-документу
-    var div = $(".header-dropdown"); // тут указываем ID элемента
+// событие клика по веб-документу
+$(document).mouseup(function (e) {
+    var div = $(".header-dropdown");
     var btn = $('.btn-drop-header');
-    if (!div.is(e.target) // если клик был не по нашему блоку
-        && !btn.is(e.target) && btn.has(e.target).length === 0
-        && div.has(e.target).length === 0) { // и не по его дочерним элементам
-        div.fadeOut(); // скрываем его
+    if (!div.is(e.target) && !btn.is(e.target) && btn.has(e.target).length === 0 && div.has(e.target).length === 0) {
+        div.fadeOut();
     }
 });
 
@@ -124,3 +123,4 @@ $('.btn-view-password').on('click', function(){
     }
     return false;
 });
+

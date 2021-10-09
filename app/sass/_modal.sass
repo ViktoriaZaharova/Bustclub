@@ -8,7 +8,7 @@
   background: #FFFFFF
   border: none
     radius: 8px
-  padding: 40px 30px
+
   position: relative
   overflow-y: auto
 
@@ -31,7 +31,7 @@
     padding: 3px
 
 .modal-body
-  padding: 0
+  padding: 40px 30px
   border: none
   .btn-group
     align-items: center
@@ -50,7 +50,8 @@
     border-radius: 8px
   .box-text
     line-height: 23px
-
+  .status-icon
+    margin: 20px auto 0
 
 .modal-title
   text-align: center
@@ -99,8 +100,7 @@
     font-weight: 500
   .btn-view-password
     position: absolute
-    top: 50%
-    transform: translateY(-50%)
+    top: 19px
     right: 21px
 
 .consent
@@ -221,16 +221,182 @@
   label
     margin: 0 0 10px
   .btn
-    margin: 20px auto
+    margin: 20px auto 0
 
 .links-password
-  margin: 15px 0 0
+  margin: 5px 0 0
 
 .box-text-entrance
   text-align: center
-
+  margin: 20px auto 0
   p
     margin: 0
     font-weight: normal
     width: fit-content
     display: inline
+
+.test-modal
+  .modal-dialog
+    max-width: 1328px
+  .modal-body
+    padding: 40px 15px 40px 80px
+
+.test-modal-content
+  width: 100%
+  height: 100%
+  max-height: 776px
+  .mCustomScrollBox
+    padding: 0 59px 60px 0
+    margin: 0
+    &:before
+      width: calc(100% - 59px)
+      left: 0
+      right: auto
+  .mCSB_scrollTools
+    right: 0
+    left: auto
+    max-height: none
+    width: 6px
+    border-radius: 17px
+  .mCSB_scrollTools .mCSB_draggerRail, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+    width: 6px
+
+.collapse-item
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+  .card-body
+    padding: 10px 0 0 34px
+    color: $text
+    border: none
+      radius: 0
+    .links-details
+      display: inline-flex
+    .links-details__text
+      padding: 0
+  &__header
+    width: 100%
+    display: flex
+    align-items: flex-start
+  .label-checkbox
+    width: fit-content
+  .icon-arrow
+    width: 24px
+    min-width: 24px
+    height: 24px
+    fill: $accent
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 5px
+    transform: rotate(180deg)
+  &__btn
+    display: flex
+    align-items: flex-start
+    font-weight: 600
+    font-size: 17px
+    color: #0D0D0E
+    &:hover
+      color: $accent
+    &-text
+      max-width: 533px
+      width: 100%
+  .collapsed
+    .icon-arrow
+      transform: none
+
+
+.test-modal-box
+  h6
+    color: #B0B1BF
+    font-size: 20px
+    font-weight: 600
+  .modal-title
+    font-size: 38px
+    font-weight: 600
+    text-align: left
+    max-width: 430px
+    line-height: 44px
+    margin: 5px 0 25px
+
+
+
+.test-modal-box__img
+  width: 100%
+  max-width: 455px
+  display: flex
+  align-items: center
+  margin: 0 0 25px
+  img
+    width: 100%
+
+.test-result-modal
+  .modal-dialog
+    max-width: 1056px
+  .modal-body
+    padding: 40px 60px
+
+.test-result-box
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: #0D0D0E
+  .box-text
+    font-size: 17px
+    font-weight: 600
+    margin: 5px 0 25px
+    color: #0D0D0E
+  h6
+    font-weight: 600
+    font-size: 28px
+
+.test-result__val
+  margin: 30px 0 35px
+  color: $accent
+  line-height: .8
+  font-size: 200px
+  font-weight: 600
+
+.links-prev-modal
+  display: flex
+  align-items: center
+  color: #0D0D0E
+  font-size: 16px
+  font-weight: 500
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+    width: 20px
+    height: 16px
+    fill: #B0B1BF
+  &:hover, &:focus
+    color: #0D0D0E
+    .links-prev-modal__icon
+      fill: $accent
+
+.error-input-text
+  margin: 2px 0 0
+  color: $accent
+  font-size: 13px
+  font-weight: 500
+
+.error-input
+  input
+    border-color: $accent
+    font-size: 28px
+    font-weight: 600
+    color: #252634
+
+.modal-product
+  .modal-body
+    padding: 40px 24px 40px
+  .modal-body .btn-group
+    margin: 10px 0 0
+    .btn
+      max-width: none
+
+
