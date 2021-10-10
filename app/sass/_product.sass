@@ -1,0 +1,499 @@
+@import "fonts"
+@import "vars"
+
+.gallery-product
+  max-width: 736px
+  width: 100%
+  margin: 0 0 75px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.gallery-product-preview
+  width: 126px
+  height: 100%
+  max-height: 740px
+  //padding: 20px 0
+  //margin: -20px 0
+  //overflow: hidden
+  .slick-arrow
+    top: -19px
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 48px
+    height: 48px
+    background: #fff
+    z-index: 1
+    border-radius: 50%
+    padding: 13px
+    filter: drop-shadow(0px 0px 40px rgba(13, 13, 14, 0.15))
+  .slick-next
+    top: auto
+    bottom: -24px
+    svg
+      transform: rotate(90deg)
+  .slick-prev
+    svg
+      transform: rotate(90deg)
+
+
+.gallery-product-preview__item
+  width: 100%
+  height: 140px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 10px
+  overflow: hidden
+  img
+    width: 100%
+
+.gallery-product-max
+  width: calc(100% - 126px)
+  padding: 0 0 0 10px
+
+.gallery-product-max__item
+  width: 100%
+  height: 750px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-page
+  h1
+    margin: 0 0 5px
+    font-size: 28px
+
+.product-content
+  margin: 0 0 75px
+  min-height: 750px
+
+.product-content__item
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  .price-wrapper
+    font-size: 32px
+  .btn-group
+    .btn, .btn:not(:last-child):not(.dropdown-toggle)
+      border-radius: 8px
+    .btn
+      margin: 0 10px 10px 0
+      &:last-child
+        margin: 0 0 10px
+  h4
+    font-size: 20px
+    margin: 0 0 20px
+
+.btn-subscribe
+  padding: 10px 64px
+
+.add-favorite
+  height: 62px
+  padding: 0 28px
+  font-size: 16px
+  .btn-text
+    margin: 0 0 0 10px
+  .btn-icon
+    width: 24px
+    height: 20px
+    background: url("../img/heart.svg") no-repeat center
+      size: 100%
+  &:hover
+    background: #E95670
+    border: 1px solid rgba(233, 86, 112, 0.15)
+    .btn-icon
+      background: url("../img/heart-hover-white.svg") no-repeat center
+        size: 100%
+  &:focus
+    .btn-icon
+      background: url("../img/heart-focus-white.svg") no-repeat center
+        size: 100%
+
+
+
+.product-content__item-footer
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .article
+    margin: 0 10px 0 0
+
+.color-product
+  display: flex
+  align-items: center
+  margin: 0 0 12px
+  color: $text
+  span
+    color: $text-dark
+    margin: 0 0 0 6px
+
+.color-product-preview
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.color-product-preview__item
+  margin: 0 10px 10px 0
+  border-radius: 5px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 106px
+  height: 120px
+  transition: .3s ease
+  cursor: pointer
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 4px
+  &.active
+    padding: 4px
+    border: 1px solid #E95670
+
+
+.product-size
+  max-width: 455px
+  width: 100%
+  margin: 0 0 10px
+  &.show
+    .btn-select
+      background: #fff
+      border-color: $accent
+      color: $text-dark
+    .btn-select__icon
+      fill: $accent
+      transform: rotate(180deg)
+
+.dropdown-menu-size-product
+  min-width: 649px
+  width: 100%
+  padding: 10px
+  box-shadow: 0px 20px 100px rgba(13, 13, 14, 0.11)
+  border: none
+    radius: 8px
+  background: #fff
+  margin: 10px 0 0
+
+.table-scrollbox
+  margin: 0
+  max-width: 630px
+  width: 100%
+  .mCustomScrollBox
+    padding: 0 0 21px
+    margin: 0
+    &:before
+      display: none
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal
+    bottom: -10px
+  .mCSB_horizontal.mCSB_inside>.mCSB_container
+    margin-bottom: 0
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail
+    height: 6px
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar
+    height: 6px
+
+  .table-sizes
+    font-size: 16px
+    color: #0D0D0E
+    td, th
+      width: 65px
+      min-width: 65px
+      height: 40px
+      white-space: nowrap
+      padding: 0
+    td
+      border: 1px solid rgba(176, 177, 191, 0.45)
+      &:first-child
+        border: none
+      &:hover
+        border-color: $accent
+    thead
+      tr
+        th
+          &:first-child
+            background: transparent
+
+    .size-disable
+      border: 1px solid rgba(176, 177, 191, 0.1)
+      pointer-events: none
+      color: rgba(#B0B1BF, .7)
+  .table-sizes-v-2
+    th, td
+      width: 49px
+      min-width: 49px
+      height: 40px
+    td
+      border: 1px solid rgba(176, 177, 191, 0.25)
+    thead
+      tr
+        th
+          &:first-child
+            background: rgba(#B0B1BF, .15)
+
+    td
+      &:first-child
+        border: 1px solid rgba(176, 177, 191, 0.25)
+        background: #fff
+        &:hover
+          background: $accent
+          border-color: $accent
+
+
+.btn-one-click
+  max-width: 455px
+  width: 100%
+  height: 62px
+
+.advantages-product-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+
+.advantages-product-item
+  display: flex
+  align-items: center
+  max-width: 300px
+  width: 100%
+  padding: 0 20px 0 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    height: 60px
+    width: 2px
+    background: #B0B1BF
+    opacity: .3
+  &:last-child
+    max-width: 215px
+    padding: 0 0 0 30px
+    &:before
+      display: none
+  p
+    color: $text
+  h4
+    margin: 0 0 8px
+  &__icon
+    width: 50px
+    min-width: 50px
+    height: 50px
+    margin: 0 20px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.complete-product
+  h3
+    margin: 0 0 20px
+    font-size: 28px
+
+.complete-product-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+
+.complete-product__image
+  max-width: 242px
+  height: 263px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+  overflow: hidden
+  img
+    width: 100%
+
+.complete-product__body
+  width: calc(100% - 242px)
+  max-width: 350px
+  height: 100%
+  padding: 0 0 0 30px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  h4
+    font-size: 20px
+    margin: 0 0 15px
+    line-height: 26px
+  .price-wrapper
+    font-size: 28px
+    font-weight: 600
+    line-height: 42px
+    margin: 0 0 15px
+  .dropdown-menu-size-product
+    min-width: auto
+    width: 100%
+  .add-favorite
+    padding: 20px 21px
+  .btn-group
+    margin: auto 0 0
+
+.recommended
+  //margin: 0 0 75px
+  h3
+    margin: 0 0 20px
+    font-size: 28px
+
+.recommended-product-card
+  margin: 0 auto
+  max-width: 174px
+  .model-card__img
+    height: 200px
+  .model-card__body
+    padding: 10px 0 0
+  .model-card__body-top
+    min-height: 34px
+  .model-card__title
+    margin: 0 0 5px
+  .model-card__footer
+    margin: 0
+  .price-wrapper
+    font-size: 17px
+  .slick-prev
+    width: 48px
+    height: 48px
+  .btn-add-card
+    height: 27px
+    padding: 0 10px
+    font-size: 12px
+
+.slider-my-navigation
+  .slick-arrow
+    position: absolute
+    top: 40%
+    transform: translate(0,-50%)
+    width: 48px
+    height: 48px
+    z-index: 1
+    background: #fff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    filter: drop-shadow(0px 0px 40px rgba(13, 13, 14, 0.15))
+    padding: 15px
+  .slick-prev
+    left: -17px
+  .slick-next
+    right: -17px
+
+.slick-disabled
+  opacity: 0
+
+.characteristics-product
+  margin: 75px 0
+  .tab-content
+    .box-text
+      margin: 0 0 20px
+
+.characteristics-box
+  h4
+    font-size: 20px
+    margin: 0 0 20px
+
+  .list-dots
+    color: $text
+    p
+      color: #0D0D0E
+      font-weight: 500
+      margin: 0 5px 0 0
+
+.nav-tabs
+  width: 100%
+  position: relative
+  border: none
+  font-size: 20px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 3000px
+    height: 1px
+    background: #B0B1BF
+    opacity: .3
+  .nav-link
+    padding: 0 0 20px
+    border: none
+      radius: 0
+    position: relative
+    font-weight: normal
+    color: rgba(#252634, .55)
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      width: 100%
+      height: 2px
+      background: transparent
+      transition: .3s ease
+    &.active
+      background: transparent
+      color: #0D0D0E
+      font-weight: 600
+      &:before
+        background: $accent
+  .nav-item
+    margin: 0 55px 0 0
+    &:last-child
+      margin: 0
+
+.tab-content
+  padding: 30px 0 0
+
+
+.ui-tooltip
+  background: #fff
+  box-shadow: 0 10px 25px rgba(13, 13, 14, 0.11)
+  padding: 15px
+  border-radius: 15px
+  text-align: center
+  border: none !important
+  margin: 0 auto 4px !important
+  max-width: 306px
+  width: 100%
+  font-family: $default-font
+  font-size: 13px
+  line-height: 20px
+  color: #252634
+
+.ui-tooltip-content
+  border: none
+
+.added-favorite
+  height: 62px
+  padding: 10px 28px
+  font-size: 16px
+  font-weight: 500
+  .btn-icon
+    fill: $accent
+    width: 20px
+    height: 21px
+    margin: 0 10px 0 0
+  &:hover, &:focus
+    .btn-icon
+      fill: #fff
+
+
+.product-content__item-wrapper
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  .recommended-product-card
+    margin: 0 30px 0 0

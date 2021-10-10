@@ -24,8 +24,34 @@ $('.reviews-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
+$('.gallery-product-preview').slick({
+    slidesToShow: 5,
+    vertical: true,
+    focusOnSelect: true,
+    asNavFor: '.gallery-product-max',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$('.gallery-product-max').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+});
+
+$('.recommended-slider').slick({
+    slidesToShow: 4,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+
 $(window).on("load", function () {
     $(".mScrollbar").mCustomScrollbar();
+    $(".table-mScrollbar").mCustomScrollbar({
+        axis:"x"
+    });
 });
 
 // input change
@@ -99,8 +125,8 @@ $(document).mouseup(function (e) {
 });
 
 // hover table
-$('.table-sizes td').on('mouseenter', function() {
-    var $currentTable = $(this).closest('.table-sizes');
+$('.table-sizes-header td').on('mouseenter', function() {
+    var $currentTable = $(this).closest('.table-sizes-header');
     var index = $(this).index();
     $currentTable.find('td').removeClass('hover-td');
 
@@ -124,3 +150,10 @@ $('.btn-view-password').on('click', function(){
     return false;
 });
 
+
+$("[data-toggle=tooltip]").tooltip({ boundary: 'window' });
+
+$('.color-product-preview__item').on('click', function () {
+   $('.color-product-preview__item').removeClass('active');
+   $(this).addClass('active');
+});

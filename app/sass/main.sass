@@ -165,6 +165,50 @@ input, textarea, select
     background: $accent
     color: #fff
     box-shadow: none
+    
+.btn-black
+  background: #0D0D0E
+  color: #fff
+  font-size: 16px
+  font-weight: 500
+  &:hover
+    background: #252634
+    color: #fff
+  &:focus
+    background: #0D0D0E
+    color: #fff
+
+
+.btn-select
+  color: $text
+  font-weight: normal
+  font-size: 16px
+  justify-content: space-between
+  border: 1px solid rgba(#B0B1BF, .5)
+  height: 62px
+  width: 100%
+  padding: 0 30px
+  background: rgba(#fff, .5)
+  &:after
+    display: none
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+    fill: #252634
+  &:hover
+    background: rgba(#fff, .5)
+    border: 1px solid rgba(#E95670, .5)
+  &:focus
+    background: #fff
+    color: #0D0D0E
+    border: 1px solid #E95670
+    .btn-select__icon
+      transform: rotate(180deg)
+      fill: $accent
+
 
 .btn:disabled
   background: #B0B1BF
@@ -172,8 +216,17 @@ input, textarea, select
   opacity: 1
   cursor: none
 
+.btn-group
+  .btn, .btn:not(:last-child):not(.dropdown-toggle), .btn:not(:first-child)
+    border-radius: 8px
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+
 .bg-grey
   background: rgba(#B0B1BF, .13)
+
+
 
 
 .container
@@ -810,6 +863,7 @@ h4
     align-items: center
     margin: 8px 0 0
     position: relative
+    z-index: 1
 
   &__title
     color: rgba($title, .75)
@@ -831,6 +885,7 @@ h4
     position: absolute
     right: 0
     bottom: 0
+    z-index: 1
 
   &:hover
     .btn-add-favorite, .btn-add-card
@@ -1439,5 +1494,6 @@ h4
 @import "cabinet"
 @import "catalog"
 @import "modal"
+@import "product"
 @import "media"
 // Всегда в конце
