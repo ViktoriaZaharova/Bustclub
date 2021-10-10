@@ -74,6 +74,7 @@ body
 
 html, body
   overflow-x: hidden
+  height: 100%
 
 img
   display: block
@@ -103,7 +104,7 @@ input, textarea, select
   font-family: $default-font
   font-size: 16px
   transition: .3s ease-in-out
-
+  width: 100%
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -785,11 +786,26 @@ h4
 
 .contacts-content
   padding: 65px 0
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    background: #B0B1BF
+    opacity: .13
+    z-index: -1
+    height: 100%
+    width: 2500px
+    top: 0
+    right: -10px
+    border-radius: 0 8px 8px 0
 
 .map
   min-width: 955px
   height: 100%
-
+  border-radius: 8px 0 0 8px
+  overflow: hidden
+  margin: 0 0 0 -10px
   iframe
     width: 100%
     height: 100%

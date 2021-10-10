@@ -3,57 +3,437 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1680px)
+  .not-undefined h1
+    font-size: 90px
+
+@media only screen and (max-width: 1450px)
+  .not-undefined h1
+    font-size: 60px
+
+@media only screen and (max-width: 1380px)
+  .footer-menu
+    font-size: 14px
+    max-width: 200px
+    li
+      margin: 0 0 15px
+
+  .logo
+    max-width: 165px
+
+@media only screen and (max-width: 1300px)
+  .form-search
+    max-width: 223px
+
+  .menu li
+    margin: 0 30px 0 0
+
+  .header-bottom
+    padding: 11px 0
+
+  footer
+    padding: 20px 0
+    position: relative
+    .btn
+      padding: 16px 20px
+
+  .list-social li
+    margin: 0 10px 0 0
+
+  .contacts-links
+    font-size: 13px
+
+
+
+
+@media only screen and (max-width: 1200px)
+  .logo
+    max-width: 140px
+
+  header
+    .links-details
+      margin: 0 0 0 20px
+
+  .phone
+    margin: 0 20px 0 0
+
+  .address
+    font-size: 14px
+
+  .not-undefined
+    h1
+      font-size: 50px
+
+    .slider-decor1
+      max-width: 123px
+      left: -73px
+
+    .slider-decor2
+      max-width: 155px
+      left: 199px
+      bottom: -76px
+
+    .slider-decor3
+      max-width: 116px
+      left: -35px
+      top: 4px
+
+    .box-text
+      margin: 20px 0 35px
+      font-size: 18px
+      font-weight: 600
+
+  .catalog-dropdown__title
+    font-size: 14px
+    padding: 7px 18px
+    margin: 0 0 15px
+
+  .sidebar-menu, .sidebar-submenu
+    font-size: 14px
+
+  .sidebar-menu li a
+    padding: 4px 6px
+
+  .header-dropdown
+    padding: 24px 0
+
+  .sidebar-submenu
+    margin: 8px 0 15px
+
+  .table-sizes
+    font-size: 13px
+
+    th, td
+      padding: 10px
+      width: 58px
+      height: 36px
+      min-width: 56px
+
+  .contacts-box
+    font-size: 17px
+    span
+      margin: 0 0 5px
+
+  .contacts
+    h2
+      margin: 0
+
+  .contacts-content
+    padding: 45px 0
+
+  .map
+    min-width: 600px
+
+  .footer-box
+    .copyright
+      display: none
+
+  .copyright
+    max-width: none
+    margin: 25px auto 0
+    width: fit-content
+
+  .footer-box-menu
+    margin: 20px 24px 0 0
+    order: 1
+
+  .footer-box-callback
+    order: 1
+    width: 100%
+    max-width: 320px
+    margin: 33px 0 0 auto
+
+  .list-social
+    margin: 0
+    justify-content: center
+
+  .footer-box-contacts
+    margin: 10px auto 0
+    width: calc(100% - 165px - 265px)
+
+  .footer-wrapper
+    justify-content: flex-start
+
+  footer
+    .btn
+      padding: 18px 36px
+    .links-details
+      display: none
+    .logo
+      margin: 15px 0 0
+
+  .contacts-links
+    font-size: 16px
+    text-align: right
+    justify-content: flex-end
+    .svg-icon
+      order: 1
+      margin: 0 0 0 13px
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 1000px)
-	.container
+@media only screen and (max-width: 1100px)
+  .container
     max-width: 980px
 
+  header
+    .links-details, .address
+      display: none
+
+  .header-box
+    margin: 0 auto
+
+  .phone
+    margin: 0
+
+  .menu
+    font-size: 14px
+
+  .header-top
+    padding: 16px 0
+
+  .not-undefined__img
+    min-width: 525px
+
+  .not-undefined
+    .btn
+      height: 52px
+      margin: 0 0 20px
+      font-size: 14px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	.container
+@media only screen and (max-width: 992px)
+  .menu li
+    margin: 0 20px 0 0
+
+  .btn-burger
+    display: flex
+
+  .menu
+    display: none
+
+  .form-search
+    margin: 0 auto 0 38px
+    max-width: 336px
+
+  .header-top
+    .btn-burger
+      display: none
+
+  .map
+    min-width: 492px
+
+  .copyright
+    margin: 25px 0 0
+    max-width: none
+    text-align: center
+    width: 100%
+
+@media only screen and (max-width: 768px)
+  .container
     max-width: 750px
 
+  .logo
+    max-width: 130px
+
+  .not-undefined
+    .box-text
+      font-size: 17px
+
+    .slider-decor3
+      max-width: 204px
+      left: -58px
+      top: 0
+
+    .slider-decor2
+      bottom: -269px
+      left: 62px
+      max-width: 271px
+
+    .slider-decor1
+      left: -139px
+      top: 193px
+      max-width: 233px
+
+  .not-undefined__img
+    min-width: 764px
+
+  .contacts-content
+    padding: 40px 0
+    margin: 0 0 10px
+    &:before
+      border-radius: 0
+      right: -15px
+
+  .map
+    min-width: auto
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    height: 300px
+    border-radius: 0
+
+  .contacts-box
+    max-width: 225px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	.container
+@media only screen and (max-width: 690px)
+  .form-search
+    max-width: 240px
+    margin: 0 auto 0 20px
+
+
+@media only screen and (max-width: 576px)
+  .header-bottom
+    display: none
+
+  .header-top
+    .btn-burger
+      display: flex
+      margin: 0 10px 0 0
+
+  header
+    background: #0D0D0E
+    color: #fff
+
+    .phone
+      display: none
+
+    .logo
+      width: 131px
+      height: 26px
+      background: url("../img/logo-footer.png") no-repeat center
+        size: 100%
+
+      img
+        display: none
+
+  .insta-link
+    margin: 0
+
+  .links-cabinet
+    fill: #fff
+    margin: 0 20px 0 0
+
+    &:last-child
+      margin: 0 7px 0 0
+
+  .not-undefined
+    padding: 218px 0
+    background: rgba(#B0B1BF, .13)
+    position: relative
+    overflow: hidden
+
+    &:after
+      content: ''
+      position: absolute
+      width: 210px
+      height: 206px
+      background: url("../img/decor3.png") no-repeat center
+        size: contain
+      right: 11px
+      top: -66px
+
+    .slider-decor1
+      left: -149px
+      top: 140px
+
+  .mobile-menu
+    top: 0
+    height: 100%
+
+  .mobile-menu__head
+    .phone
+      display: block
+
+  .contacts-content
+    padding: 55px 0
+
+  .map
+    height: 220px
+
+  .contacts
+    .mt-35
+      top: 20px
+
+
+  h2
+    font-size: 20px
+    line-height: 26px
+
+@media only screen and (max-width: 480px)
+  .container
     max-width: 480px
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 420px)
+  .not-undefined
+    padding: 108px 0 107px
 
+    &:after
+      width: 130px
+      height: 128px
+      top: -30px
+      right: 37px
 
-/*==========  Mobile First  ==========*/
+    h1
+      font-size: 35px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+    .slider-decor1
+      max-width: 123px
+      left: -71px
+      top: 75px
 
+    .slider-decor2
+      left: auto
+      right: -15px
+      bottom: -107px
+      max-width: 143px
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+    .box-text
+      margin: 15px 0 30px
+      font-size: 14px
 
+@media only screen and (max-width: 375px)
+  .header-box
+    display: none
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  header
+    .logo
+      margin: 0 auto 0 0
 
+  .mobile-menu
+    padding: 9px 16px 30px
+    .form-search
+      display: flex
+      margin: 40px 0 25px 0
+      max-width: 288px
+    .btn-sing
+      display: flex
+      margin: 0 0 20px
+      width: 100%
+    .address
+      display: flex
+      margin: 15px 0 0
+      color: #fff
+      font-size: 16px
+      font-weight: 500
+      .svg-icon
+        opacity: .3
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+    .phone
+      display: block
+      color: $accent
+    &__head
+      .phone
+        display: none
+      .insta-link
+        display: flex
+    &__body
+      padding: 21px 0 0
 
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (max-width: 320px)
+  .container
+    max-width: 320px
 
