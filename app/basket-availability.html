@@ -898,21 +898,21 @@
   </div>
 </section>
 
-<section class="contacts bg-grey">
+<section class="contacts">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-6 col-lg-6">
         <div class="contacts-content">
           <h2>Контакты</h2>
 
           <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+            <div class="col-12 col-sm-5 col-md-6 col-xl-4 mt-35">
               <div class="contacts-box">
                 <span>Предварительная запись</span>
                 <a href="tel:+74998771450">+7 (499) 877-14-50</a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+            <div class="col-12 col-sm-5 col-md-6 col-xl-4 mt-35">
               <div class="contacts-box">
                 <span>Доставка в регионы</span>
                 <a href="tel:+74998771450">+7 (499) 877-14-50</a>
@@ -921,14 +921,14 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+            <div class="col-12 col-sm-5 col-md-6 col-xl-4 mt-35">
               <div class="contacts-box">
                 <span>Время работы</span>
-                <p><span>пн-сб:</span> с 10:00 до 21:00</p>
-                <p><span>вс:</span> с 10:00 до 20:00</p>
+                <p><span>пн-сб:</span>с 10:00 до 21:00</p>
+                <p><span>вс:</span>с 10:00 до 20:00</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 mt-35">
+            <div class="col-12 col-sm-5 col-md-6 col-xl-4 mt-35">
               <div class="contacts-box">
                 <span>Адрес</span>
                 <p>Москва, Петровка 17 стр 4, оф 53</p>
@@ -946,7 +946,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-6 col-lg-6">
         <div class="map">
           <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.6635292445003!2d37.6131763159714!3d55.764346980556425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a43c0ad8617%3A0xda429ef0bf271a08!2z0J_QtdGC0YDQvtCy0LrQsCDRg9C7LiwgMTcg0YHRgtGA0L7QtdC90LjQtSA0LCA1Mywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2suk!4v1632168778082!5m2!1sru!2suk"
@@ -956,7 +956,6 @@
     </div>
   </div>
 </section>
-
 
 <footer>
   <div class="container">
@@ -973,7 +972,7 @@
           </div>
         </div>
 
-        <div class="footer-box">
+        <div class="footer-box footer-box-menu footer-box-menu1">
           <ul class="footer-menu">
             <li><a href="#">Бюстгалтеры</a></li>
             <li><a href="#">Купальники</a></li>
@@ -983,7 +982,7 @@
           </ul>
         </div>
 
-        <div class="footer-box">
+        <div class="footer-box footer-box-menu footer-box-menu2">
           <ul class="footer-menu">
             <li><a href="blog.html">Блог</a></li>
             <li><a href="contacts.html">Контакты</a></li>
@@ -993,7 +992,7 @@
           </ul>
         </div>
 
-        <div class="footer-box">
+        <div class="footer-box footer-box-menu footer-box-menu3">
           <ul class="footer-menu">
             <li><a href="#">Политика
               конфиденциальности</a></li>
@@ -1003,15 +1002,15 @@
         </div>
 
         <div class="footer-box footer-box-contacts">
-          <a href="mailto:" class="mail contacts-links">
+          <a href="mailto:" class="mail contacts-links d-none d-xl-flex">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#mail"></use>
             </svg>
             <span class="mail-text">bustclubinfo@gmail.com</span>
           </a>
-          <div class="address contacts-links">
+          <div class="address contacts-links d-none d-xl-flex">
             <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#mail"></use>
+              <use xlink:href="img/sprite.svg#geo"></use>
             </svg>
             <span class="mail-text">Москва, Петровка 17 стр 4, оф 53</span>
           </div>
@@ -1044,12 +1043,40 @@
             </a></li>
           </ul>
         </div>
+        <div class="footer-box footer-box-btn">
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+          <a href="#" class="links-details"><span class="links-details__text">Обучение брафиттингу</span></a>
+        </div>
+        <div class="footer-box footer-box-callback d-block d-xl-none">
 
-        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+          <a href="mailto:" class="mail contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="mail-text">bustclubinfo@gmail.com</span>
+          </a>
+          <div class="address contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#geo"></use>
+            </svg>
+            <span class="mail-text">Москва, Петровка 17 стр 4, оф 53</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 d-block d-xl-none">
+        <div class="copyright">
+          <p>Продавец ИП Ивкова
+            Оксана Николаевна
+            ИНН 771401924372
+            ОГРНИП 318774600212261
+            © 2004-2020. BustClub</p>
+        </div>
       </div>
     </div>
   </div>
 </footer>
+
 
 <!-- Модальное окно -->
 <div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
