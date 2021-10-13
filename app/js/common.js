@@ -78,12 +78,12 @@ $(window).on('load resize', function() {
             prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
         });
+
+        $(".scroll-box-mobile").mCustomScrollbar('destroy');
     } else {
         $(".models-slider.slick-initialized").slick("unslick");
-        $(window).on("load", function () {
-            $(".scroll-box-mobile").mCustomScrollbar({
-                axis: "x"
-            });
+        $(".scroll-box-mobile").mCustomScrollbar({
+            axis: "x"
         });
     }
 });

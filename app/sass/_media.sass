@@ -716,15 +716,21 @@
     justify-content: space-between
 
   .scroll-box-mobile
+    max-width: 876px
+    width: 100%
     .mCustomScrollBox
       padding: 0 0 20px
       &:before
         display: none
-    .mCSB_container
-      display: flex
-      align-items: stretch
+    //.mCSB_container
+    //  display: flex
+    //  align-items: stretch
 
   .models-slider
+
+    display: flex
+    align-items: flex-start
+
     .model-card
       margin: 0 20px 0 0
 
@@ -733,6 +739,7 @@
 
   .models
     padding: 0 0 40px
+
 
 @media only screen and (max-width: 768px)
   .container
