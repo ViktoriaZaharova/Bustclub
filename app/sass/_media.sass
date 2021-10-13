@@ -178,6 +178,13 @@
     transform: translate(0,-50%)
     right: 54px
 
+  .test-modal .modal-dialog
+    max-width: 952px
+
+  .test-modal-box .modal-title
+    font-size: 30px
+    line-height: normal
+
 @media only screen and (max-width: 1200px)
   .logo
     max-width: 140px
@@ -433,6 +440,49 @@
   .total-sum
     line-height: 26px
 
+  .test-result-modal .modal-body
+    padding: 35px 45px
+
+  .test-modal-box .modal-title
+    font-size: 30px
+    line-height: normal
+
+  .test-result__val
+    margin: 20px 0 25px
+
+  .links-prev-modal
+    font-size: 14px
+
+  .test-modal-box h6
+    margin: 0 0 5px
+
+  .test-result-box .box-text
+    margin: 10px 0 25px
+
+  .test-result-box h6
+    font-size: 20px
+    line-height: 26px
+
+  .test-modal-box__img
+    max-width: 252px
+    margin: 0 0 15px
+
+  .collapse-item__btn
+    font-size: 14px
+    line-height: 24px
+
+  .test-modal-content
+    height: 100%
+    max-height: 449px
+
+  .collapse-item__header
+    align-items: center
+    .label-checkbox
+      margin: 0 0 auto
+
+  .collapse-item .card-body
+    font-size: 14px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .container
@@ -596,6 +646,13 @@
 
   .btn-return
     font-size: 14px
+
+  .test-modal-box .modal-title
+    font-size: 20px
+    line-height: 26px
+
+  .test-result-modal .modal-dialog
+    max-width: 790px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 992px)
@@ -944,6 +1001,49 @@
     .box-text-info
       margin: 15px 0 0
 
+  .test-result-modal .modal-dialog
+    max-width: 720px
+
+  .test-result-box .box-text
+    font-size: 14px
+    line-height: 20px
+
+  .test-modal .modal-dialog
+    max-width: 720px
+
+  .test-modal .modal-body
+    padding: 35px 15px 35px 35px
+
+  .test-modal-box .modal-title
+    margin: 5px 0 16px
+
+  .test-modal-box__img
+    max-width: 300px
+
+  .collapse-item
+    .card-body
+      padding: 7px 0 0
+    .checkbox-custom
+      top: 0
+    .icon-arrow
+      margin: -5px 0 0 5px
+
+  .collapse-item__btn
+    line-height: 17px
+
+  .test-modal-content
+    max-height: 505px
+    .mCustomScrollBox
+      padding: 0 20px 50px 0
+      &:before
+        display: block
+        height: 100px
+        bottom: -50px
+        width: calc(100% - 20px)
+        left: 0
+        right: auto
+
+
 @media only screen and (max-width: 730px)
   .footer-box-contacts
     width: 100%
@@ -992,6 +1092,11 @@
   .basket-card .btn-add-favorite
     top: 15px
 
+  .test-result-modal
+    .modal-body
+      padding: 20px 18px
+    .modal-content
+      border-radius: 0
 
 @media only screen and (max-width: 576px)
   .header-bottom
@@ -1416,6 +1521,88 @@
   .entrance-social-links__text
     margin: 0 0 0 5px
 
+  .modal-product .modal-body .btn-group
+    flex-direction: column
+    align-items: center
+    .btn
+      width: 100%
+      margin: 0 auto 10px
+      &:last-child
+        margin: 0 auto
+
+  .test-modal
+    .modal-dialog
+      margin: 0 auto
+    .modal-content
+      border-radius: 0
+
+    .modal-header
+      background: #0D0D0E
+      padding: 15px 16px
+      border-radius: 0
+      .close
+        fill: #fff
+        position: relative
+        margin: 0 0 0 auto
+        top: 0
+        right: 0
+    .modal-title
+      text-align: left
+      margin: 0
+      color: #fff
+    .modal-body
+      padding: 20px 16px
+    .mCSB_container
+      overflow: visible
+      top: 0 !important
+
+  .test-result-modal
+    .box-text
+      margin: 10px 0 25px
+
+  .test-modal-content
+    max-height: none
+    .btn
+      margin: 0 auto
+
+  .test-modal-box__img
+    margin: 10px 0
+    max-width: 211px
+
+  .test-modal-content
+    margin: 10px 0 0
+
+  .test-result-box
+    justify-content: flex-start
+    .btn
+      padding: 0 10px
+      max-width: 260px
+      width: 100%
+
+  .test-modal-box
+    h6
+      display: none
+    .modal-title
+      color: #0D0D0E
+      font-size: 17px
+      line-height: 22px
+
+
+
+
+  .test-result__val
+    margin: 20px 0
+
+  .test-modal-content .mCustomScrollBox
+    padding: 0
+    max-height: none
+    overflow: visible
+    &:before
+      display: none
+
+  .test-modal-content .mCSB_scrollTools
+    display: none !important
+
 @media only screen and (max-width: 480px)
   .container
     max-width: 472px
@@ -1426,6 +1613,32 @@
 
   .brand-box
     height: 70px
+
+  .test-modal-box .modal-title
+    text-align: center
+
+  .test-result__val
+    text-align: center
+    margin: 20px auto 30px
+
+  .test-modal-box
+    .links-prev-modal
+      display: none
+
+  .test-result-box
+    .box-text
+      text-align: left
+    .btn
+      margin: 0 auto
+    .links-prev-modal
+      display: flex
+
+  .links-prev-modal
+    justify-content: center
+    margin: 20px auto 0
+
+  .test-modal .modal-title
+    text-align: left
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -1585,7 +1798,7 @@
 
   .advantages
     margin: 15px 0 30px
-    
+
   .agitation-wrapper
     h2
       text-align: left
@@ -1612,6 +1825,7 @@
 
   .total-basket__footer
     max-width: none
+
 
 
 @media only screen and (max-width: 375px)
@@ -1705,7 +1919,7 @@
 
   .main-slider-box2 .main-slider__title
     font-size: 27px
-    
+
   .modal-body
     padding: 20px 16px
 
@@ -1741,9 +1955,31 @@
     .box-text
       text-align: center
 
+
+  .test-result-box .box-text
+    text-align: left
+
+
 @media only screen and (min-width: 420px)
   .d-xs-none
     display: none !important
 
+@media only screen and (min-width: 480px)
+  .col-xs-5
+    flex: 0 0 41.666667%
+    width: 41.666667%
+
+  .col-xs-7
+    flex: 0 0 58.333333%
+    width: 58.333333%
+
+@media only screen and (min-width: 576px)
+  .col-sm-4
+    flex: 0 0 33.333333%
+    width: 33.333333%
+
+  .col-sm-8
+    flex: 0 0 66.666667%
+    width: 66.666667%
 
 
