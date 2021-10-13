@@ -771,10 +771,10 @@
 <section class="section-page blog-page basket-page pt-50">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-sm-6 col-md-12 col-lg-8">
         <h1>Корзина</h1>
       </div>
-      <div class="col-12 col-md-8 mb-35">
+      <div class="col-12 col-sm-6 col-md-12 col-lg-8 mb-sm0 mb-35 d-none d-sm-flex">
         <a href="#" class="links-clear" data-toggle="modal" data-target="#basketModal">
           <span class="links-clear__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#delete"></use></svg></span>
@@ -784,8 +784,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-8 mb-30">
-
+      <div class="col-12 col-lg-8 mb-30 mb-xs-20">
 
         <div class="basket-card basket-card-not">
           <a href="product.html" class="basket-card__img"><img src="img/basket1.jpg" alt=""></a>
@@ -827,69 +826,83 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4 mb-30">
+      <div class="col-12 d-block d-xs-none">
+        <a href="#" class="links-clear" data-toggle="modal" data-target="#basketModal">
+          <span class="links-clear__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#delete"></use></svg></span>
+          <span class="links-clear__text">Очистить корзину</span>
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-4 mb-30 mb-md-40">
         <form method="post" class="total-basket">
-          <div class="total-basket-box">
-            <h3>Сумма покупок: 0 ₽ </h3>
-          </div>
-          <div class="total-basket-box">
-            <h3>Способ доставки:</h3>
-            <ul class="list-checkbox">
-              <li>
-                <label class="label-checkbox">
-                  <span class="checkbox-title">Курьером по москве</span>
-                  <input type="radio" name="radio" class="inp-check">
-                  <span class="checkbox-custom"></span>
-                  <span class="checkbox-text">
+          <div class="row">
+            <div class="col-12 col-sm-7 col-md-7 col-lg-12">
+              <div class="total-basket-box">
+                <h3>Сумма покупок: 0 ₽ </h3>
+              </div>
+              <div class="total-basket-box">
+                <h3>Способ доставки:</h3>
+                <ul class="list-checkbox">
+                  <li>
+                    <label class="label-checkbox">
+                      <span class="checkbox-title">Курьером по москве</span>
+                      <input type="radio" name="radio" class="inp-check">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
                     <span>Бесплатно при заказе от 10 000 руб</span>
                     <span>Стоимость доставки -  350 руб</span>
                   </span>
-                </label>
-              </li>
-              <li>
-                <label class="label-checkbox">
-                  <span class="checkbox-title">Самовывоз</span>
-                  <input type="radio" name="radio" class="inp-check">
-                  <span class="checkbox-custom"></span>
-                  <span class="checkbox-text">
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox">
+                      <span class="checkbox-title">Самовывоз</span>
+                      <input type="radio" name="radio" class="inp-check">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
                     <span>В пунктах выдачи всегда бесплатно</span>
                   </span>
-                </label>
-              </li>
-              <li>
-                <label class="label-checkbox">
-                  <span class="checkbox-title">Доставка по России</span>
-                  <input type="radio" name="radio" class="inp-check">
-                  <span class="checkbox-custom"></span>
-                  <span class="checkbox-text">
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox">
+                      <span class="checkbox-title">Доставка по России</span>
+                      <input type="radio" name="radio" class="inp-check">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
                     <span>Стоимость доставки стоимость -  350 руб</span>
                   </span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="total-basket__wrap">
-            <p>Доставка: <span>0 ₽</span></p>
-            <div class="commission">
-              <div class="dropdown dropleft">
-                <a href="#" class="links-dropdown dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">Комиссия оплаты:</a>
-                <div class="dropdown-menu dropdown-menu-basket" aria-labelledby="dropdownMenuButton">
-                  <div class="box-text">
-                    <p>При оплате онлайн взимается комиссия за обработку платежа в размере 4% от суммы заказа. При
-                      возврате средств комиссия не возвращается.</p>
-                  </div>
-                  <a href="#" class="links-details"><span class="links-details__text">Читать подробнее</span></a>
-                </div>
+                    </label>
+                  </li>
+                </ul>
               </div>
-              <div class="commission-val"> 0 ₽</div>
             </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-12">
+              <div class="total-basket__wrap">
+                <p>Доставка: <span>0 ₽</span></p>
+                <div class="commission">
+                  <div class="dropdown dropleft">
+                    <a href="#" class="links-dropdown dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Комиссия оплаты:</a>
+                    <div class="dropdown-menu dropdown-menu-basket" aria-labelledby="dropdownMenuButton">
+                      <div class="box-text">
+                        <p>При оплате онлайн взимается комиссия за обработку платежа в размере 4% от суммы заказа. При
+                          возврате средств комиссия не возвращается.</p>
+                      </div>
+                      <a href="#" class="links-details"><span class="links-details__text">Читать подробнее</span></a>
+                    </div>
+                  </div>
+                  <div class="commission-val"> 0 ₽</div>
+                </div>
 
-            <div class="total-sum">Итого: 0 ₽</div>
-          </div>
-          <div class="total-basket__footer">
-            <label class="label-promo"><input type="text" placeholder="Промокод" name="promocode"></label>
-            <button type="submit" class="btn btn-accent" disabled>Оформить заказ</button>
+                <div class="total-sum">Итого: 0 ₽</div>
+              </div>
+              <div class="total-basket__footer">
+                <label class="label-promo"><input type="text" placeholder="Промокод" name="promocode"></label>
+                <button type="submit" class="btn btn-accent" disabled>Оформить заказ</button>
+              </div>
+            </div>
           </div>
         </form>
       </div>

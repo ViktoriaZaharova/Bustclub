@@ -568,16 +568,20 @@ h4
   display: flex
   align-items: stretch
   flex-wrap: wrap
-  justify-content: space-between
+  margin: 0 -15px
+
+.advantages-box__col
+  width: 20%
+  padding: 0 15px
+  margin: 0 0 20px
 
 .advantages-box
-  width: calc(20% - 25px)
+  height: 100%
   border: 1px solid rgba(176, 177, 191, 0.2)
     radius: 8px
   padding: 35px 30px 35px 35px
   color: rgba($text-dark, .65)
   line-height: 23px
-  margin: 0 0 20px
 
   &__icon
     border-radius: 50%
@@ -884,7 +888,8 @@ h4
   &__title
     color: rgba($title, .75)
     margin: 0 0 8px
-
+    -webkit-line-clamp: 2
+    overflow: hidden
     &:hover
       color: $accent
 

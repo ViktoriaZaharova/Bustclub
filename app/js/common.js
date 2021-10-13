@@ -3,19 +3,14 @@ $('.main-slider').slick({
     slidesToShow: 1,
     fade: true,
     dots: true,
-    infinite: false,
+    infinite: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
     appendArrows: '.main-slider-nav',
     appendDots: '.main-slider-nav'
 });
 
-$('.models-slider').slick({
-    slidesToShow: 4,
-    dots: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-});
+
 
 $('.reviews-slider').slick({
     slidesToShow: 2,
@@ -54,9 +49,6 @@ $('.mobile-filter-sizes-slider-left').slick({
     verticalSwiping: true,
     verticalScrolling: true,
     centerMode: true,
-    // useTransform: true,
-    // cssEase: "cubic-bezier(0.645, 0.045, 0.355, 1.000)",
-    // adaptiveHeight: true,
     centerPadding: '0',
     infinite: true,
     arrows: false,
@@ -71,14 +63,31 @@ $('.mobile-filter-sizes-slider-right').slick({
     verticalSwiping: true,
     verticalScrolling: true,
     centerMode: true,
-    // useTransform: true,
-    // cssEase: "cubic-bezier(0.645, 0.045, 0.355, 1.000)",
-    // adaptiveHeight: true,
     centerPadding: '0',
     infinite: true,
     arrows: false,
     dots: false
 });
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() > 900) {
+        $('.models-slider:not(.slick-initialized)').slick({
+            slidesToShow: 4,
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+        });
+    } else {
+        $(".models-slider.slick-initialized").slick("unslick");
+        $(window).on("load", function () {
+            $(".scroll-box-mobile").mCustomScrollbar({
+                axis: "x"
+            });
+        });
+    }
+});
+// slick active
 
 $(window).on("load", function () {
     $(".mScrollbar").mCustomScrollbar();
