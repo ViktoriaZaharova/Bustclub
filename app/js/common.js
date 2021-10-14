@@ -17,6 +17,32 @@ $('.reviews-slider').slick({
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: true,
+                appendDots: '.reviews-slider__nav',
+                appendArrows: '.reviews-slider__nav'
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+                appendDots: '.reviews-slider__nav',
+                appendArrows: '.reviews-slider__nav'
+            }
+        }
+    ]
 });
 
 $('.gallery-product-preview').slick({
@@ -83,6 +109,14 @@ $(window).on('load resize', function() {
     } else {
         $(".models-slider.slick-initialized").slick("unslick");
         $(".scroll-box-mobile").mCustomScrollbar({
+            axis: "x"
+        });
+    }
+
+    if ($(window).width() > 768) {
+        $(".scroll-box-about").mCustomScrollbar('destroy');
+    } else {
+        $(".scroll-box-about").mCustomScrollbar({
             axis: "x"
         });
     }

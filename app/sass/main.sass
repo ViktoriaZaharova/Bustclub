@@ -1007,7 +1007,6 @@ h4
   color: $accent
   font-weight: 500
   width: fit-content
-  flex-wrap: wrap
   line-height: 20px
   &__icon
     display: flex
@@ -1087,7 +1086,8 @@ h4
   align-items: flex-end
   flex-wrap: wrap
   justify-content: space-between
-  margin: 0 0 34px
+  .links-details
+    margin: 34px 0 0
 
   input
     width: 100%
@@ -1097,7 +1097,7 @@ h4
     border: 1px solid rgba(255, 255, 255, 0.18)
     color: #fff
     font-size: 16px
-    padding: 0 30px
+    padding: 0 54px 0 30px
 
     &::placeholder
       color: rgba(255, 255, 255, 0.4)
@@ -1180,10 +1180,14 @@ h4
     right: 0
     bottom: 0
     z-index: -1
+    height: 100%
+    object-fit: cover
 
   &__content
     margin: 0 0 auto
     max-width: 192px
+    position: relative
+    z-index: 1
 
 .bg-sale-1
   background: #FFEFE6
@@ -1212,7 +1216,7 @@ h4
   color: #B0B1BF
 
 .reviews-box
-  max-width: 649px
+  max-width: calc(100% - 20px)
   width: 100%
   margin: 0 auto 25px
   background: #fff
@@ -1229,7 +1233,24 @@ h4
   .box-text
     line-height: 28px
     margin: 0 0 20px
+    color: #252634
 
+.reviews-slider__nav
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  .slick-arrow
+    transform: none
+    position: relative
+    left: 0
+    top: 0
+    right: 0
+  .slick-dots
+    margin: 0 30px
+  .slick-next
+    order: 1
 
 
 .insta-link-user
@@ -1294,6 +1315,13 @@ h4
   flex-wrap: wrap
   justify-content: space-between
   width: 100%
+
+.instagram-portfolio__row
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+
 
 .instagram-portfolio__item
   width: calc(16.6667% - 10px)

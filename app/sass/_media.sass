@@ -10,6 +10,13 @@
   .label-promo
     max-width: 180px
 
+@media only screen and (max-width: 1570px)
+  .selection-wrapper
+    padding: 55px
+
+  .selection-img
+    max-width: 431px
+
 @media only screen and (max-width: 1540px)
   .model-card
     max-width: 223px
@@ -40,6 +47,18 @@
   .article
     margin: 5px 0 15px
 
+  .selection-content
+    width: 100%
+    max-width: 490px
+
+  .label-group
+    max-width: 228px
+    margin: 0 0 25px
+
+  .form-selection
+    align-items: center
+    .links-details
+      margin: 0 auto 0 25px
 
 @media only screen and (max-width: 1450px)
   .not-undefined h1
@@ -184,6 +203,15 @@
   .test-modal-box .modal-title
     font-size: 30px
     line-height: normal
+
+  .selection-img
+    max-width: 396px
+    right: -24px
+
+  .selection
+    padding: 44px 0 10px
+    h2
+      margin: 0 0 25px
 
 @media only screen and (max-width: 1200px)
   .logo
@@ -483,6 +511,62 @@
   .collapse-item .card-body
     font-size: 14px
 
+  .sale-box
+    height: 259px
+    padding: 35px 30px
+    margin: 0 0 8px
+    width: calc(33.3% - 4px)
+    h3
+      margin: 0 0 10px
+
+  .sale-box__img
+    right: -20px
+
+  .sale-box.bg-sale-6
+    .sale-box__img
+      right: 0
+
+  .reviews
+    margin: 45px 0
+
+  .about-section-wrapper
+    align-items: flex-start
+    margin: 0 0 35px
+    h3
+      margin: 0 0 25px
+    h2
+      display: none
+
+  .about-section
+    h2
+      text-align: center
+
+  .author
+    padding: 25px 20px
+    font-size: 17px
+    line-height: 22px
+    margin: 0 0 20px
+    h3
+      margin: 0
+
+  .about-section-wrapper__content
+    width: calc(50% - 15px)
+    max-width: none
+
+  .about-section-wrapper__img
+    width: calc(50% - 15px)
+    height: 319px
+
+  .instagram-portfolio__item
+    height: 150px
+
+  .seo-content-box
+    margin: 25px 0 0
+    h3
+      margin: 0 0 25px
+    .btn
+      margin: 25px 0 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .container
@@ -654,6 +738,25 @@
   .test-result-modal .modal-dialog
     max-width: 790px
 
+  .reviews
+    padding: 45px 0
+    h2
+      text-align: center
+
+  .reviews-slider
+    padding: 0 67px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .reviews-box
+    padding: 29px 45px 13px
+    margin: 0 auto 20px
+    width: 100%
+    .box-text
+      margin: 0 0 48px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 992px)
   .menu li
@@ -716,15 +819,11 @@
     justify-content: space-between
 
   .scroll-box-mobile
-    max-width: 876px
     width: 100%
     .mCustomScrollBox
       padding: 0 0 20px
       &:before
         display: none
-    //.mCSB_container
-    //  display: flex
-    //  align-items: stretch
 
   .models-slider
 
@@ -740,6 +839,8 @@
   .models
     padding: 0 0 40px
 
+  .selection-img
+    right: -50px
 
 @media only screen and (max-width: 768px)
   .container
@@ -1050,6 +1151,87 @@
         left: 0
         right: auto
 
+  .selection-img
+    max-width: 431px
+    right: -95px
+
+  .selection
+    padding: 40px 0 20px
+
+  .selection-wrapper
+    border-radius: 0
+    width: calc(100% + 48px)
+    margin: 0 -24px
+    padding: 55px 24px
+
+  .sale-box
+    width: calc(50% - 10px)
+    margin: 0 0 20px
+    height: 289px
+    padding: 45px 40px 43px
+    &__img
+      right: 0
+
+  .reviews-box
+    width: 649px
+    margin: 0 20px 25px 0
+    padding: 29px 45px 40px
+    .box-text
+      margin: 0 0 20px
+
+  .reviews
+    h2
+      text-align: left
+      font-size: 20px
+      line-height: 26px
+
+  .reviews-slider
+    padding: 0
+
+  .instagram-portfolio__item
+    width: 170px
+    min-width: 170px
+    height: 170px
+    margin: 0 10px 10px 0
+    max-width: none
+
+  .scroll-box-about
+    width: 100%
+    .mCSB_horizontal.mCSB_inside>.mCSB_container
+      margin: 0
+    .mCustomScrollBox
+      padding: 0
+      &:before
+        display: none
+
+  .seo-content-box
+    margin: 15px 0 0
+    .box-text
+      max-height: 84px
+      overflow: hidden
+      margin: 0 0 20px
+    h3
+      font-size: 17px
+      margin: 0 0 15px
+
+  .about-section-wrapper__content
+    width: calc(50% - 10px)
+    .box-text
+      max-height: 196px
+      overflow: hidden
+      margin: 0 0 20px
+
+  .author
+    padding: 25px 11px 25px 20px
+
+  .about-section-wrapper__img
+    height: 376px
+    width: calc(50% - 10px)
+
+  .instagram-portfolio
+    padding: 0 0 25px
+
+
 
 @media only screen and (max-width: 730px)
   .footer-box-contacts
@@ -1073,6 +1255,12 @@
     .logo
       max-width: 165px
       margin: 10px auto 0 0
+
+  .selection-img
+    max-width: 350px
+
+  .selection-content
+    max-width: 465px
 
 
 
@@ -1105,6 +1293,20 @@
     .modal-content
       border-radius: 0
 
+  .reviews-box
+    width: 448px
+    margin: 0 10px 15px 0
+
+  .reviews
+    h2
+      margin: 0 0 25px
+
+  .reviews-slider
+    width: calc(100% + 32px)
+    margin: 0 -16px
+    padding: 0 0 0 16px
+
+
 @media only screen and (max-width: 576px)
   .header-bottom
     display: none
@@ -1124,7 +1326,7 @@
     .logo
       width: 131px
       height: 26px
-      background: url("../img/logo-footer.png") no-repeat center
+      background: url("../img/logo-footer.svg") no-repeat center
         size: 100%
 
       img
@@ -1594,9 +1796,6 @@
       font-size: 17px
       line-height: 22px
 
-
-
-
   .test-result__val
     margin: 20px 0
 
@@ -1609,6 +1808,96 @@
 
   .test-modal-content .mCSB_scrollTools
     display: none !important
+
+  .selection
+    padding: 40px 0 10px
+    h2
+      margin: 0 0 30px
+
+  .selection-content
+    max-width: 290px
+
+  .selection-wrapper
+    padding: 40px 16px
+    width: calc(100% + 32px)
+    margin: 0 -16px
+
+  .label-group
+    flex-direction: column
+    align-items: center
+    max-width: 137px
+    text-align: center
+    margin: 0 0 20px
+    p
+      font-size: 14px
+    &__icon
+      margin: 0 auto 10px
+    &__text
+      padding: 0
+      width: 100%
+
+  .form-selection
+    button
+      order: 1
+    .links-details
+      margin: 0 0 25px
+
+  .selection-img
+    max-width: 431px
+    right: -142px
+
+  .sale-box
+    width: 100%
+    margin: 0 0 10px
+    padding: 30px 25px
+    height: 210px
+    h3
+      margin: 0 0 15px
+
+  .reviews-box
+    padding: 30px 20px 20px
+    .box-text
+      margin: 0 0 19px
+
+  .reviews-date
+    width: 100%
+    margin: 10px 0 0
+
+  .reviews-slider__nav .slick-dots
+    margin: 0 25px
+
+  .seo-content-box .box-text
+    line-height: 28px
+    max-height: 168px
+    margin: 0 0 15px
+
+  .instagram-portfolio__item
+    width: 135px
+    height: 135px
+    min-width: 135px
+    margin: 0 5px 5px 0
+    max-width: none
+
+  .about-section
+    h2
+      margin: 0 auto 25px
+
+  .about-section-wrapper
+    margin: 0 0 40px
+
+  .about-section-wrapper__content
+    width: 100%
+
+  .author
+    max-width: 350px
+    width: 100%
+    margin: 0 auto 10px
+
+  .about-section-wrapper__img
+    width: 100%
+    height: 241px
+    max-width: 350px
+    margin: 0 auto 15px
 
 @media only screen and (max-width: 480px)
   .container
@@ -1833,7 +2122,64 @@
   .total-basket__footer
     max-width: none
 
+  .selection-img
+    display: none
 
+  .selection-content
+    max-width: none
+
+  .selection-wrapper
+    padding: 40px 16px 45px
+
+  .label-group
+    max-width: none
+    width: calc(50% - 10px)
+
+  .form-selection
+    .links-details
+      display: flex
+      width: 100%
+      justify-content: center
+      span
+        display: flex
+    button
+      margin: 0 auto
+
+  .selection
+    h2
+      text-align: center
+
+  .reviews-box
+    width: 100%
+    margin: 0 auto 15px
+
+  .author
+    width: calc(100% + 24px)
+    margin: 0 -16px 10px
+    border-radius: 0
+    max-width: none
+    padding: 25px 16px
+
+  .about-section
+    h2
+      text-align: left
+
+  .about-section-wrapper__img
+    height: 198px
+
+  .about-section-wrapper__content
+    .box-text
+      height: 280px
+      margin: 0 0 15px
+
+  .seo-content-box
+    h3
+      margin: 0 0 20px
+    .box-text
+      height: 280px
+      margin: 0 0 15px
+    .btn
+      margin: 25px auto 0
 
 @media only screen and (max-width: 375px)
   .header-box

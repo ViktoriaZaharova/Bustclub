@@ -286,7 +286,7 @@
             <span></span>
             <span></span>
           </div>
-          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
           <a href="#" class="links-details">
             <span class="links-details__text">Обучение брафиттингу</span>
           </a>
@@ -1119,12 +1119,13 @@
               </div>
 
               <button type="submit" class="btn btn-accent">Подобрать размер</button>
+              <a href="#" class="links-details">
+                <span class="links-details__icon">?</span>
+                <span class="links-details__text">Инструкция</span>
+              </a>
             </form>
 
-            <a href="#" class="links-details">
-              <span class="links-details__icon">?</span>
-              <span class="links-details__text">Инструкция</span>
-            </a>
+
           </div>
           <div class="selection-img"><img src="img/women.png" alt=""></div>
         </div>
@@ -1142,7 +1143,7 @@
           <div class="sale-box bg-sale-1">
             <div class="sale-box__content">
               <h3>Бюстгалтеры</h3>
-              <p>На большую грудь
+              <p>На большую грудь <br>
                 и не только</p>
             </div>
             <a href="#" class="links-details">
@@ -1154,7 +1155,7 @@
           <div class="sale-box bg-sale-2">
             <div class="sale-box__content">
               <h3>Купальники</h3>
-              <p>Для самого
+              <p>Для самого <br>
                 жаркого лета 🔥</p>
             </div>
             <a href="#" class="links-details">
@@ -1166,7 +1167,7 @@
             <div class="sale-box__content">
               <h3>Спортивное
                 белье</h3>
-              <p>Занимайся спортом
+              <p>Занимайся спортом <br>
                 с комфортом</p>
             </div>
             <a href="#" class="links-details">
@@ -1177,7 +1178,7 @@
           <div class="sale-box bg-sale-4">
             <div class="sale-box__content">
               <h3>Сертификаты</h3>
-              <p>Сделай приятный подарок</p>
+              <p>Сделай приятный <br>подарок</p>
             </div>
             <a href="#" class="links-details">
               <span class="links-details__text">Посмотреть</span>
@@ -1187,7 +1188,7 @@
           <div class="sale-box bg-sale-5">
             <div class="sale-box__content">
               <h3>Аксессуары</h3>
-              <p>Дополни свой идеальный образ</p>
+              <p>Дополни свой <br>идеальный образ</p>
             </div>
             <a href="#" class="links-details">
               <span class="links-details__text">Посмотреть</span>
@@ -1197,7 +1198,7 @@
           <div class="sale-box bg-sale-6">
             <div class="sale-box__content">
               <h3>Скидки</h3>
-              <p>Любимые модели стали доступнее</p>
+              <p>Любимые модели <br>стали доступнее</p>
             </div>
             <a href="#" class="links-details links-details-white">
               <span class="links-details__text">Посмотреть</span>
@@ -1356,6 +1357,8 @@
             </div>
           </div>
         </div>
+
+        <div class="reviews-slider__nav"></div>
       </div>
     </div>
   </div>
@@ -1364,7 +1367,11 @@
 <section class="about-section">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="col-12 d-block d-xl-none">
+        <h2>Немного о нас</h2>
+      </div>
+
+      <div class="col-12 col-xl-10 offset-xl-1">
         <div class="about-section-wrapper">
           <div class="about-section-wrapper__content">
             <h2>Немного о нас</h2>
@@ -1372,6 +1379,9 @@
               <h3>Лидия Хулигановна — идейный вдохновитель
                 и основательница bust-club.com.</h3>
             </div>
+
+            <div class="about-section-wrapper__img d-flex d-sm-none"><img src="img/about1.jpg" alt=""></div>
+
             <div class="box-text">
               <p>Она знает все о нижнем белье: как правильно подобрать бюстгальтер на большую тяжелую грудь, какие
                 фасоны подходят для широко расставленной груди, а какие — для близко посаженной. Как сформировать
@@ -1380,13 +1390,17 @@
                 (и для AA, и для D+, и для K).
               </p>
             </div>
+
+            <a href="#" class="links-details d-flex d-md-none"><span
+                class="links-details__text">Читать дальше</span></a>
+
           </div>
 
-          <div class="about-section-wrapper__img"><img src="img/about1.jpg" alt=""></div>
+          <div class="about-section-wrapper__img d-none d-sm-flex"><img src="img/about1.jpg" alt=""></div>
         </div>
       </div>
 
-      <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="col-12 col-xl-10 offset-xl-1 d-none d-md-block">
         <div class="about-section-wrapper">
           <div class="about-section-wrapper__img"><img src="img/about2.jpg" alt=""></div>
 
@@ -1409,106 +1423,112 @@
   </div>
 </section>
 
-<section class="seo-content mb-30">
+<section class="seo-content">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="instagram-portfolio">
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio1.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio2.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio3.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio4.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio5.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio6.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio7.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio8.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio9.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio10.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio11.jpg" alt="">
-          </div>
-          <div class="instagram-portfolio__item">
-            <a href="#" class="insta-link link-accent">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <img src="img/portfolio12.jpg" alt="">
+        <div class="scroll-box-about mScrollbar">
+          <div class="instagram-portfolio">
+            <div class="instagram-portfolio__row">
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio1.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio2.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio3.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio4.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio5.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio6.jpg" alt="">
+            </div>
+            </div>
+            <div class="instagram-portfolio__row">
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio7.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio8.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio9.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio10.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio11.jpg" alt="">
+            </div>
+            <div class="instagram-portfolio__item">
+              <a href="#" class="insta-link link-accent">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <img src="img/portfolio12.jpg" alt="">
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1527,6 +1547,9 @@
             <p>Поднимаем не только грудь, но и настроение ;-)
             </p>
           </div>
+
+          <a href="#" class="links-details d-flex d-md-none"><span
+              class="links-details__text">Читать дальше</span></a>
 
           <a href="#" class="btn btn-accent">Записаться в шоурум</a>
         </div>
@@ -1599,7 +1622,7 @@
     <div class="row">
       <div class="col-12 footer-wrapper">
         <div class="footer-box">
-          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+          <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
           <div class="copyright">
             <p>Продавец ИП Ивкова <br>
               Оксана Николаевна <br>
