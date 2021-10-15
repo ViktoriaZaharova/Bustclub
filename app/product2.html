@@ -784,9 +784,22 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-5 col-lg-6">
+      <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
         <div class="gallery-product">
-          <div class="gallery-product-preview">
+          <a href="#" class="btn-add-favorite btn-add-favorite-mob"></a>
+          <div class="gallery-product-preview mcs-horizontal">
+            <div class="slide">
+              <div class="gallery-product-preview__item"><img src="img/preview-product1.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="gallery-product-preview__item"><img src="img/preview-product2.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="gallery-product-preview__item"><img src="img/preview-product1.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="gallery-product-preview__item"><img src="img/preview-product2.jpeg" alt=""></div>
+            </div>
             <div class="slide">
               <div class="gallery-product-preview__item"><img src="img/preview-product1.jpeg" alt=""></div>
             </div>
@@ -846,7 +859,7 @@
             </div>
           </div>
         </div>
-        <div class="complete-product">
+        <div class="complete-product d-none d-sm-block">
           <h3>Дополните образ</h3>
 
           <div class="complete-product-wrapper">
@@ -860,7 +873,9 @@
               <div class="dropdown product-size">
                 <button class="btn btn-select dropdown-toggle" type="button" id="dropdownMenuSize"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Выберите размер белья
+                  <span class="dropdown-toggle__text-pc">Выберите размер белья</span>
+                  <span class="dropdown-toggle__text-tablet">Выберите размер</span>
+                  <span class="dropdown-toggle__text-mob">Размер</span>
                   <span class="btn-select__icon"><svg class="svg-icon"><use
                       xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
                 </button>
@@ -895,7 +910,10 @@
                 </div>
               </div>
               <div class="btn-group">
-                <a href="#" class="btn btn-accent btn-add-basket">Добавить в корзину</a>
+                <a href="#" class="btn btn-accent btn-add-basket">
+                  <span class="btn-add-basket__text-pc">Добавить в корзину</span>
+                  <span class="btn-add-basket__text-mob">В корзину</span>
+                </a>
                 <a href="#" class="btn btn-border-red add-favorite">
                   <span class="btn-icon"></span>
                 </a>
@@ -906,7 +924,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-7 col-lg-6">
+      <div class="col-12 col-sm-6 col-lg-7 col-xl-6">
         <div class="product-content">
           <div class="product-content__item">
             <h1>Dana Strapless (BLACK)</h1>
@@ -1074,7 +1092,7 @@
             </div>
           </div>
         </div>
-        <div class="recommended">
+        <div class="recommended d-none d-xl-block">
           <h3>С этим товаром покупают </h3>
 
           <div class="recommended-slider slider-my-navigation w-100">
@@ -1185,113 +1203,204 @@
         </div>
       </div>
 
-      <div class="col-12 d-block d-lg-none">
+      <div class="col-12 d-none d-sm-block d-xl-none">
         <div class="recommended">
           <h3>С этим товаром покупают </h3>
 
-          <div class="recommended-slider slider-my-navigation w-100">
-            <div class="slide">
-              <div class="model-card recommended-product-card">
-                <a href="#" class="btn-add-favorite"></a>
-                <ul class="list-tags">
-                  <li class="tags-item">хит</li>
-                </ul>
+          <div class="scroll-box-about mScrollbar">
+            <div class="recommended-slider slider-my-navigation w-100">
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+                  <ul class="list-tags">
+                    <li class="tags-item">хит</li>
+                  </ul>
 
-                <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
-                <div class="model-card__body">
-                  <div class="model-card__body-top">
-                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
-                  </div>
-                  <div class="model-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">4 500 ₽</div>
+                  <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
                     </div>
-                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="price">4 500 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+                  <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                    </div>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="price">7 780 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+                  <ul class="list-tags">
+                    <li class="tags-item">скидка</li>
+                  </ul>
+
+                  <a href="product.html" class="model-card__img"><img src="img/model5.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                    </div>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="new-price">4 500 ₽</div>
+                        <div class="old-price">5 600 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+
+                  <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) 2 ст...</a>
+                    </div>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="price">3 900 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+                  <ul class="list-tags">
+                    <li class="tags-item">хит</li>
+                  </ul>
+
+                  <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                    </div>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="price">4 500 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="model-card recommended-product-card">
+                  <a href="#" class="btn-add-favorite"></a>
+                  <ul class="list-tags">
+                    <li class="tags-item">хит</li>
+                  </ul>
+
+                  <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                  <div class="model-card__body">
+                    <div class="model-card__body-top">
+                      <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                    </div>
+                    <div class="model-card__footer">
+                      <div class="price-wrapper">
+                        <div class="price">4 500 ₽</div>
+                      </div>
+                      <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="slide">
-              <div class="model-card recommended-product-card">
-                <a href="#" class="btn-add-favorite"></a>
-                <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
-                <div class="model-card__body">
-                  <div class="model-card__body-top">
-                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
-                  </div>
-                  <div class="model-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">7 780 ₽</div>
-                    </div>
-                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+      <div class="col-12 d-block d-sm-none">
+        <div class="complete-product">
+          <h3>Дополните образ</h3>
+
+          <div class="complete-product-wrapper">
+            <div class="complete-product__image"><img src="img/basket2.jpeg" alt=""></div>
+            <div class="complete-product__body">
+              <h4>Бесшовные трусы Bonded Hipster (Black)</h4>
+              <div class="price-wrapper">
+                <div class="price">15 500 ₽</div>
+              </div>
+
+              <div class="dropdown product-size">
+                <button class="btn btn-select dropdown-toggle" type="button" id="dropdownMenuSize2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="dropdown-toggle__text-pc">Выберите размер белья</span>
+                  <span class="dropdown-toggle__text-tablet">Выберите размер</span>
+                  <span class="dropdown-toggle__text-mob">Размер</span>
+                  <span class="btn-select__icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-size-product" aria-labelledby="dropdownMenuSize2">
+                  <div class="table-scrollbox">
+                    <table class="table-sizes table-sizes-v-2 table">
+                      <thead>
+                      <tr>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                      </tr>
+                      </thead>
+
+                      <tbody>
+
+                      <tr>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>14</td>
+                        <td>16</td>
+                        <td>18</td>
+                      </tr>
+
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="btn-group">
+                <a href="#" class="btn btn-accent btn-add-basket">
 
-            <div class="slide">
-              <div class="model-card recommended-product-card">
-                <a href="#" class="btn-add-favorite"></a>
-                <ul class="list-tags">
-                  <li class="tags-item">скидка</li>
-                </ul>
-
-                <a href="product.html" class="model-card__img"><img src="img/model5.jpg" alt=""></a>
-                <div class="model-card__body">
-                  <div class="model-card__body-top">
-                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
-                  </div>
-                  <div class="model-card__footer">
-                    <div class="price-wrapper">
-                      <div class="new-price">4 500 ₽</div>
-                      <div class="old-price">5 600 ₽</div>
-                    </div>
-                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
-                  </div>
-                </div>
+                  <span class="btn-add-basket__text-pc">Добавить в корзину</span>
+                  <span class="btn-add-basket__text-mob">В корзину</span>
+                </a>
+                <a href="#" class="btn btn-border-red add-favorite">
+                  <span class="btn-icon"></span>
+                </a>
               </div>
-            </div>
 
-            <div class="slide">
-              <div class="model-card recommended-product-card">
-                <a href="#" class="btn-add-favorite"></a>
-
-                <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
-                <div class="model-card__body">
-                  <div class="model-card__body-top">
-                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) 2 ст...</a>
-                  </div>
-                  <div class="model-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">3 900 ₽</div>
-                    </div>
-                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="model-card recommended-product-card">
-                <a href="#" class="btn-add-favorite"></a>
-                <ul class="list-tags">
-                  <li class="tags-item">хит</li>
-                </ul>
-
-                <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
-                <div class="model-card__body">
-                  <div class="model-card__body-top">
-                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
-                  </div>
-                  <div class="model-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">4 500 ₽</div>
-                    </div>
-                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1328,41 +1437,38 @@
                aria-labelledby="pills-description-tab">
             <div class="row">
               <div class="col-12 col-lg-7">
-                <div class="box-text">
-                  <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
-                    кожи.
-                    Верхняя деталь чашки это мягкий гипюр с вышивкой. Форма бюстгальтера балконет, состоит из 3 деталей.
-                    Прекрасно приподнимает грудь и центрирует её, чтобы вы ощущали комфорт весь день.</p>
+                <h3 class="tabs-pane-title">Описание</h3>
+                <div class="characteristics-product__content">
+                  <div class="box-text">
+                    <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
+                      кожи.
+                      Верхняя деталь чашки это мягкий гипюр с вышивкой. Форма бюстгальтера балконет, состоит из 3
+                      деталей.
+                      Прекрасно приподнимает грудь и центрирует её, чтобы вы ощущали комфорт весь день.</p>
+                  </div>
+
+                  <div class="characteristics-box">
+                    <h4>Характеристики</h4>
+                    <ul class="list-dots">
+                      <li><p>Особенности модели:</p><span>съемный push-up</span></li>
+                      <li><p>Состав:</p><span>эластан 13%, нейлон 87%</span></li>
+                      <li><p>Вид бретелей:</p><span>широкие бретели</span></li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="characteristics-box">
-                  <h4>Характеристики</h4>
-                  <ul class="list-dots">
-                    <li><p>Особенности модели:</p><span>съемный push-up</span></li>
-                    <li><p>Состав:</p><span>эластан 13%, нейлон 87%</span></li>
-                    <li><p>Вид бретелей:</p><span>широкие бретели</span></li>
-                  </ul>
-                </div>
+                <a href="#" class="links-toggle">Развернуть</a>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-size" role="tabpanel" aria-labelledby="pills-size-tab">
             <div class="row">
               <div class="col-12 col-lg-7">
-                <div class="box-text">
-                  <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
-                    кожи.
-                    Верхняя деталь чашки это мягкий гипюр с вышивкой. Форма бюстгальтера балконет, состоит из 3 деталей.
-                    Прекрасно приподнимает грудь и центрирует её, чтобы вы ощущали комфорт весь день.</p>
-                </div>
-
-                <div class="characteristics-box">
-                  <h4>Характеристики</h4>
-                  <ul class="list-dots">
-                    <li><p>Особенности модели:</p><span>съемный push-up</span></li>
-                    <li><p>Состав:</p><span>эластан 13%, нейлон 87%</span></li>
-                    <li><p>Вид бретелей:</p><span>широкие бретели</span></li>
-                  </ul>
+                <h3 class="tabs-pane-title">Размер и крой</h3>
+                <div class="characteristics-product__content">
+                  <div class="box-text">
+                    <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1370,41 +1476,166 @@
           <div class="tab-pane fade" id="pills-inset" role="tabpanel" aria-labelledby="pills-inset-tab">
             <div class="row">
               <div class="col-12 col-lg-7">
-                <div class="box-text">
-                  <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
-                    кожи.
-                    Верхняя деталь чашки это мягкий гипюр с вышивкой. Форма бюстгальтера балконет, состоит из 3 деталей.
-                    Прекрасно приподнимает грудь и центрирует её, чтобы вы ощущали комфорт весь день.</p>
+                <h3 class="tabs-pane-title">Вкладка</h3>
+                <div class="characteristics-product__content">
+                  <div class="box-text">
+                    <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
+                      ...</p>
+                  </div>
                 </div>
 
-                <div class="characteristics-box">
-                  <h4>Характеристики</h4>
-                  <ul class="list-dots">
-                    <li><p>Особенности модели:</p><span>съемный push-up</span></li>
-                    <li><p>Состав:</p><span>эластан 13%, нейлон 87%</span></li>
-                    <li><p>Вид бретелей:</p><span>широкие бретели</span></li>
-                  </ul>
-                </div>
+                <a href="#" class="links-toggle">Развернуть</a>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-inset2" role="tabpanel" aria-labelledby="pills-inset2-tab">
             <div class="row">
               <div class="col-12 col-lg-7">
-                <div class="box-text">
-                  <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень гармонично сочетается с оттенком
-                    кожи.
-                    Верхняя деталь чашки это мягкий гипюр с вышивкой. Форма бюстгальтера балконет, состоит из 3 деталей.
-                    Прекрасно приподнимает грудь и центрирует её, чтобы вы ощущали комфорт весь день.</p>
+                <h3 class="tabs-pane-title">Другая вкладка</h3>
+                <div class="characteristics-product__content">
+                  <div class="box-text">
+                    <p>Пастельный цвет бюстгальтера с мягким цветочным принтом очень </p>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div class="characteristics-box">
-                  <h4>Характеристики</h4>
-                  <ul class="list-dots">
-                    <li><p>Особенности модели:</p><span>съемный push-up</span></li>
-                    <li><p>Состав:</p><span>эластан 13%, нейлон 87%</span></li>
-                    <li><p>Вид бретелей:</p><span>широкие бретели</span></li>
-                  </ul>
+<section class="recommended-section d-block d-sm-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>С этим товаром покупают </h3>
+
+        <div class="scroll-box-about mScrollbar">
+          <div class="recommended-slider slider-my-navigation w-100">
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+                <ul class="list-tags">
+                  <li class="tags-item">хит</li>
+                </ul>
+
+                <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="price">4 500 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+                <a href="product.html" class="model-card__img"><img src="img/model3.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="price">7 780 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+                <ul class="list-tags">
+                  <li class="tags-item">скидка</li>
+                </ul>
+
+                <a href="product.html" class="model-card__img"><img src="img/model5.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="new-price">4 500 ₽</div>
+                      <div class="old-price">5 600 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+
+                <a href="product.html" class="model-card__img"><img src="img/model2.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE) 2 ст...</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="price">3 900 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+                <ul class="list-tags">
+                  <li class="tags-item">хит</li>
+                </ul>
+
+                <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="price">4 500 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="model-card recommended-product-card">
+                <a href="#" class="btn-add-favorite"></a>
+                <ul class="list-tags">
+                  <li class="tags-item">хит</li>
+                </ul>
+
+                <a href="product.html" class="model-card__img"><img src="img/model1.jpg" alt=""></a>
+                <div class="model-card__body">
+                  <div class="model-card__body-top">
+                    <a href="product.html" class="model-card__title">Бюстгальтер Cari Spacer Bra (DOVE)</a>
+                  </div>
+                  <div class="model-card__footer">
+                    <div class="price-wrapper">
+                      <div class="price">4 500 ₽</div>
+                    </div>
+                    <a href="#" class="btn btn-border-red btn-add-card">В корзину</a>
+                  </div>
                 </div>
               </div>
             </div>

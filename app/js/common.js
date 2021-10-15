@@ -53,20 +53,38 @@ $('.gallery-product-preview').slick({
     asNavFor: '.gallery-product-max',
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768.5,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                vertical: false,
+                verticalSwiping: false,
+                variableWidth: true,
+                infinite: false,
+                arrows: false,
+            }
+        }
+    ]
 });
 
 $('.gallery-product-max').slick({
     slidesToShow: 1,
     arrows: false,
     fade: true,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+            }
+        }
+    ]
 });
 
-$('.recommended-slider').slick({
-    slidesToShow: 4,
-    infinite: false,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-});
+
 
 $('.mobile-filter-sizes-slider-left').slick({
     slidesToShow: 5,
@@ -113,13 +131,67 @@ $(window).on('load resize', function() {
         });
     }
 
-    if ($(window).width() > 768) {
-        $(".scroll-box-about").mCustomScrollbar('destroy');
+    if ($(window).width() > 735) {
+        $(".similar-products-scroll").mCustomScrollbar('destroy');
     } else {
-        $(".scroll-box-about").mCustomScrollbar({
+        $(".similar-products-scroll").mCustomScrollbar({
             axis: "x"
         });
     }
+
+
+    if ($(window).width() > 768) {
+        $('.recommended-slider:not(.slick-initialized)').slick({
+            slidesToShow: 4,
+            infinite: false,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 850,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+
+        });
+
+        $(".mcs-horizontal").mCustomScrollbar('destroy');
+        $(".scroll-box-about").mCustomScrollbar('destroy');
+
+    } else {
+        $(".recommended-slider.slick-initialized").slick("unslick");
+        $(".scroll-box-about").mCustomScrollbar({
+            axis: "x"
+        });
+
+        $(".mcs-horizontal").mCustomScrollbar({
+            axis: "x",
+            autoExpandScrollbar: true,
+            advanced: { autoExpandHorizontalScroll: true },
+            updateOnContentResize: true,
+            scrollbarPosition: "outside",
+            scrollInertia: 200
+        });
+
+    }
+
+
+
+
 });
 // slick active
 
@@ -128,6 +200,8 @@ $(window).on("load", function () {
     $(".table-mScrollbar").mCustomScrollbar({
         axis: "x"
     });
+
+
 });
 
 // input change
@@ -248,4 +322,25 @@ $('.btn-burger').on('click', function () {
 
 $('.btn-close-menu').on('click', function () {
     $('.mobile-menu').fadeOut();
+});
+
+$('.links-toggle').on('click', function(e){
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parent().find('.characteristics-product__content');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть');
+
+        content.addClass('open');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Развернуть');
+
+        content.removeClass('open');
+    }
 });

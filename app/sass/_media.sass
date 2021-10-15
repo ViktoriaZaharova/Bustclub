@@ -17,6 +17,13 @@
   .selection-img
     max-width: 431px
 
+  .recommended-product-card
+    padding: 0 5px
+
+  .product-content
+    min-height: auto
+    margin: 0 0 50px
+
 @media only screen and (max-width: 1540px)
   .model-card
     max-width: 223px
@@ -59,6 +66,15 @@
     align-items: center
     .links-details
       margin: 0 auto 0 25px
+
+  .product-content__item h4
+    font-size: 17px
+
+  .similar-products
+    .recommended-product-card
+      max-width: 174px
+      padding: 0
+      margin: 0 15px 0 0
 
 @media only screen and (max-width: 1450px)
   .not-undefined h1
@@ -112,6 +128,23 @@
   .total-basket__wrap
     margin: 20px 0
 
+  .gallery-product-max__item
+    height: 550px
+
+  .gallery-product-preview
+    max-height: none
+    width: 100px
+
+  .dropdown-menu-size-product
+    min-width: auto
+
+
+  .gallery-product-preview__item
+    height: 100px
+
+  .gallery-product-max
+    width: calc(100% - 100px)
+
 @media only screen and (max-width: 1380px)
   .footer-menu
     font-size: 14px
@@ -150,6 +183,15 @@
     font-size: 80px
     margin: 0 0 25px
 
+  .gallery-product-preview
+    width: 61px
+
+
+  .gallery-product-max
+    width: calc(100% - 61px)
+
+  .product-content__item
+    margin: 0 0 20px
 
 
 
@@ -567,6 +609,107 @@
     .btn
       margin: 25px 0 0
 
+  .gallery-product-max__item
+    height: 380px
+
+  .product-content__item .price-wrapper
+    font-size: 20px
+    margin: 0 0 2px
+
+  .product-page h1
+    font-size: 20px
+    margin: 0 0 5px
+    line-height: 26px
+
+  .product-content__item
+    .links-details
+      font-size: 14px
+    .btn
+      font-size: 14px
+      padding: 0 20px
+
+    .btn-select
+      padding: 0 25px
+    .btn-group
+      max-width: 373px
+
+
+
+  .color-product-preview__item
+    width: 70px
+    height: 80px
+
+
+  .color-product
+    margin: 0 0 10px
+
+  .btn-select
+    max-width: 373px
+    width: 100%
+    padding: 0 25px
+
+  .btn-one-click
+    max-width: 373px
+    font-size: 14px
+
+  .add-favorite
+    padding: 0 20px
+    font-size: 14px
+
+  .advantages-product-item
+    font-size: 14px
+    h4
+      font-size: 14px
+      line-height: 17px
+      margin: 0 0 8px
+
+  .product-content
+    margin: 0
+
+  .complete-product__image
+    max-width: 145px
+    height: 157px
+
+  .complete-product__body
+    width: calc(100% - 145px)
+    padding: 0 0 0 20px
+    h4
+      font-size: 14px
+      line-height: 17px
+      margin: 0 0 10px
+    .price-wrapper
+      line-height: 22px
+      font-size: 17px
+      margin: 0 0 10px
+
+
+  .dropdown-toggle__text-pc, .btn-add-basket__text-pc
+    display: none
+
+  .dropdown-toggle__text-tablet, .btn-add-basket__text-mob
+    display: block
+
+  .recommended
+    margin: 45px 0 0
+
+  .recommended-product-card
+    padding: 0 7.5px
+
+  .gallery-product
+    margin: 0 0 45px
+
+  .gallery-product-preview
+    max-height: 380px
+
+  .characteristics-product
+    margin: 45px 0 0
+
+  .models-slider .model-card__img
+    height: 256px
+
+  .gallery-product-preview__item
+    height: 68px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .container
@@ -832,6 +975,8 @@
 
     .model-card
       margin: 0 20px 0 0
+      width: 227px
+      max-width: none
 
   .model-card
     width: 227px
@@ -841,6 +986,16 @@
 
   .selection-img
     right: -50px
+
+  .scroll-box-mobile .mCustomScrollBox, .scroll-box-mobile .mCSB_container
+    overflow: hidden
+
+  .similar-products .recommended-product-card
+    margin: 0 15px 0 0
+    max-width: 174px
+    min-width: 174px
+    &:last-child
+      margin: 0
 
 @media only screen and (max-width: 768px)
   .container
@@ -1231,7 +1386,144 @@
   .instagram-portfolio
     padding: 0 0 25px
 
+  .characteristics-product
+    margin: 30px 0 0
 
+  .nav-tabs .nav-link
+    padding: 0 0 15px
+    font-size: 17px
+
+  .nav-tabs .nav-item
+    margin: 0 45px 0 0
+
+  .tab-content
+    padding: 20px 0 0
+
+  .characteristics-box
+    h4
+      font-size: 17px
+      margin: 0 0 15px
+      line-height: 22px
+
+  .recommended-slider
+    display: flex
+    align-items: flex-start
+    padding: 0 0 42px
+
+  .recommended-product-card
+    padding: 0
+    width: 174px
+    margin: 0 15px 0 0
+
+  .recommended h3
+    font-size: 20px
+    margin: 0 0 20px
+    line-height: 26px
+
+  .recommended
+    margin: 40px 0 0
+
+  .gallery-product
+    margin: 0 0 30px
+    flex-direction: column
+    align-items: flex-start
+    max-width: 330px
+    width: 100%
+
+  .complete-product h3
+    font-size: 20px
+
+
+  .gallery-product-preview
+    max-height: none
+    width: 100%
+    display: flex
+    align-items: flex-start
+    touch-action: auto
+
+  .mcs-horizontal.slick-slider
+    .slick-track
+      width: 100% !important
+      transform: none !important
+    //.mCSB_container
+      //width: 100% !important
+    .slick-list
+      width: 100% !important
+      transform: none !important
+
+  .gallery-product-preview__item
+    margin: 0 10px 0 0
+    width: 100%
+    //padding: 0 5px
+    max-width: 58px
+    height: 65px
+
+  .gallery-product-max
+    padding: 0
+    width: 100%
+    margin: 0 0 10px
+
+  .gallery-product-max__item
+    height: 406px
+
+  .product-page
+    h1
+      font-size: 20px
+
+  .gallery-product-preview
+    order: 1
+    width: 100%
+    height: auto
+    max-height: none
+
+  .gallery-product-scroll__wrapper
+    display: flex
+    align-items: flex-start
+    width: 100%
+    padding: 0 0 30px
+
+  .advantages-product-item__icon
+    width: 30px
+    height: 30px
+    min-width: 30px
+    margin: 0 10px 0 0
+
+
+  .advantages-product-item
+    padding: 0 18px 0 0
+    &:last-child
+      padding: 0 0 0 22px
+      max-width: 160px
+
+  .dropdown-toggle__text-mob
+    display: block
+
+  .dropdown-toggle__text-tablet
+    display: none
+
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar
+    height: 2px
+    margin: 7px auto
+
+  .btn-select
+    padding: 0 20px 0 25px
+    height: 52px
+
+  .product-content__item .btn
+    padding: 0 15px
+    height: 52px
+
+  .complete-product__body .btn-add-basket
+    font-size: 14px
+    width: calc(100% - 62px)
+    margin: 0
+
+  .complete-product__body .add-favorite
+    padding: 14px 13px
+    height: 52px
+
+  .complete-product__body .btn-add-basket
+    height: 52px
 
 @media only screen and (max-width: 730px)
   .footer-box-contacts
@@ -1306,6 +1598,13 @@
     margin: 0 -16px
     padding: 0 0 0 16px
 
+  .complete-product__body
+    width: calc(100% - 105px)
+    padding: 0 0 0 11px
+
+  .complete-product__image
+    width: 105px
+    height: 128px
 
 @media only screen and (max-width: 576px)
   .header-bottom
@@ -1899,6 +2198,116 @@
     max-width: 350px
     margin: 0 auto 15px
 
+  .complete-product-wrapper
+    position: relative
+    padding: 0 0 65px
+    .btn-group
+      position: absolute
+      left: 0
+      bottom: 0
+
+  .breadcrumb
+    font-size: 14px
+
+  .breadcrumb-item + .breadcrumb-item::before
+    margin: 0 15px
+
+  .gallery-product
+    max-width: none
+    margin: 0 0 20px
+    position: relative
+
+  .btn-add-favorite-mob
+    display: flex
+    top: 16px
+    right: 16px
+    z-index: 1
+    position: absolute
+    width: 24px
+    height: 20px
+
+  .gallery-product-preview
+    display: none
+
+  .gallery-product-max__item
+    height: 552px
+
+  .gallery-product-max
+    margin: 0
+    .slick-dots
+      margin: 15px 0 0
+
+  .product-content__item-footer
+    font-size: 14px
+
+  .product-size, .btn-one-click
+    max-width: 331px
+
+  .product-content__item
+    .btn-group
+      width: 100%
+      max-width: 331px
+    .btn-group .btn, .btn-group .btn:not(:last-child):not(.dropdown-toggle), .btn-group .btn:not(:first-child)
+      margin: 0 0 10px
+      max-width: none
+      width: 100%
+    .add-favorite
+      display: none
+
+  .advantages-product-item:last-child
+    max-width: 189px
+    padding: 0 0 0 30px
+
+  .advantages-product-item
+    max-width: 259px
+    padding: 0 20px 0 0
+
+  .complete-product
+    margin: 40px 0
+    max-width: 331px
+
+  .characteristics-product
+    margin: 0
+
+  .nav-tabs .nav-item
+    margin: 0 25px 0 0
+
+  .nav-tabs
+    font-size: 14px
+    .nav-link
+      font-size: 14px
+
+
+
+  .tab-content
+    font-size: 14px
+    padding: 15px 0 0
+
+  .characteristics-box h4
+    font-size: 14px
+    margin: 0 0 15px
+
+  .recommended-section
+    margin: 40px 0 0
+    h3
+      margin: 0 0 30px
+      font-size: 20px
+      line-height: 26px
+
+  .recommended-product-card
+    width: 150px
+    .model-card__img
+      height: 180px
+    .price-wrapper
+      font-size: 14px
+    .model-card__title
+      font-size: 13px
+
+  .recommended-slider
+    padding: 0 0 30px
+
+
+
 @media only screen and (max-width: 480px)
   .container
     max-width: 472px
@@ -2181,6 +2590,12 @@
     .btn
       margin: 25px auto 0
 
+  .dropdown-menu-size-product
+    right: 0 !important
+    left: auto !important
+    transform: none !important
+    top: 100% !important
+
 @media only screen and (max-width: 375px)
   .header-box
     display: none
@@ -2312,6 +2727,69 @@
   .test-result-box .box-text
     text-align: left
 
+
+  .tabs-pane-title
+    display: block
+
+
+  .gallery-product
+    width: calc(100% + 32px)
+    margin: 0 -16px 20px
+
+  .gallery-product-max__item
+    height: 462px
+
+  .advantages-product-item
+    max-width: none
+    padding: 0
+    width: 100%
+    margin: 0 0 15px
+    &:last-child
+      max-width: none
+      width: 100%
+      padding: 0
+      margin: 0
+
+  .advantages-product-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .advantages-product-item__icon
+    display: none
+
+  .product-content__item
+    margin: 0 0 15px
+
+  .characteristics-product
+    .nav-tabs
+      display: none
+    .tab-pane
+      display: block
+      opacity: 1
+      padding: 20px 16px
+      width: calc(100% + 32px)
+      margin: 0 -16px
+      border-bottom: 1px solid rgba(#B0B1BF, .3)
+      &:first-child
+        border-top: 1px solid rgba(#B0B1BF, .3)
+    .tab-content
+      padding: 0
+      .box-text
+        margin: 0 0 5px
+        font-size: 14px
+
+  .characteristics-product__content
+    max-height: 72px
+    overflow: hidden
+
+  .characteristics-product__content.open
+    max-height: none
+
+
+
+@media only screen and (max-width: 340px)
+  .gallery-product-max__item
+    height: 394px
 
 @media only screen and (min-width: 420px)
   .d-xs-none

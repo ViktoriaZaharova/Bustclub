@@ -845,8 +845,13 @@ h4
 .models-slider
   .model-card
     margin: 0 auto 25px
+    max-width: 309px
+    width: calc(100% - 15px)
   .slick-arrow
     top: 40%
+  .model-card__img
+    height: 335px
+
 
 .model-card
   width: 100%
@@ -1301,6 +1306,17 @@ h4
   h3
     margin: 0
 
+.scroll-box-mobile
+  .mCustomScrollBox
+    padding: 0
+    margin: 0
+    &:before
+      display: none
+  .mCSB_container
+    overflow: visible
+  .mCustomScrollBox
+    overflow: visible
+
 //.seo-content
 .seo-content-box
   margin: 40px 0 0
@@ -1510,8 +1526,12 @@ h4
   color: rgba(#252634, .65)
   font-size: 16px
   line-height: 23px
+  flex-wrap: nowrap
+  overflow-x: auto
+  white-space: nowrap
   a
     color: rgba(#252634, .65)
+
     &:hover
       color: $accent
 
