@@ -4,14 +4,23 @@
 .title-line
   width: 100%
   display: flex
-  align-items: flex-end
+  align-items: center
+  margin: 0 0 20px
+
   h1
     width: fit-content
     margin: 0
 
+  .links-details__icon
+    margin: 0 0 0 10px
+
 .catalog-val
-  margin: 0 0 5px 20px
+  margin: 10px auto 0 20px
   color: rgba(#252634, .6)
+
+.catalog-page
+  .model-card
+    margin: 0
 
 .list-sales
   display: flex
@@ -19,11 +28,14 @@
   flex-wrap: wrap
   font-size: 14px
   font-weight: 500
+  margin: 0 0 20px
+
   li
     margin: 0 10px 10px 0
 
     &:last-child
       margin: 0 0 10px
+
     a
       padding: 11px 22px
       color: #fff
@@ -34,12 +46,14 @@
   padding: 0 0 0 10px
   margin: 10px 0 15px
   font-size: 16px
+
   li
     a
       padding: 7px 10px
       border-radius: 8px
       color: #0D0D0E
       width: fit-content
+
       &:hover
         background: #E95670
         color: #fff
@@ -63,6 +77,7 @@
   font-weight: 600
   font-size: 20px
   color: #0D0D0E
+
   &:hover
     color: $accent
 
@@ -70,15 +85,18 @@
   width: 100%
   font-size: 16px
   font-weight: 500
+
   li
     a
       padding: 7px 10px
       border-radius: 8px
       color: #0D0D0E
       width: fit-content
+
       &:hover
         background: #E95670
         color: #fff
+
     .dropdown-toggle
       &:hover
         &::after
@@ -95,6 +113,7 @@
 
 .sidebar-box
   margin: 0 0 20px
+
   &:last-child
     margin: 0
 
@@ -105,6 +124,7 @@
   font-weight: 500
   font-size: 16px
   margin: 0 0 0 auto
+
   &__icon
     width: 20px
     height: 20px
@@ -113,8 +133,10 @@
     display: flex
     align-items: center
     justify-content: center
+
   &:hover
     color: #252634
+
   &:focus
     color: #0D0D0E
 
@@ -124,11 +146,17 @@
   align-items: center
   flex-wrap: wrap
   margin: 0 0 15px
+
   h4
     margin: 0 15px 0 0
 
 .dropdown-filter
   margin: 0 10px 0 0
+
+.list-sorting__item
+  display: flex
+  align-items: center
+  flex-wrap: wrap
 
 
 .dropdown-filter-toggle
@@ -138,6 +166,7 @@
   color: #0D0D0E
   font-size: 16px
   font-weight: 500
+
   &:after
     width: 24px
     height: 24px
@@ -145,12 +174,15 @@
     border: none
     background: url("../img/arrow-bottom.svg") no-repeat center
       size: 100%
+
   &:hover
     border: 1px solid rgba(233, 86, 112, 0.3)
     color: #0D0D0E
+
   &:focus
     border: 1px solid rgba(176, 177, 191, 0.3)
     color: #0D0D0E
+
     &:after
       transform: rotate(180deg)
 
@@ -166,6 +198,7 @@
   left: 50% !important
   top: 100% !important
   transform: translateX(-50%) !important
+
   &:before
     content: ''
     width: 0
@@ -177,16 +210,20 @@
     transform: translateX(-50%)
     top: -7px
     position: absolute
+
   .btn
     margin: 0 auto
     height: 46px
     padding: 0 21px
     font-size: 14px
+
   .scroll-text
     height: auto
     max-height: 305px
+
   .list-checkbox
     margin: 0
+
     li
       display: flex
       align-items: center
@@ -194,15 +231,19 @@
 
   .checkbox-title
     margin: 0
+
   .mCustomScrollBox
     padding: 0
     margin: 0
+
     &:before
       display: none
+
   .mCSB_scrollTools
     left: auto
     width: 6px
     right: 0
+
   .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_draggerRail
     width: 6px
 
@@ -259,6 +300,7 @@
 
 .sorting-wrapper
   margin: 0 0 35px
+
   .links-details__icon
     margin: 0 0 0 10px
 
@@ -269,12 +311,16 @@
   margin: 0 auto 0 0
   font-size: 16px
   font-weight: 500
+
   li
     margin: 0 15px 0 0
+
     a
       color: rgba(#252634, .65)
+
       &:hover
         color: $accent
+
     .active
       color: $accent
 
@@ -283,6 +329,7 @@
   width: 100%
 
 .pagination
+  width: 100%
   border-radius: 0
   align-items: center
   justify-content: center
@@ -290,6 +337,7 @@
 
 .page-item
   margin: 0 5px 0 0
+
   &:last-child
     margin: 0
 
@@ -301,6 +349,7 @@
   color: #252634
   font-size: 16px
   font-weight: 500
+
   &__icon
     display: flex
     align-items: center
@@ -308,18 +357,22 @@
     width: 24px
     height: 24px
     padding: 7px
+
   &:hover
     color: $accent
+
   &:focus
     color: #DA3351
 
 .pagination-prev
   margin: 0 20px 0 0
+
   &__icon
     margin: 0 5px 0 0
 
 .pagination-next
   margin: 0 0 0 20px
+
   &__icon
     margin: 0 0 0 5px
 
@@ -336,9 +389,11 @@
   font-size: 17px
   font-weight: 600
   border: none
+
   &:hover
     background: rgba(#B0B1BF, .15)
     color: #252634
+
   &:focus
     background: $accent
     color: #fff
@@ -355,6 +410,7 @@
   margin: 0 0 40px
   display: flex
   align-items: stretch
+
   .main-slider-box__img
     max-width: 600px
     max-height: 670px
@@ -366,15 +422,18 @@
     display: flex
     align-items: flex-end
     justify-content: center
+
   .main-slider-box__content
     width: calc(100% - 600px)
     padding: 65px 0 50px
     max-width: none
     display: flex
     flex-direction: column
+
   .main-slider__title
     font-size: 70px
     line-height: 73px
+
   .box-text-info
     max-width: 785px
     margin: 35px 0 auto
@@ -382,10 +441,13 @@
     font-weight: 600
     color: #0D0D0E
     line-height: 27px
+
     p
       margin: 0 0 20px
+
       &:last-child
         margin: 0
+
   .box-text
     margin: 0
     font-size: 16px
@@ -406,22 +468,29 @@
 
 .catalog-info-box
   margin: 0 0 40px
+
   &:last-child
     margin: 0
+
   h3
     margin: 0 0 20px
     font-size: 28px
+
   h4
     margin: 30px 0 20px
     font-size: 20px
+
   .list-dots
     line-height: 23px
     color: $text
+
     strong
       color: #0D0D0E
       font-weight: 500
+
     li
       margin: 0 0 10px
+
       &:last-child
         margin: 0
 
@@ -435,8 +504,10 @@
   border-radius: 10px
   font-weight: 500
   font-size: 16px
+
   &:last-child
     margin: 0
+
   &__val
     margin: 0 0 0 5px
     display: flex
@@ -444,6 +515,7 @@
 
   .color-circle
     margin: 0 5px 0 0
+
     &:last-child
       margin: 0
 
@@ -464,6 +536,7 @@
 
 .filter__slider
   width: 250px
+
   .ui-widget.ui-widget-content
     background: rgba(#B0B1BF, .4)
     border: none
@@ -474,6 +547,7 @@
     height: 100%
     background: #E95670
     border-radius: 0
+
   .ui-slider-horizontal .ui-slider-handle
     width: 3px
     height: 20px
@@ -483,6 +557,7 @@
     margin-left: 0
     cursor: pointer
     outline: none
+
     &:focus
       outline: none
 
@@ -496,5 +571,205 @@
 
 .price-range-min
   right: 0
+
+.btn-filter
+  align-items: center
+  justify-content: center
+  fill: $accent
+  width: 24px
+  height: 24px
+  margin: 0 0 0 auto
+
+
+.box-content-hidden.open
+  max-height: none
+
+//filter mobile
+.filter-mobile
+  position: fixed
+  z-index: 10
+  display: none
+  top: 0
+  width: 100%
+  height: 100%
+  overflow-y: auto
+  background: #FFFFFF
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    background: #0D0D0E
+    color: #fff
+    padding: 15px 16px
+
+
+  &__footer
+    width: 100%
+    position: fixed
+    left: 0
+    bottom: 0
+    z-index: 3
+
+.btn-filter-close__icon
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 10px 0 0
+  cursor: pointer
+  padding: 3px
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 12px
+    width: 2px
+    height: 100%
+    background: #fff
+    border-radius: 1px
+
+  &:before
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(135deg)
+
+.clear-filter-all
+  color: #fff
+  margin: 0 0 0 auto
+  font-size: 14px
+  line-height: 17px
+
+  &:hover
+    color: $accent
+
+.filter-mobile__box
+  width: 100%
+  padding: 35px 16px
+
+  .price-filter
+    margin: 0 0 25px
+
+  h4
+    margin: 0 7px 0 0
+
+  .filter__slider
+    max-width: 390px
+    width: 100%
+
+.form-filter-mobile
+  button.btn
+    border-radius: 0
+    width: 100%
+    max-width: none
+
+.btn-filter-close
+  display: flex
+  align-items: center
+  color: #fff
+  font-size: 17px
+  font-weight: 600
+
+  .svg-icon
+    fill: #fff
+
+  &:hover
+    color: $accent
+
+
+.btn-filter-prev
+  .btn-filter-close__icon
+    &:before, &:after
+      display: none
+
+
+
+.form-filter-mobile
+  width: 100%
+  height: 100%
+  .label-checkbox span
+    margin: 0 5px 0 0
+  .checkbox-custom
+    position: relative
+    top: 0
+    left: 0
+    transform: none
+  .color-circle
+    margin: 0 8px
+  .checkbox-title
+    margin: 0
+  .inp-check:checked ~ .checkbox-title
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba(#E95670, .03)
+      z-index: -1
+
+
+.form-filter-mobile__category__links
+  position: relative
+  display: flex
+  align-items: center
+  color: #0D0D0E
+  font-size: 16px
+  font-weight: 500
+  overflow: hidden
+  cursor: pointer
+  padding: 20px 16px
+
+a.form-filter-mobile__category__links
+  &:hover
+    color: $accent
+
+
+.form-filter-mobile__category__icon
+  width: 24px
+  height: 24px
+  //margin: 0 0 0 auto
+  fill: $accent
+  padding: 6px 7px
+  position: absolute
+  right: 16px
+  top: 50%
+  transform: translate(0,-50%)
+
+.form-filter-mobile__category__val-clear
+  fill: #B0B1BF
+
+
+.form-filter-mobile__category
+  border-bottom: 1px solid rgba(#B0B1BF, .35)
+
+
+.filter-mobile__body
+  height: calc(100% - 63px)
+  overflow-y: auto
+  padding: 0 0 63px
+
+.form-filter-mobile__category-submenu
+  transition: .3s ease
+  position: fixed
+  right: -100%
+  top: 0
+  background: #fff
+  z-index: 3
+  width: 100%
+  height: 100%
+  .form-filter-mobile__category__links
+    border-bottom: 1px solid rgba(#B0B1BF, .35)
+    padding: 20px 16px
+
+.form-filter-mobile__category__name
+  margin: 0 5px 0 0
+  color: rgba(#252634, .6)
+  display: inline-block
 
 

@@ -26,9 +26,9 @@
 
 @media only screen and (max-width: 1540px)
   .model-card
-    max-width: 223px
+    //max-width: 223px
     &__img
-      height: 256px
+      //height: 256px
     &__body
       padding: 10px 0 0
     &__title
@@ -193,7 +193,8 @@
   .product-content__item
     margin: 0 0 20px
 
-
+  .filter__slider
+    width: 165px
 
 @media only screen and (max-width: 1300px)
   .form-search
@@ -299,6 +300,7 @@
 
   .sidebar-menu, .sidebar-submenu
     font-size: 14px
+    line-height: 17px
 
   .sidebar-menu li a
     padding: 4px 6px
@@ -704,11 +706,70 @@
   .characteristics-product
     margin: 45px 0 0
 
-  .models-slider .model-card__img
+  .model-card__img
     height: 256px
 
   .gallery-product-preview__item
     height: 68px
+
+  .sidebar-category
+    margin: 0 0 15px
+    font-size: 17px
+
+  .title-line
+    margin: 0 0 15px
+
+  .catalog-banner
+    min-height: 392px
+    margin: 0 0 40px
+    .main-slider-box__img
+      max-width: 385px
+      max-height: 430px
+      height: 430px
+    .main-slider-box__content
+      padding: 40px 0 30px
+      width: calc(100% - 385px)
+    .main-slider__title
+      font-size: 40px
+      line-height: 45px
+    .box-text-info
+      margin: 20px 0 35px
+      font-size: 14px
+      line-height: 20px
+    .box-text
+      font-size: 14px
+      line-height: 24px
+
+
+  .slogan
+    margin: 10px 0 0
+    font-size: 14px
+    padding: 8px 15px
+
+  .pagination-nav
+    margin: 0 auto 15px
+
+  .dropdown-filter-toggle
+    padding: 5px 10px
+    font-size: 14px
+
+  .btn-clear-filter
+    font-size: 14px
+
+  .list-sorting
+    font-size: 14px
+    li
+      margin: 0 10px 0 0
+
+  .sorting-wrapper
+    margin: 0 0 25px
+
+  .filter-wrapper
+    margin: 0 0 10px
+
+  .filter-wrapper h4, .sorting-wrapper h4
+    margin: 0 10px 0 0
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
@@ -900,6 +961,13 @@
     .box-text
       margin: 0 0 48px
 
+  .catalog-info
+    margin: 45px 0
+
+  .catalog-banner .box-text
+    margin: 0
+    font-size: 14px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 992px)
   .menu li
@@ -932,6 +1000,11 @@
 
   .mb-lg0
     margin-bottom: 0
+
+  .list-sorting__item
+    width: 100%
+    order: 1
+    margin: 15px 0 0
 
 @media only screen and (max-width: 900px)
   .footer-box-callback
@@ -978,9 +1051,6 @@
       width: 227px
       max-width: none
 
-  .model-card
-    width: 227px
-
   .models
     padding: 0 0 40px
 
@@ -996,6 +1066,20 @@
     min-width: 174px
     &:last-child
       margin: 0
+
+  .filter-wrapper h4, .sorting-wrapper h4
+    font-size: 14px
+
+  .list-tags
+    top: 5px
+    right: 5px
+
+  .list-sorting
+    margin: 0
+    li
+      margin: 0 5px 0 0
+      &:last-child
+        margin: 0
 
 @media only screen and (max-width: 768px)
   .container
@@ -1533,6 +1617,47 @@
   .complete-product__body .btn-add-basket
     height: 52px
 
+  .model-card__img
+    height: 257px
+
+  .title-line
+    .links-details
+      font-size: 14px
+
+  .catalog-info
+    margin: 40px 0
+
+  .catalog-banner
+    margin: 0 0 30px
+    min-height: auto
+    .main-slider-box__img
+      max-width: 304px
+      height: 340px
+      right: -34px
+    .main-slider-box__content
+      padding: 35px 0 25px
+      width: calc(100% - 280px)
+    .main-slider__title
+      font-size: 30px
+      line-height: 33px
+    .box-text-info
+      margin: 20px 0 45px
+    .box-text
+      margin: 0
+      font-size: 14px
+
+  .catalog-info-box h4
+    margin: 20px 0
+    font-size: 17px
+    line-height: 22px
+
+  .catalog-info-box h3
+    font-size: 20px
+
+  .pagination-nav
+    margin: 0 auto
+
+
 @media only screen and (max-width: 730px)
   .footer-box-contacts
     width: 100%
@@ -1613,6 +1738,16 @@
   .complete-product__image
     width: 105px
     height: 128px
+
+  .model-card__img
+    height: 180px
+
+  .dropdown-filter
+    margin: 0 5px 5px 0
+
+  .filter-wrapper
+    h4
+      margin: 0 10px 5px 0
 
 @media only screen and (max-width: 576px)
   .header-bottom
@@ -2317,6 +2452,51 @@
   .product-content .info-box
     font-size: 13px
 
+  .list-sales
+    font-size: 13px
+    li
+      margin: 0 5px 5px 0
+      a
+        padding: 9px 18px
+
+  .catalog-val
+    font-size: 14px
+    margin: 5px 0 0 10px
+
+  .breadcrumb
+    margin: 15px 0
+    padding: 0 0 5px
+
+  .product-card__col
+    margin: 0 0 25px
+    flex: 0 0 33.333333%
+    width: 33.333333%
+
+  .catalog-banner
+    min-height: auto
+    padding: 35px 68px 25px 35px
+    .box-text-info
+      margin: 20px 0
+      font-size: 14px
+      line-height: 20px
+    .box-text
+      font-size: 14px
+      line-height: 24px
+    .main-slider-box__img
+      display: none
+    .main-slider-box__content
+      width: 100%
+      padding: 0
+
+  .list-tags
+    font-size: 12px
+    li
+      padding: 4px 8px 6px
+
+  .catalog-info-box__wrapper
+    max-height: 153px
+    overflow: hidden
+
 @media only screen and (max-width: 480px)
   .container
     max-width: 472px
@@ -2353,6 +2533,10 @@
 
   .test-modal .modal-title
     text-align: left
+
+  .catalog-info-box__wrapper
+    margin: 0 0 15px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -2489,9 +2673,8 @@
       margin: 0
 
   .links-details
-    display: block
+    display: flex
     span
-      display: inline
       line-height: 17px
       padding: 0 0 2px
 
@@ -2614,6 +2797,32 @@
     text-align: left
     margin: 0
     font-size: 13px
+
+  .product-card__col
+    width: 50%
+    flex: 0 0 50%
+
+  .catalog-info-box__wrapper
+    margin: 0 0 15px
+    max-height: 237px
+
+  .catalog-banner
+    margin: 0 -16px 25px
+    padding: 35px 16px 25px
+    width: calc(100% + 32px)
+    border-radius: 0
+
+  .pagination-prev__text, .pagination-next__text
+    display: none
+
+  .pagination-prev
+    margin: 0 15px 0 0
+
+  .pagination-next
+    margin: 0 0 0 15px
+
+
+
 
 @media only screen and (max-width: 375px)
   .header-box
@@ -2801,8 +3010,11 @@
     max-height: 72px
     overflow: hidden
 
-  .characteristics-product__content.open
-    max-height: none
+  .pagination-prev
+    margin: 0 5px 0 0
+
+  .pagination-next
+    margin: 0 0 0 5px
 
 
 
@@ -2823,13 +3035,5 @@
     flex: 0 0 58.333333%
     width: 58.333333%
 
-@media only screen and (min-width: 576px)
-  .col-sm-4
-    flex: 0 0 33.333333%
-    width: 33.333333%
-
-  .col-sm-8
-    flex: 0 0 66.666667%
-    width: 66.666667%
 
 
