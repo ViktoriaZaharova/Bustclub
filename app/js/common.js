@@ -63,7 +63,6 @@ $('.gallery-product-preview').slick({
                 verticalSwiping: false,
                 variableWidth: true,
                 infinite: false,
-                arrows: false,
             }
         }
     ]
@@ -169,22 +168,12 @@ $(window).on('load resize', function() {
 
         });
 
-        $(".mcs-horizontal").mCustomScrollbar('destroy');
         $(".scroll-box-about").mCustomScrollbar('destroy');
 
     } else {
         $(".recommended-slider.slick-initialized").slick("unslick");
         $(".scroll-box-about").mCustomScrollbar({
             axis: "x"
-        });
-
-        $(".mcs-horizontal").mCustomScrollbar({
-            axis: "x",
-            autoExpandScrollbar: true,
-            advanced: { autoExpandHorizontalScroll: true },
-            updateOnContentResize: true,
-            scrollbarPosition: "outside",
-            scrollInertia: 200
         });
 
     }

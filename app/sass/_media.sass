@@ -1440,16 +1440,24 @@
     display: flex
     align-items: flex-start
     touch-action: auto
+    .slick-prev
+      left: 0
+      .svg-icon
+        transform: rotate(0)
+    .slick-arrow
+      padding: 5px
+      z-index: 1
+      top: 50%
+      transform: translate(0,-50%)
+      width: 20px
+      height: 20px
+    .slick-next
+      right: 0
+      left: auto
+      .svg-icon
+        transform: rotate(0deg)
 
-  .mcs-horizontal.slick-slider
-    .slick-track
-      width: 100% !important
-      transform: none !important
-    //.mCSB_container
-      //width: 100% !important
-    .slick-list
-      width: 100% !important
-      transform: none !important
+
 
   .gallery-product-preview__item
     margin: 0 10px 0 0
@@ -2306,7 +2314,8 @@
   .recommended-slider
     padding: 0 0 30px
 
-
+  .product-content .info-box
+    font-size: 13px
 
 @media only screen and (max-width: 480px)
   .container
@@ -2595,6 +2604,16 @@
     left: auto !important
     transform: none !important
     top: 100% !important
+
+  .product-content .info-box
+    flex-direction: row
+    align-items: center
+    text-align: left
+
+  .product-content .info-box .info-box__content
+    text-align: left
+    margin: 0
+    font-size: 13px
 
 @media only screen and (max-width: 375px)
   .header-box

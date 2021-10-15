@@ -4211,6 +4211,18 @@ footer {
 .product-content {
   margin: 0 0 75px;
   min-height: 750px; }
+  .product-content .info-box {
+    margin: 10px 0 0;
+    color: #E95670;
+    font-size: 14px;
+    font-weight: 500; }
+    .product-content .info-box .info-box__icon {
+      width: 25px;
+      height: 25px;
+      padding: 7px; }
+    .product-content .info-box .info-box__content {
+      width: calc(100% - 25px);
+      padding: 0 0 0 10px; }
 
 .product-content__item {
   margin: 0 0 30px; }
@@ -4468,7 +4480,10 @@ footer {
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin: 0 0 30px; }
+  .complete-product-wrapper:last-child {
+    margin: 0; }
 
 .complete-product__image {
   max-width: 242px;
@@ -5846,14 +5861,25 @@ footer {
             align-items: flex-start;
     -ms-touch-action: auto;
         touch-action: auto; }
-  .mcs-horizontal.slick-slider .slick-track {
-    width: 100% !important;
-    -webkit-transform: none !important;
-            transform: none !important; }
-  .mcs-horizontal.slick-slider .slick-list {
-    width: 100% !important;
-    -webkit-transform: none !important;
-            transform: none !important; }
+    .gallery-product-preview .slick-prev {
+      left: 0; }
+      .gallery-product-preview .slick-prev .svg-icon {
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
+    .gallery-product-preview .slick-arrow {
+      padding: 5px;
+      z-index: 1;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      width: 20px;
+      height: 20px; }
+    .gallery-product-preview .slick-next {
+      right: 0;
+      left: auto; }
+      .gallery-product-preview .slick-next .svg-icon {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); }
   .gallery-product-preview__item {
     margin: 0 10px 0 0;
     width: 100%;
@@ -6573,7 +6599,9 @@ footer {
     .recommended-product-card .model-card__title {
       font-size: 13px; }
   .recommended-slider {
-    padding: 0 0 30px; } }
+    padding: 0 0 30px; }
+  .product-content .info-box {
+    font-size: 13px; } }
 
 @media only screen and (max-width: 480px) {
   .container {
@@ -6812,7 +6840,20 @@ footer {
     left: auto !important;
     -webkit-transform: none !important;
             transform: none !important;
-    top: 100% !important; } }
+    top: 100% !important; }
+  .product-content .info-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left; }
+  .product-content .info-box .info-box__content {
+    text-align: left;
+    margin: 0;
+    font-size: 13px; } }
 
 @media only screen and (max-width: 375px) {
   .header-box {
