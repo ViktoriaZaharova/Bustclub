@@ -876,184 +876,91 @@
   </div>
 </header>
 
-<section class="section-page blog-page basket-page pt-50">
+<section class="section-page cabinet-page cabinet-page-favorites">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-12 col-lg-8">
-        <h1>Корзина</h1>
-      </div>
-      <div class="col-12 col-sm-6 col-md-12 col-lg-8 mb-sm0 mb-35 d-none d-sm-flex">
-        <a href="#" class="links-clear" data-toggle="modal" data-target="#basketModal">
-          <span class="links-clear__icon"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#delete"></use></svg></span>
-          <span class="links-clear__text">Очистить корзину</span>
-        </a>
+    <div class="row cabinet-page-menu">
+      <div class="col-12">
+        <div class="cabinet-page-menu__title">Личный кабинет</div>
+
+        <ul class="cabinet-menu">
+          <li><a href="cabinet-history.html">История заказов <span class="icon-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a></li>
+          <li><a href="cabinet-data.html">Мои данные <span class="icon-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a></li>
+          <li><a href="cabinet-favorites.html">Избранное <span class="icon-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a></li>
+          <li><a href="index.html">Выйти</a></li>
+        </ul>
       </div>
     </div>
+    <div class="row cabinet-page-content">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 d-block d-sm-none">
+            <a href="#" class="links-prev-modal btn-cabinet-menu">
+                  <span class="links-prev-modal__icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-prev"></use></svg></span>
+              <span class="links-prev-modal__text">Личный кабинет</span>
+            </a>
+            <h1>Мои данные</h1>
+          </div>
 
-    <div class="row">
-      <div class="col-12 col-lg-8 mb-30 mb-xs-20">
-        <div class="basket-card-return">
-          <a href="#" class="basket-card-return__photo"><img src="img/basket1.jpg" alt=""></a>
-          <a href="#" class="btn-return">
-            <span class="btn-return__icon"><img src="img/loader.svg" alt=""></span>
-            <span class="btn-return__text">Вернуть</span>
-          </a>
+          <div class="col-12 d-none d-sm-block">
+            <h1>Личный кабинет</h1>
+          </div>
         </div>
 
-        <div class="basket-card">
-          <a href="product.html" class="basket-card__img"><img src="img/basket2.jpeg" alt=""></a>
-          <div class="basket-card__body">
-            <a href="product.html" class="basket-card__title">Бесшовные трусы Bonded Hipster (Black)</a>
-            <div class="article">Артикул: 24385.43</div>
-            <div class="basket-card__size">
-              <div class="price-wrapper d-flex d-sm-none">
-                <div class="new-price">3 950 ₽</div>
-                <div class="old-price">5 800 ₽</div>
-              </div>
-              <p>100 FF</p>
-              <a href="#" class="links-details d-none d-sm-flex"><span class="links-details__text">Изменить размер / цвет</span></a>
+        <div class="row">
+          <div class="col-12 col-sm-3 col-xl-2 d-none d-sm-block">
+            <div class="sidebar-cabinet">
+              <ul class="cabinet-menu">
+                <li><a href="cabinet-history.html">История заказов</a></li>
+                <li><a href="cabinet-data.html">Мои данные</a></li>
+                <li><a href="cabinet-favorites.html">Избранное</a></li>
+                <li><a href="index.html">Выйти</a></li>
+              </ul>
             </div>
-            <a href="#" class="links-details d-flex d-sm-none"><span class="links-details__text">Изменить</span></a>
           </div>
 
-          <div class="amount">
-            <span class="down"><svg class="svg-icon"><use xlink:href="img/sprite.svg#minus"></use></svg></span>
-            <input type="text" value="1"/>
-            <span class="up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#plus"></use></svg></span>
-          </div>
-
-          <div class="price-wrapper d-none d-sm-flex">
-            <div class="new-price">3 950 ₽</div>
-            <div class="old-price">5 800 ₽</div>
-          </div>
-
-          <a href="#" class="btn-add-favorite active"></a>
-
-          <a href="#" class="btn-delete">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#delete"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="basket-card">
-          <a href="product.html" class="basket-card__img"><img src="img/basket3.jpg" alt=""></a>
-          <div class="basket-card__body">
-            <a href="product.html" class="basket-card__title">Браллет без костей Adriana (Lace Bralette) (Blue)</a>
-            <div class="article">Артикул: 24385.43</div>
-            <div class="basket-card__size">
-              <div class="price-wrapper d-flex d-sm-none">
-                <div class="new-price">3 950 ₽</div>
-                <div class="old-price">5 800 ₽</div>
-              </div>
-              <p>100 FF</p>
-              <a href="#" class="links-details d-none d-sm-flex"><span class="links-details__text">Изменить размер / цвет</span></a>
-            </div>
-            <a href="#" class="links-details d-flex d-sm-none"><span class="links-details__text">Изменить</span></a>
-          </div>
-
-          <div class="amount">
-            <span class="down"><svg class="svg-icon"><use xlink:href="img/sprite.svg#minus"></use></svg></span>
-            <input type="text" value="1"/>
-            <span class="up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#plus"></use></svg></span>
-          </div>
-
-          <div class="price-wrapper d-none d-sm-flex">
-            <div class="price">4 100 ₽</div>
-          </div>
-
-          <a href="#" class="btn-add-favorite"></a>
-
-          <a href="#" class="btn-delete">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#delete"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-
-      <div class="col-12 d-block d-xs-none">
-        <a href="#" class="links-clear" data-toggle="modal" data-target="#basketModal">
-          <span class="links-clear__icon"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#delete"></use></svg></span>
-          <span class="links-clear__text">Очистить корзину</span>
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-4 mb-30 mb-md-40">
-        <form method="post" class="total-basket">
-          <div class="row">
-            <div class="col-12 col-sm-7 col-md-7 col-lg-12">
-              <div class="total-basket-box">
-                <h3>Сумма покупок: 23 550 ₽ </h3>
-                <p>До бесплатной доставки осталось: <span> 2 344 ₽ </span></p>
-              </div>
-              <div class="total-basket-box">
-                <h3>Способ доставки:</h3>
-                <ul class="list-checkbox">
-                  <li>
-                    <label class="label-checkbox">
-                      <span class="checkbox-title">Курьером по москве</span>
-                      <input type="radio" name="radio" class="inp-check">
-                      <span class="checkbox-custom"></span>
-                      <span class="checkbox-text">
-                    <span>Бесплатно при заказе от 10 000 руб</span>
-                    <span>Стоимость доставки -  350 руб</span>
-                  </span>
+          <div class="col-12 col-sm-9 col-xl-10">
+            <div class="cabinet-page-favorites__wrapper">
+              <div class="row">
+                <div class="col-12 col-xl-11">
+                  <form method="post" class="form-cabinet form form-entrance">
+                    <label class="label-info">
+                      <input type="text" name="first_name" placeholder="Фамилия">
                     </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox">
-                      <span class="checkbox-title">Самовывоз</span>
-                      <input type="radio" name="radio" class="inp-check">
-                      <span class="checkbox-custom"></span>
-                      <span class="checkbox-text">
-                    <span>В пунктах выдачи всегда бесплатно</span>
-                  </span>
+                    <label class="label-info">
+                      <input type="text" name="name" placeholder="Ирина">
                     </label>
-                  </li>
-                  <li>
-                    <label class="label-checkbox">
-                      <span class="checkbox-title">Доставка по России</span>
-                      <input type="radio" name="radio" class="inp-check">
-                      <span class="checkbox-custom"></span>
-                      <span class="checkbox-text">
-                    <span>Стоимость доставки стоимость -  350 руб</span>
-                  </span>
+                    <label class="label-info">
+                      <input type="text" name="last_name" placeholder="Игоревна">
                     </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-12 col-sm-5 col-md-5 col-lg-12">
-              <div class="total-basket__wrap">
-                <p>Доставка: <span>350 ₽</span></p>
-                <div class="commission">
-                  <div class="dropdown dropleft">
-                    <a href="#" class="links-dropdown dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Комиссия оплаты:</a>
-                    <div class="dropdown-menu dropdown-menu-basket" aria-labelledby="dropdownMenuButton">
-                      <div class="box-text">
-                        <p>При оплате онлайн взимается комиссия за обработку платежа в размере 4% от суммы заказа. При
-                          возврате средств комиссия не возвращается.</p>
-                      </div>
-                      <a href="#" class="links-details"><span class="links-details__text">Читать подробнее</span></a>
+                    <label class="label-phone error-input">
+                      <input type="text" name="phone" placeholder="+ 375 00 000 00 00" required>
+                      <small class="form-text error-input-text">заполните номер телефона</small>
+                    </label>
+                    <label class="label-address">
+                      <input type="text" name="address" placeholder="Минск, пр Независимости, 45 ">
+                    </label>
+                    <div class="form-group">
+                      <p><span>Пароль:</span>
+                        <a href="#" class="links-details d-inline"><span class="links-details__text">Изменить</span></a>
+                      </p>
+                      <p><span>Email:</span>
+                        <a href="mailto:blabla@gmail.com" class="mail-form d-inline">blabla@gmail.com</a></p>
                     </div>
-                  </div>
-                  <div class="commission-val"> 150 ₽</div>
-                </div>
 
-                <div class="total-sum">Итого: 26 050 ₽</div>
-              </div>
-              <div class="total-basket__footer">
-                <label class="label-promo"><input type="text" placeholder="Промокод" name="promocode"></label>
-                <button type="submit" class="btn btn-accent">Оформить заказ</button>
+                    <button class="btn btn-border-red btn-submit" type="submit">Сохранить</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
+
 
   </div>
 </section>
@@ -1237,76 +1144,6 @@
   </div>
 </footer>
 
-
-<!-- Модальное окно -->
-<div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close-modal"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3 class="modal-title">Вы уверены, что хотите
-          очистить корзину?</h3>
-        <div class="box-text text-center">
-          <p>Это действие нельзя будет отменить</p>
-        </div>
-        <div class="btn-group">
-          <a href="#" class="btn btn-border-red">Очистить</a>
-          <button type="button" class="btn btn-accent" data-dismiss="modal">Отмена</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Модальное окно -->
-<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close-modal"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3 class="modal-title">Подписаться на товар</h3>
-        <div class="box-text text-center">
-          <p>К сожалению, сейчас этого размера нет в наличии. Укажите свой Email, и мы напишем вам, когда нужный размер
-            появится в наличии.</p>
-        </div>
-        <form method="post" class="form-subscribe form">
-          <label>
-            <input type="text" placeholder="Введите свой Email">
-          </label>
-          <button type="submit" class="btn btn-accent">Подписаться</button>
-
-          <div class="consent">
-            Нажимая кнопку, вы даете согласие на
-            <a href="https://bust-club.com/personal" target="_blank" class="links-details d-inline">
-              <span class="links-details__text">обработку</span>
-              <span class="links-details__text">персональных данных</span>
-            </a>
-            и соглашаетесь с
-            <a href="https://bust-club.com/privacypolicy" target="_blank" class="links-details d-inline">
-              <span class="links-details__text">политикой сайта</span>
-            </a>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"

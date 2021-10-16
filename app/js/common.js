@@ -367,3 +367,21 @@ $('.btn-filter-close__mob').on('click', function (e) {
     e.preventDefault();
     $('.filter-mobile').fadeOut();
 });
+
+
+// активная ссылка меню
+$('.cabinet-menu li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location === link) {
+        $(this).addClass('active');
+    }
+});
+// end
+
+// mobile cabinet menu
+$('.btn-cabinet-menu').on('click', function (e) {
+    e.preventDefault();
+    $('.cabinet-page-menu').css('display', 'flex');
+    $('.cabinet-page-content').css('display', 'none');
+});

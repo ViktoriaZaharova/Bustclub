@@ -893,6 +893,9 @@
         <a href="#" data-toggle="modal" data-target="#addProductModal" class="btn btn-accent mb-35">Товар-модалка-добавлен в корзину</a>
         <a href="#" data-toggle="modal" data-target="#subscribeModal" class="btn btn-accent mb-35">Окно Подписаться на товар</a>
         <a href="#" data-toggle="modal" data-target="#subscribeResultModal" class="btn btn-accent mb-35">Окно Подписка оформлена</a>
+        <a href="#" data-toggle="modal" data-target="#passwordChangeModal2" class="btn btn-accent mb-35">Изменение пароля Cabinet</a>
+        <a href="#" data-toggle="modal" data-target="#applicationModal" class="btn btn-accent mb-35">Заявка отправлена</a>
+        <a href="#" data-toggle="modal" data-target="#oneClickModal" class="btn btn-accent mb-35">Окно Купить в 1 клик</a>
       </div>
     </div>
   </div>
@@ -1076,7 +1079,6 @@
     </div>
   </div>
 </footer>
-
 
 
 <!-- Модальное окно -->
@@ -2080,6 +2082,144 @@
           <p>Спасибо! Ожидайте письма на почту, как только товар появится в наличии.</p>
         </div>
         <div class="status-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#check"></use></svg></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="passwordChangeModal2" tabindex="-1" aria-labelledby="passwordChangeModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Изменение пароля</h3>
+
+        <form method="post" class="form-entrance form">
+          <label>
+            <input type="password" class="input-password" placeholder="Введите текущий пароль" name="password" required>
+            <span class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view-off"></use></svg></span>
+          </label>
+          <label>
+            <input type="password" class="input-password" placeholder="Придумайте новый пароль" name="new_password" required>
+            <span class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view-off"></use></svg></span>
+          </label>
+          <label>
+            <input type="password" class="input-password" placeholder="Повторите новый пароль" name="double_password"
+                   required>
+            <span class="btn-view-password"><svg class="svg-icon"><use xlink:href="img/sprite.svg#view-off"></use></svg></span>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Изменить пароль</button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Ваша заявка отправлена</h3>
+        <div class="box-text text-center">
+          <p>Спасибо! Ожидайте звонка менеджера <br>
+            в ближайшее время</p>
+        </div>
+        <div class="status-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#check"></use></svg></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-order" id="oneClickModal" tabindex="-1" aria-labelledby="oneClickModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title">Введите ваши данные для покупки</h3>
+
+        <div class="basket-card basket-card-modal">
+          <a href="product.html" class="basket-card__img"><img src="img/basket1.jpg" alt=""></a>
+          <div class="basket-card__body">
+            <a href="product.html" class="basket-card__title">Dana Strapless (BLACK)</a>
+            <div class="article">Артикул: 9685.43</div>
+
+            <div class="basket-card__size">
+              <div class="price-wrapper d-flex d-sm-none">
+                <div class="price">15 500 ₽</div>
+              </div>
+              <p>90 E</p>
+              <a href="#" class="links-details d-none d-sm-flex"><span class="links-details__text">Изменить размер / цвет</span></a>
+            </div>
+            <a href="#" class="links-details d-flex d-sm-none"><span class="links-details__text">Изменить</span></a>
+          </div>
+
+          <div class="amount">
+            <span class="down"><svg class="svg-icon"><use xlink:href="img/sprite.svg#minus"></use></svg></span>
+            <input type="text" value="1"/>
+            <span class="up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#plus"></use></svg></span>
+          </div>
+
+
+          <div class="price-wrapper d-none d-sm-flex">
+            <div class="price">15 500 ₽</div>
+          </div>
+
+        </div>
+
+        <form method="post" class="form-entrance form">
+          <label>
+            <input type="text" placeholder="Введите свое имя" name="name" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Введите свой телефон" name="phone" required>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+
+          <div class="box-text box-text-entrance">
+            <p>С вами свяжется наш менеджер в близжайшее время</p>
+          </div>
+
+          <div class="consent">
+            Нажимая кнопку, вы даете согласие на
+            <a href="https://bust-club.com/personal" target="_blank" class="links-details d-inline">
+              <span class="links-details__text">обработку</span>
+              <span class="links-details__text">персональных данных</span>
+            </a>
+            и соглашаетесь с
+            <a href="https://bust-club.com/privacypolicy" target="_blank" class="links-details d-inline">
+              <span class="links-details__text">политикой сайта</span>
+            </a>
+          </div>
+        </form>
       </div>
 
     </div>
