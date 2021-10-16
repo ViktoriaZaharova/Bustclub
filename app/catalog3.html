@@ -402,12 +402,7 @@
           <div class="form-filter-mobile__category__links form-filter-mobile__category__links-dropdown">
             <div class="form-filter-mobile__category__name">Сортировать по:</div>
             <div class="form-filter-mobile__category__val">Популярности</div>
-            <a href="#" class="form-filter-mobile__category__icon form-filter-mobile__category__val-clear">
-              <svg class="svg-icon">
-                <use
-                    xlink:href="img/sprite.svg#close"></use>
-              </svg>
-            </a>
+            <a href="#" class="form-filter-mobile__category__icon form-filter-mobile__category__val-clear"></a>
           </div>
           <div class="form-filter-mobile__category-submenu">
             <div class="filter-mobile__head">
@@ -433,14 +428,9 @@
 
         <div class="form-filter-mobile__category">
           <div class="form-filter-mobile__category__links form-filter-mobile__category__links-dropdown">
-            <div class="form-filter-mobile__category__name">Размер</div>
-            <div class="form-filter-mobile__category__val"></div>
-            <a href="#" class="form-filter-mobile__category__icon">
-              <svg class="svg-icon">
-                <use
-                    xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
+            <div class="form-filter-mobile__category__name">Размер:</div>
+            <div class="form-filter-mobile__category__val">70H, 75Н, 80H, 85H ...</div>
+            <a href="#" class="form-filter-mobile__category__icon form-filter-mobile__category__val-clear"></a>
           </div>
           <div class="form-filter-mobile__category-submenu">
             <div class="filter-mobile__head">
@@ -551,13 +541,12 @@
         <div class="form-filter-mobile__category">
           <div class="form-filter-mobile__category__links form-filter-mobile__category__links-dropdown">
             <div class="form-filter-mobile__category__name">Цвет:</div>
-            <div class="form-filter-mobile__category__val"></div>
-            <a href="#" class="form-filter-mobile__category__icon">
-              <svg class="svg-icon">
-                <use
-                    xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
+            <div class="form-filter-mobile__category__val">
+                <div class="color-circle color-circle-black"></div>
+                <div class="color-circle color-circle-red"></div>
+                <div class="color-circle color-circle-blue-dark"></div>
+            </div>
+            <a href="#" class="form-filter-mobile__category__icon form-filter-mobile__category__val-clear"></a>
           </div>
           <div class="form-filter-mobile__category-submenu">
             <div class="filter-mobile__head">
@@ -660,13 +649,8 @@
         <div class="form-filter-mobile__category">
           <div class="form-filter-mobile__category__links form-filter-mobile__category__links-dropdown">
             <div class="form-filter-mobile__category__name">Бренд</div>
-            <div class="form-filter-mobile__category__val"></div>
-            <a href="#" class="form-filter-mobile__category__icon">
-              <svg class="svg-icon">
-                <use
-                    xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
+            <div class="form-filter-mobile__category__val">Panache, Empreinte ...</div>
+            <a href="#" class="form-filter-mobile__category__icon form-filter-mobile__category__val-clear"></a>
           </div>
           <div class="form-filter-mobile__category-submenu">
             <div class="filter-mobile__head">
@@ -1255,13 +1239,24 @@
     </div>
 
     <div class="row">
-      <div class="col-12 mb-20">
+      <div class="col-12">
         <div class="title-line">
           <h1>Для полных</h1>
           <div class="catalog-val">1355 товаров</div>
+
+          <a href="#" class="links-details d-none d-sm-flex d-xl-none">
+            <span class="links-details__text">Как подобрать белье</span>
+            <span class="links-details__icon">?</span>
+          </a>
+
+          <a href="#" class="btn-filter d-flex d-sm-none">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#filter"></use>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="col-12 mb-20">
+      <div class="col-12">
         <ul class="list-sales">
           <li><a href="#">Летняя коллекция</a></li>
           <li><a href="#">Купальники на скидке</a></li>
@@ -1270,7 +1265,7 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-2 col-md-3">
+      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
         <div class="sidebar">
           <div class="sidebar-box">
             <a href="#" class="sidebar-category">Бюстгальтеры</a>
@@ -1344,44 +1339,46 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-10 col-md-9">
-        <div class="row">
+      <div class="col-12 col-xl-10 col-lg-9 col-md-8 col-sm-8">
+        <div class="row d-none d-sm-flex">
           <div class="col-12">
             <div class="filter-wrapper">
               <h4>Фильтр:</h4>
 
-              <div class="filter-result-box">
-                <p>размер: </p>
-                <div class="filter-result-box__val">70H, 75Н, 80H, 85H, 85D ...</div>
-                <a href="#" class="btn-delete-filter-result">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-              </div>
-
-              <div class="filter-result-box">
-                <p>цвет: </p>
-                <div class="filter-result-box__val">
-                  <div class="color-circle color-circle-black"></div>
-                  <div class="color-circle color-circle-red"></div>
-                  <div class="color-circle color-circle-blue-dark"></div>
+              <div class="filter-wrapper__list">
+                <div class="filter-result-box">
+                  <p>размер: </p>
+                  <div class="filter-result-box__val">70H, 75Н, 80H, 85H, 85D ...</div>
+                  <a href="#" class="btn-delete-filter-result">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                  </a>
                 </div>
-                <a href="#" class="btn-delete-filter-result">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-              </div>
 
-              <div class="filter-result-box">
-                <p>бренд: </p>
-                <div class="filter-result-box__val">5</div>
-                <a href="#" class="btn-delete-filter-result">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
+                <div class="filter-result-box">
+                  <p>цвет: </p>
+                  <div class="filter-result-box__val">
+                    <div class="color-circle color-circle-black"></div>
+                    <div class="color-circle color-circle-red"></div>
+                    <div class="color-circle color-circle-blue-dark"></div>
+                  </div>
+                  <a href="#" class="btn-delete-filter-result">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="filter-result-box">
+                  <p>бренд: </p>
+                  <div class="filter-result-box__val">5</div>
+                  <a href="#" class="btn-delete-filter-result">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div class="price-filter">
@@ -1392,7 +1389,7 @@
                 </div>
               </div>
 
-              <a href="#" class="btn-clear-filter">
+              <a href="#" class="btn-clear-filter d-none d-sm-flex d-lg-none d-xl-flex">
                 <span class="btn-clear-filter__text">очистить фильтр</span>
                 <span class="btn-clear-filter__icon"><svg class="svg-icon"><use
                     xlink:href="img/sprite.svg#close-modal"></use></svg></span>
@@ -1402,23 +1399,30 @@
 
           <div class="col-12">
             <div class="sorting-wrapper">
-              <h4>Сортировать по:</h4>
-              <ul class="list-sorting">
-                <li><a href="#">Популярности</a></li>
-                <li><a href="#" class="active">Цене</a></li>
-                <li><a href="#">Новинкам</a></li>
-                <li><a href="#">Распродажам</a></li>
-              </ul>
-
-              <a href="#" class="links-details">
+              <div class="list-sorting__item">
+                <h4>Сортировать по:</h4>
+                <ul class="list-sorting">
+                  <li><a href="#">Популярности</a></li>
+                  <li><a href="#" class="active">Цене</a></li>
+                  <li><a href="#">Новинкам</a></li>
+                  <li><a href="#">Распродажам</a></li>
+                </ul>
+              </div>
+              <a href="#" class="links-details d-none d-xl-flex">
                 <span class="links-details__text">Как подобрать белье</span>
                 <span class="links-details__icon">?</span>
+              </a>
+
+              <a href="#" class="btn-clear-filter d-flex d-sm-none d-lg-flex d-xl-none">
+                <span class="btn-clear-filter__text">очистить фильтр</span>
+                <span class="btn-clear-filter__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#close-modal"></use></svg></span>
               </a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1437,7 +1441,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
               <ul class="list-tags">
@@ -1461,7 +1465,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
               <ul class="list-tags">
@@ -1482,7 +1486,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1503,7 +1507,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
               <ul class="list-tags">
@@ -1524,7 +1528,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1543,7 +1547,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1563,7 +1567,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1589,7 +1593,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1608,7 +1612,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1628,7 +1632,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1647,7 +1651,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1668,7 +1672,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1688,7 +1692,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
               <ul class="list-tags">
@@ -1710,7 +1714,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1730,7 +1734,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1750,7 +1754,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1769,7 +1773,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1788,7 +1792,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
 
@@ -1808,7 +1812,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
+          <div class="product-card__col col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3 mb-30">
             <div class="model-card">
               <a href="#" class="btn-add-favorite"></a>
               <ul class="list-tags">
@@ -1873,9 +1877,11 @@
         <div class="main-slider-box catalog-banner bg-grey-light">
           <div class="main-slider-box__content">
             <div class="main-slider__title">Купальники <br>
-              разных форм</div>
+              разных форм
+            </div>
             <div class="box-text-info">
-              <p>Мы подбираем купальник, как и бюстгальтер, — с учетом анатомического строения и параметров вашей груди. У нас есть бандо без бретелей, балконет, поднимающий грудь, пландж, создающий сексуальную ложбинку.</p>
+              <p>Мы подбираем купальник, как и бюстгальтер, — с учетом анатомического строения и параметров вашей груди.
+                У нас есть бандо без бретелей, балконет, поднимающий грудь, пландж, создающий сексуальную ложбинку.</p>
               <p>А если хотите закрытую модель, подойдут слитные купальники и танкини.</p>
             </div>
             <div class="box-text">
@@ -1896,52 +1902,61 @@
       </div>
     </div>
     <div class="row">
-
       <div class="col-12 col-lg-10 offset-lg-1">
-        <div class="catalog-info-box">
-          <h3>Базовый бюстгальтер</h3>
-          <div class="box-text">
-            <p>Про эту вещь гардероба стоит поговорить отдельно — без нее уж точно не обходится ни одна женщина. Этот
-              предмет носят ежедневно, поэтому выбирают наиболее удобные модели для различных случаев.
-            </p>
-          </div>
 
-          <h4>У каждой девушки должны быть:
-          </h4>
-          <div class="box-text">
-            <ul class="list-dots">
-              <li><strong>Бра </strong> <span>— придает нужную форму груди, часто представлен с технологией пуш-ап, благодаря которой можно значительно увеличить бюст;
+        <div class="catalog-info-box__wrapper box-content-hidden">
+          <div class="catalog-info-box">
+            <h3>Базовый бюстгальтер</h3>
+            <div class="box-text">
+              <p>Про эту вещь гардероба стоит поговорить отдельно — без нее уж точно не обходится ни одна женщина. Этот
+                предмет носят ежедневно, поэтому выбирают наиболее удобные модели для различных случаев.
+              </p>
+            </div>
+            <h4>У каждой девушки должны быть:
+            </h4>
+            <div class="box-text">
+              <ul class="list-dots">
+                <li><strong>Бра </strong> <span>— придает нужную форму груди, часто представлен с технологией пуш-ап, благодаря которой можно значительно увеличить бюст;
 вариант с отстегивающимися/прозрачными бретелями — лямки не торчат из под вещей с открытой спиной.</span></li>
-              <li>
-                <strong>Спортивный</strong> <span>— это бесшовное, мягкое изделие, подходящее для занятий спортом и во время отдыха, не причиняет никакого дискомфорта и удобно.</span>
-              </li>
-              <li>
-                <strong>Бандо</strong>
-                <span>— подходит для открытых и вечерних нарядов, лямки просто отстегиваются и не портят общий вид образа.</span>
-              </li>
-              <li>
-                <strong>Силиконовая модель</strong>
-                <span>— это две чашки, скрепленные между собой застежкой/декоративной шнуровкой, заслужил название «невидимка», его закрепляют на груди и он абсолютно незаметен во время использования.</span>
-              </li>
-            </ul>
+                <li>
+                  <strong>Спортивный</strong> <span>— это бесшовное, мягкое изделие, подходящее для занятий спортом и во время отдыха, не причиняет никакого дискомфорта и удобно.</span>
+                </li>
+                <li>
+                  <strong>Бандо</strong>
+                  <span>— подходит для открытых и вечерних нарядов, лямки просто отстегиваются и не портят общий вид образа.</span>
+                </li>
+                <li>
+                  <strong>Силиконовая модель</strong>
+                  <span>— это две чашки, скрепленные между собой застежкой/декоративной шнуровкой, заслужил название «невидимка», его закрепляют на груди и он абсолютно незаметен во время использования.</span>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <div class="catalog-info-box">
+            <h3>Какие модели входят в топ</h3>
+            <div class="box-text">
+              <p>Прежде всего важно обращать внимание на ткани, поэтому выбирая трусики и бюстгальтер не стоит
+                приобретать
+                только синтетику — белье должно дышать. Необходимо отдавать предпочтение натуральному текстилю типа
+                хлопка, трикотажа, шелка — оно довольно качественное и прослужит не один день. Очень популярны изделия
+                из
+                микрофибры, натурального кружева, эластана.
+              </p>
+              <p>
+                По цветовой гамме в приоритете черная, телесная (нюдовая) и белая расцветки, которые считаются
+                универсальными. Эксперты советуют под каждый бюстгальтер прикупить по несколько пар подходящих
+                однотонных
+                трусов. Бывают ситуации, когда необходимо переодеться — некоторые думают, что можно носить к примеру
+                верх
+                темный, а низ светлый — это считается моветоном.</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="catalog-info-box">
-          <h3>Какие модели входят в топ</h3>
-          <div class="box-text">
-            <p>Прежде всего важно обращать внимание на ткани, поэтому выбирая трусики и бюстгальтер не стоит приобретать
-              только синтетику — белье должно дышать. Необходимо отдавать предпочтение натуральному текстилю типа
-              хлопка, трикотажа, шелка — оно довольно качественное и прослужит не один день. Очень популярны изделия из
-              микрофибры, натурального кружева, эластана.
-            </p>
-            <p>
-              По цветовой гамме в приоритете черная, телесная (нюдовая) и белая расцветки, которые считаются
-              универсальными. Эксперты советуют под каждый бюстгальтер прикупить по несколько пар подходящих однотонных
-              трусов. Бывают ситуации, когда необходимо переодеться — некоторые думают, что можно носить к примеру верх
-              темный, а низ светлый — это считается моветоном.</p>
-          </div>
-        </div>
+        <a href="#" class="links-toggle links-details d-flex d-sm-none"><span
+            class="links-details__text">Читать дальше</span></a>
       </div>
     </div>
   </div>

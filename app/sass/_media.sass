@@ -76,6 +76,10 @@
       padding: 0
       margin: 0 15px 0 0
 
+  .filter__slider
+    width: 165px
+
+
 @media only screen and (max-width: 1450px)
   .not-undefined h1
     font-size: 60px
@@ -144,6 +148,9 @@
 
   .gallery-product-max
     width: calc(100% - 100px)
+
+  .filter-result-box
+    font-size: 14px
 
 @media only screen and (max-width: 1380px)
   .footer-menu
@@ -726,6 +733,9 @@
       max-width: 385px
       max-height: 430px
       height: 430px
+    .main-slider-box__img-two
+      height: 100%
+      max-height: none
     .main-slider-box__content
       padding: 40px 0 30px
       width: calc(100% - 385px)
@@ -766,12 +776,17 @@
 
   .filter-wrapper
     margin: 0 0 10px
+    align-items: flex-start
+    h4
+      margin: 7px 10px 0 0
 
-  .filter-wrapper h4, .sorting-wrapper h4
-    margin: 0 10px 0 0
+  .price-filter
+    h4
+      margin: 0 10px 0 0
+
 
   .filter-wrapper__list
-    max-width: 400px
+    max-width: calc(100% - 350px)
 
   .filter-result-box
     margin: 0 5px 5px 0
@@ -973,6 +988,13 @@
     margin: 0
     font-size: 14px
 
+  .filter-wrapper h4, .sorting-wrapper h4
+    margin: 0 10px 0 0
+
+  .filter-result-box
+    font-size: 14px
+    padding: 6.5px 10px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 992px)
   .menu li
@@ -1010,6 +1032,25 @@
     width: 100%
     order: 1
     margin: 15px 0 0
+
+  .filter-wrapper
+    align-items: flex-end
+    h4
+      margin: 0 10px 10px 0
+    .price-filter
+      margin: 35px 0 -4px
+      h4
+        margin: 0 10px 3px 0
+
+
+
+  .filter__slider
+    width: 217px
+
+  .filter-wrapper__list
+    max-width: none
+
+
 
 @media only screen and (max-width: 900px)
   .footer-box-callback
@@ -1085,6 +1126,7 @@
       margin: 0 5px 0 0
       &:last-child
         margin: 0
+
 
 @media only screen and (max-width: 768px)
   .container
@@ -1639,6 +1681,9 @@
       max-width: 304px
       height: 340px
       right: -34px
+    .main-slider-box__img-two
+      height: auto
+
     .main-slider-box__content
       padding: 35px 0 25px
       width: calc(100% - 280px)
@@ -1661,6 +1706,11 @@
 
   .pagination-nav
     margin: 0 auto
+
+  .filter__slider
+    width: 180px
+
+
 
 
 @media only screen and (max-width: 730px)

@@ -421,7 +421,7 @@
   .main-slider-box__img
     max-width: 600px
     max-height: 670px
-    height: 670px
+    height: 100%
     width: 100%
     position: absolute
     right: 0
@@ -429,7 +429,15 @@
     display: flex
     align-items: flex-end
     justify-content: center
-
+  .main-slider-box__img-two
+    max-height: none
+    height: 100%
+    justify-content: flex-start
+    img
+      max-width: none
+      width: auto
+      height: 100%
+      //object-fit: cover
   .main-slider-box__content
     width: calc(100% - 600px)
     padding: 65px 0 50px
@@ -458,7 +466,7 @@
   .box-text
     margin: 15px 0 0
     font-size: 16px
-
+    line-height: 28px
     .links-details__text
       padding: 0
 
@@ -668,11 +676,6 @@
     max-width: 390px
     width: 100%
 
-.form-filter-mobile
-  button.btn
-    border-radius: 0
-    width: 100%
-    max-width: none
 
 .btn-filter-close
   display: flex
@@ -687,17 +690,18 @@
   &:hover
     color: $accent
 
-
 .btn-filter-prev
   .btn-filter-close__icon
     &:before, &:after
       display: none
 
-
-
 .form-filter-mobile
   width: 100%
   height: 100%
+  button.btn
+    border-radius: 0
+    width: 100%
+    max-width: none
   .label-checkbox span
     margin: 0 5px 0 0
   .checkbox-custom
@@ -706,7 +710,7 @@
     left: 0
     transform: none
   .color-circle
-    margin: 0 8px
+    margin: 0 8px 0 0
   .checkbox-title
     margin: 0
   .inp-check:checked ~ .checkbox-title
@@ -747,9 +751,18 @@ a.form-filter-mobile__category__links
   right: 16px
   top: 50%
   transform: translate(0,-50%)
+  background: url("../img/arrow-right.svg") no-repeat center
+    size: 100%
+
+.form-filter-mobile__category__val
+  display: flex
+  align-items: center
+  flex-wrap: wrap
 
 .form-filter-mobile__category__val-clear
   fill: #B0B1BF
+  background: url("../img/close.svg") no-repeat center
+    size: 100%
 
 
 .form-filter-mobile__category
