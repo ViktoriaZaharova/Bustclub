@@ -352,10 +352,12 @@
     font-size: 13px
 
     th, td
-      padding: 10px
+
       width: 58px
       height: 36px
       min-width: 56px
+    .checkbox-size
+      padding: 10px
 
   .contacts-box
     font-size: 17px
@@ -597,7 +599,7 @@
     padding: 35px 30px
     margin: 0 0 8px
     width: calc(33.3% - 4px)
-    h3
+    &__title
       margin: 0 0 10px
 
   .sale-box__img
@@ -1235,6 +1237,8 @@
     max-width: 140px
 
 
+  .product-content__item .btn-group .btn, .product-content__item .btn-group .btn:not(:last-child):not(.dropdown-toggle)
+    padding: 0 8px
 
 @media only screen and (max-width: 768px)
   .container
@@ -1956,6 +1960,14 @@
     &__box
       margin: 0 0 0 10px
 
+  .product-content__item .btn-group .btn, .product-content__item .btn-group .btn:not(:last-child):not(.dropdown-toggle)
+    font-size: 12px
+
+  .product-content__item .btn-group .add-favorite .btn-icon
+    width: 17px
+    height: 16px
+    min-width: 17px
+
 
 @media only screen and (max-width: 640px)
   .cabinet-card
@@ -2533,7 +2545,7 @@
     margin: 0 0 10px
     padding: 30px 25px
     height: 210px
-    h3
+    &__title
       margin: 0 0 15px
 
   .reviews-box
@@ -2634,7 +2646,7 @@
       margin: 0 0 10px
       max-width: none
       width: 100%
-    .add-favorite
+    .add-favorite, .added-favorite
       display: none
 
   .advantages-product-item:last-child
@@ -2830,6 +2842,8 @@
       margin: 0
       left: 0
 
+  .product-content__item .btn-group .btn, .product-content__item .btn-group .btn:not(:last-child):not(.dropdown-toggle)
+    font-size: 14px
 
 @media only screen and (max-width: 480px)
   .container
@@ -3372,7 +3386,8 @@
   .cabinet-card-order__number
     margin: auto 0 auto auto
 
-
+  .links-toggle-mobile
+    display: flex
 
 @media only screen and (max-width: 340px)
   .gallery-product-max__item

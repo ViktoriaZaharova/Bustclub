@@ -85,7 +85,7 @@
   width: 100%
   font-size: 16px
   font-weight: 500
-
+  display: none
   li
     a
       padding: 7px 10px
@@ -101,6 +101,9 @@
       &:hover
         &::after
           filter: brightness(0) invert(1)
+
+.sidebar-menu.open
+  display: block
 
 .dropdown-toggle::after
   background: url("../img/arrow-bottom.svg") no-repeat center
@@ -786,6 +789,8 @@ a.form-filter-mobile__category__links
   .form-filter-mobile__category__links
     border-bottom: 1px solid rgba(#B0B1BF, .35)
     padding: 20px 16px
+  .color-circle
+    margin: 0 8px
 
 .form-filter-mobile__category__name
   margin: 0 5px 0 0
