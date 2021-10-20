@@ -3106,6 +3106,9 @@ footer {
       background: #DD50AD;
       border-radius: 30px; }
 
+.sidebar .sidebar-menu {
+  display: none; }
+
 .sidebar-submenu {
   padding: 0 0 0 10px;
   margin: 10px 0 15px;
@@ -3148,8 +3151,7 @@ footer {
 .sidebar-menu {
   width: 100%;
   font-size: 16px;
-  font-weight: 500;
-  display: none; }
+  font-weight: 500; }
   .sidebar-menu li a {
     padding: 7px 10px;
     border-radius: 8px;
