@@ -392,3 +392,10 @@ $('.sidebar-category-dropdown').on('click', function (e) {
     e.preventDefault();
     $(this).siblings('.sidebar-menu').toggleClass('open');
 });
+
+
+// input radio
+$('.checkbox-size__input').click(function() {
+    var text = $(this).val();
+    $(this).parents('.product-size').find('.dropdown-toggle .btn-select__text').text(text);
+});
