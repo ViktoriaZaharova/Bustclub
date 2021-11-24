@@ -157,11 +157,46 @@
   span
     color: $text-dark
     margin: 0 0 0 6px
+    font-weight: 500
 
 .color-product-preview
   display: flex
   align-items: stretch
   flex-wrap: wrap
+  .form-filter-mobile__category__links
+    padding: 0
+    width: 28px
+    height: 28px
+    margin: 0 11px 19px 0
+    overflow: visible
+    &:last-child
+      margin: 0 0 19px
+  .color-circle
+    width: 28px
+    min-width: 28px
+    height: 28px
+    position: relative
+    border: 1px solid transparent
+    margin: 0
+    top: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: calc(100% + 8px)
+      height: calc(100% + 8px)
+      border: 1px solid transparent
+        radius: 50%
+      background: transparent
+  .form-filter-mobile__category__links .inp-check:checked + .color-circle
+    &:before
+      background: transparent
+      border-color: #DC3232
+  .color-circle-white2
+    border-color: #000
+
 
 .color-product-preview__item
   margin: 0 10px 10px 0
