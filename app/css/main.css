@@ -8346,6 +8346,13 @@ a.form-filter-mobile__category__links:hover {
   .gallery-product-max__item {
     height: 394px; } }
 
+@media only screen and (min-width: 992px) {
+  .brand-page .product-card__col {
+    width: 20%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; } }
+
 @media only screen and (min-width: 420px) {
   .d-xs-none {
     display: none !important; } }
