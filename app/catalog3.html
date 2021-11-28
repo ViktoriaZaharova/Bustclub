@@ -1049,7 +1049,7 @@
       <label><input type="text" placeholder="Поиск"></label>
     </form>
 
-    <a href="#" class="btn btn-accent btn-sing" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+    <a href="#" class="btn btn-accent btn-sing" data-toggle="modal" data-dismiss="modal" data-target="#modalCall">Записаться в шоурум</a>
     <a href="tel:+74998771451" class="phone">+7 (499) 877-14-51</a>
     <div class="address">
       <svg class="svg-icon">
@@ -1146,7 +1146,7 @@
             <li><a href="#">Опт</a></li>
           </ul>
 
-          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-dismiss="modal" data-target="#modalCall">Записаться в шоурум</a>
         </div>
       </div>
     </div>
@@ -3677,7 +3677,7 @@
           </ul>
         </div>
         <div class="footer-box footer-box-btn">
-          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#modalCall">Записаться в шоурум</a>
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-dismiss="modal" data-target="#modalCall">Записаться в шоурум</a>
           <a href="#" class="links-details"><span class="links-details__text">Обучение брафиттингу</span></a>
         </div>
         <div class="footer-box footer-box-callback d-block d-xl-none">
@@ -4881,7 +4881,53 @@
   </div>
 </div>
 
+<div class="modal fade modal-call" id="modalCall" tabindex="-1" aria-labelledby="modalCallLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body__top">
+          <p>Не смогли расчитать ваш размер</p>
+          <a href="#" class="color-accent links-border" data-toggle="modal" data-target="#codeModal" data-dismiss="modal" aria-label="Close">Попробовать её раз</a>
+        </div>
+
+        <h3 class="modal-title">Записаться в шоурум</h3>
+
+        <form method="post" class="form-entrance form">
+          <label>
+            <input type="text" placeholder="Введите свое имя" name="name" required>
+          </label>
+          <label>
+            <input type="text" placeholder="Введите свой телефон" name="phone" required>
+          </label>
+          <button type="submit" class="btn btn-accent">Записаться</button>
+          <div class="box-text">
+            <p>С вами свяжется наш менеджер в близжайшее время</p>
+          </div>
+          <div class="consent">
+            Нажимая кнопку, вы даете согласие на
+            <a href="https://bust-club.com/personal" target="_blank" class="links-details d-inline">
+              <span class="links-details__text">обработку</span>
+              <span class="links-details__text">персональных данных</span>
+            </a>
+            и соглашаетесь с
+            <a href="https://bust-club.com/privacypolicy" target="_blank" class="links-details d-inline">
+              <span class="links-details__text">политикой сайта</span>
+            </a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
